@@ -21,6 +21,16 @@ app_license = "mit"
 # 	}
 # ]
 
+add_to_apps_screen = [
+    {
+        "name": "junhai_custom",
+        "logo": "/assets/hrms/images/frappe-hr-logo.svg",
+        "title": "Junhai Custom",
+        "route": "/desk",
+        "has_permission": "hrms.hr.utils.check_app_permission",
+    }
+]
+
 # Includes in <head>
 # ------------------
 
@@ -251,10 +261,10 @@ app_license = "mit"
 # ignore_translatable_strings_from = []
 
 fixtures = [
-	{"dt": "Custom Field", "filters": [["module", "=", app_title]]},
-	{"dt": "Property Setter", "filters": [["module", "=", app_title]]},
-	{"dt": "Print Format", "filters": [["module", "=", app_title]]},
-	{"dt": "Report", "filters": [["module", "=", app_title]]},
-	{"dt": "Client Script", "filters": [["module", "=", app_title]]},
-	{"dt": "Server Script", "filters": [["module", "=", app_title]]},
+    {"dt": "Custom Field", "filters": [["module", "=", app_title]]},
+    {"dt": "Property Setter", "filters": [["module", "=", app_title]]},
+    {"dt": "Print Format", "filters": [["module", "=", app_title]]},
+    {"dt": "Report", "filters": [["module", "=", app_title]]},
+    {"dt": "Client Script", "filters": [["module", "=", app_title]]},
+    {"dt": "Server Script", "filters": [["module", "=", app_title]]},
 ]

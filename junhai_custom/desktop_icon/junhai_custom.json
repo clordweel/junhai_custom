@@ -1,0 +1,22 @@
+{
+ "app": "junhai_custom",
+ "creation": "2025-12-12 09:00:12.280130",
+ "docstatus": 0,
+ "doctype": "Desktop Icon",
+ "hidden": 0,
+ "icon": "bolt",
+ "icon_type": "App",
+ "idx": 100,
+ "label": "Junhai Custom",
+ "link": "",
+ "link_to": "Junhai Custom",
+ "link_type": "Workspace",
+ "logo_url": "",
+ "modified": "2025-12-12 09:03:11.896045",
+ "modified_by": "Administrator",
+ "name": "Junhai Custom",
+ "owner": "Administrator",
+ "roles": [],
+ "sidebar": "",
+ "standard": 1
+}
