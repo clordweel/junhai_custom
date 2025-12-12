@@ -1,7 +1,7 @@
 {
  "app": "junhai_custom",
  "charts": [],
- "content": "[{\"id\":\"wNLoaFo7q9\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Junhai Custom</span>\",\"col\":12}}]",
+ "content": "[{\"id\":\"wNLoaFo7q9\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u541b\u6d77\u81ea\u5b9a\u4e49</span>\",\"col\":12}},{\"id\":\"a3_OWvTlVh\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u7269\u6599\u53c2\u6570\u6a21\u677f\",\"col\":3}},{\"id\":\"2uWIXIaXak\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u65b0\u589e\u7269\u6599\u7533\u8bf7\",\"col\":3}}]",
  "creation": "2025-12-12 08:30:48.221143",
  "custom_blocks": [],
  "docstatus": 0,
@@ -9,13 +9,13 @@
  "for_user": "",
  "hide_custom": 0,
  "icon": "bolt",
- "idx": 0,
+ "idx": 1,
  "indicator_color": "green",
  "is_hidden": 0,
  "label": "Junhai Custom",
  "link_type": "DocType",
  "links": [],
- "modified": "2025-12-12 08:31:28.325134",
+ "modified": "2025-12-12 12:26:16.933136",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Junhai Custom",
@@ -26,7 +26,24 @@
  "quick_lists": [],
  "roles": [],
  "sequence_id": 28.0,
- "shortcuts": [],
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u7269\u6599\u53c2\u6570\u6a21\u677f",
+   "link_to": "Item Parameter Template",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u65b0\u589e\u7269\u6599\u7533\u8bf7",
+   "link_to": "New Item Request",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
  "title": "Junhai Custom",
  "type": "Workspace"
 }
