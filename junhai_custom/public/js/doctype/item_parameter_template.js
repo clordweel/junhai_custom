@@ -11,7 +11,6 @@ frappe.ui.form.on('Item Parameter Template Definition', { // 监听子表事件
 
     // 监听约束类型变化，用于清空不相关的字段 (防脏数据)
     constraint_type: function (frm, cdt, cdn) {
-        // ... (清空逻辑代码保持不变) ...
         var row = locals[cdt][cdn];
         var fields_to_clear = ['value_material', 'value_surface', 'value_float', 'value_integer', 'value_base_name', 'value_unit'];
 
