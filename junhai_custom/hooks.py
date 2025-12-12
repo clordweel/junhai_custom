@@ -21,16 +21,6 @@ app_license = "mit"
 # 	}
 # ]
 
-add_to_apps_screen = [
-    {
-        "name": "junhai_custom",
-        "logo": "/assets/hrms/images/frappe-hr-logo.svg",
-        "title": "Junhai Custom",
-        "route": "/desk",
-        "has_permission": "hrms.hr.utils.check_app_permission",
-    }
-]
-
 # Includes in <head>
 # ------------------
 

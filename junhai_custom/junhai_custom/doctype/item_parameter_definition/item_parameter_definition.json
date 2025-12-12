@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "creation": "2025-12-12 10:05:04.311522",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "parameter_name",
+  "parameter_value",
+  "column_break_nazn",
+  "constraint_type",
+  "value_material",
+  "value_surface",
+  "value_float",
+  "value_integer"
+ ],
+ "fields": [
+  {
+   "fieldname": "parameter_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "not_nullable": 1,
+   "reqd": 1
+  },
+  {
+   "description": "\u6839\u636e\u7c7b\u578b\u503c\u52a8\u6001\u4fee\u6539",
+   "fieldname": "parameter_value",
+   "fieldtype": "Data",
+   "label": "Value",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.parameter_type=='Material'",
+   "fieldname": "value_material",
+   "fieldtype": "Link",
+   "label": "Material Value",
+   "options": "Item Material"
+  },
+  {
+   "depends_on": "eval:doc.parameter_type=='Surface'",
+   "fieldname": "value_surface",
+   "fieldtype": "Link",
+   "label": "Surface Value",
+   "options": "Item Surface"
+  },
+  {
+   "fieldname": "column_break_nazn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "value_float",
+   "fieldtype": "Float",
+   "label": "Float Value",
+   "precision": "3"
+  },
+  {
+   "fieldname": "value_integer",
+   "fieldtype": "Int",
+   "label": "Integer Value"
+  },
+  {
+   "default": "Data",
+   "fieldname": "constraint_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Constraint Type",
+   "options": "Data\nInteger\nFloat\nMaterial\nSurface",
+   "reqd": 1,
+   "translatable": 1
+  }
+ ],
+ "grid_page_length": 20,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-12 11:58:27.999000",
+ "modified_by": "Administrator",
+ "module": "Junhai Custom",
+ "name": "Item Parameter Definition",
+ "owner": "Administrator",
+ "permissions": [],
+ "read_only": 1,
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
