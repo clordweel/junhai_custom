@@ -154,5 +154,57 @@
   "name": "sbhivr0u2a",
   "source_text": "Virtual Item Flag",
   "translated_text": "标记为虚拟物料"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-13 19:17:47.492459",
+  "name": "scjv0ivh84",
+  "source_text": "Item Parameters",
+  "translated_text": "物料参数"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-13 19:18:25.917267",
+  "name": "sojcikipe3",
+  "source_text": "Integer",
+  "translated_text": "整数"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-13 19:18:36.641334",
+  "name": "srukp1e0ot",
+  "source_text": "Base Name",
+  "translated_text": "基础名"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-13 19:19:24.094480",
+  "name": "taood38eo7",
+  "source_text": "Constraint Type",
+  "translated_text": "约束类型"
  }
 ]

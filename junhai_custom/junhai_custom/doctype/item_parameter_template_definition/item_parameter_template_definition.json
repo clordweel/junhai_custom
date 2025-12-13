@@ -6,19 +6,13 @@
  "engine": "InnoDB",
  "field_order": [
   "parameter_name",
+  "description",
   "column_break_izor",
   "parameter_default_value",
-  "section_break_xjgs",
   "constraint_type",
-  "column_break_nazn",
-  "value_material",
-  "value_surface",
-  "value_float",
-  "value_integer",
-  "value_base_name",
-  "value_unit",
-  "section_break_jwzv",
-  "description"
+  "readonly_value",
+  "binding_field",
+  "target_field"
  ],
  "fields": [
   {
@@ -30,45 +24,14 @@
    "reqd": 1
   },
   {
-   "fieldname": "column_break_nazn",
-   "fieldtype": "Column Break"
-  },
-  {
    "default": "Data",
    "fieldname": "constraint_type",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Constraint Type",
-   "options": "Data\nInteger\nFloat\nBase Name\nMaterial\nSurface\nUnit",
+   "options": "Data\nInteger\nFloat\nBase Name\nMaterial\nSurface\nUnit\nFormat",
    "reqd": 1,
    "translatable": 1
-  },
-  {
-   "depends_on": "eval:doc.constraint_type=='Material'",
-   "fieldname": "value_material",
-   "fieldtype": "Link",
-   "label": "Material Value",
-   "options": "Item Material"
-  },
-  {
-   "depends_on": "eval:doc.constraint_type=='Surface'",
-   "fieldname": "value_surface",
-   "fieldtype": "Link",
-   "label": "Surface Value",
-   "options": "Item Surface"
-  },
-  {
-   "depends_on": "eval:doc.constraint_type=='Float'",
-   "fieldname": "value_float",
-   "fieldtype": "Float",
-   "label": "Float Value",
-   "precision": "3"
-  },
-  {
-   "depends_on": "eval:doc.constraint_type=='Integer'",
-   "fieldname": "value_integer",
-   "fieldtype": "Int",
-   "label": "Integer Value"
   },
   {
    "description": "\u6839\u636e\u7c7b\u578b\u503c\u52a8\u6001\u4fee\u6539",
@@ -76,24 +39,6 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Default Value"
-  },
-  {
-   "depends_on": "eval:doc.constraint_type=='Base Name'",
-   "fieldname": "value_base_name",
-   "fieldtype": "Link",
-   "label": "Base Name Value",
-   "options": "Item Base Name"
-  },
-  {
-   "depends_on": "eval:doc.constraint_type=='Unit'",
-   "fieldname": "value_unit",
-   "fieldtype": "Link",
-   "label": "Unit Value",
-   "options": "UOM"
-  },
-  {
-   "fieldname": "section_break_jwzv",
-   "fieldtype": "Section Break"
   },
   {
    "fieldname": "description",
@@ -105,15 +50,30 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_xjgs",
-   "fieldtype": "Section Break"
+   "default": "false",
+   "fieldname": "binding_field",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Binding Field"
+  },
+  {
+   "depends_on": "eval:doc.binding_field",
+   "fieldname": "target_field",
+   "fieldtype": "Data",
+   "label": "Target Field"
+  },
+  {
+   "default": "0",
+   "fieldname": "readonly_value",
+   "fieldtype": "Check",
+   "label": "Readonly Value"
   }
  ],
  "grid_page_length": 20,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-12 18:40:25.827389",
+ "modified": "2025-12-13 19:13:42.050147",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Parameter Template Definition",

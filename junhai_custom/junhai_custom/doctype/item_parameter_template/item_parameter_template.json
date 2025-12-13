@@ -11,10 +11,6 @@
   "column_break_wtcb",
   "section_break_ccpc",
   "parameters",
-  "section_break_eqpi",
-  "name_format",
-  "specification_format",
-  "description_format",
   "section_break_1ke0",
   "amended_from"
  ],
@@ -57,37 +53,17 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "section_break_eqpi",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "name_format",
-   "fieldtype": "Data",
-   "label": "Name Format",
-   "placeholder": "{\u57fa\u7840\u540d} {\u89c4\u683c}"
-  },
-  {
    "fieldname": "item_group",
    "fieldtype": "Link",
    "label": "Item Group",
    "options": "Item Group"
-  },
-  {
-   "fieldname": "specification_format",
-   "fieldtype": "Data",
-   "label": "Specification Format"
-  },
-  {
-   "fieldname": "description_format",
-   "fieldtype": "Text Editor",
-   "label": "Description Format"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-12 19:00:32.205781",
+ "modified": "2025-12-13 18:06:26.063534",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Parameter Template",

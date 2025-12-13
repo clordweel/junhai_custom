@@ -31,9 +31,13 @@ frappe.ui.form.on('New Item Request', {
                         // 在申请单的子表 (子表名: item_parameters) 中添加新行
                         var new_row = frm.add_child('item_parameters');
 
+                        // 标记该行数据来源于模板
+                        new_row.from_template = true;
+
                         // 映射常用字段
                         new_row.parameter_name = row.parameter_name || row.name || '';
                         new_row.constraint_type = row.constraint_type || '';
+                        new_row.readonly_value = row.readonly_value || 0;;
 
                         // 拷贝模板中已有的具体约束字段（如果存在）
                         if (row.value_material) new_row.value_material = row.value_material;
@@ -69,9 +73,6 @@ frappe.ui.form.on('New Item Request', {
                             }
                             // 通用展示/搜索字段
                             new_row.parameter_value = defaultVal;
-
-                            // 标记该行数据来源于模板
-                            new_row.from_template = true;
                         }
                     });
 
