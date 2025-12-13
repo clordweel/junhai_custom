@@ -7,13 +7,14 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
-  "item_group",
   "template",
+  "item_group",
   "column_break_uhke",
   "reason",
   "section_break_jwac",
   "item_parameters",
   "section_break_ypqq",
+  "unique_code",
   "amended_from"
  ],
  "fields": [
@@ -71,13 +72,19 @@
    "fieldname": "reason",
    "fieldtype": "Small Text",
    "label": "Reason"
+  },
+  {
+   "description": "\u4ece\u5173\u952e\u53c2\u6570\u8ba1\u7b97\u51fa MD5 \u552f\u4e00\u7801",
+   "fieldname": "unique_code",
+   "fieldtype": "Data",
+   "label": "Unique Code"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-12 18:48:46.539692",
+ "modified": "2025-12-13 22:49:48.265289",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "New Item Request",

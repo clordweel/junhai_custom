@@ -1,6 +1,86 @@
 import frappe
+import hashlib
 import json
 from frappe.utils import now_datetime
+
+
+@frappe.whitelist()
+def calculate_parameters_hash(doc, method=None):
+    """
+    计算 New Item Request 单据中，标记为 join_to_hash 的参数的标准化MD5指纹。
+    """
+
+    standardized_params = {}
+
+    for row in doc.item_parameters:
+
+        # 🌟 核心修正：双重检查
+        # 1. 必须标记为 join_to_hash (1/True)
+        # 2. 必须不是 Format 类型 (Format 行不提供参数值)
+        if row.join_to_hash and row.constraint_type != "Format":
+            param_name = row.parameter_name
+            param_value = row.parameter_value
+
+            # 标准化：去除 None，转换为字符串
+            # 注意：Link/Unit 等字段的值在 parameter_value 中可能是 Link Name
+            value = str(param_value).strip() if param_value is not None else ""
+
+            # 排除空的参数值，只保留有意义的组合
+            if value:
+                standardized_params[param_name] = value
+
+    # 2. 排序参数并拼接成字符串
+
+    sorted_keys = sorted(standardized_params.keys())
+
+    # 拼接最终的指纹源字符串 (格式: key1=value1|key2=value2)
+    fingerprint_source = "|".join(
+        [f"{key}={standardized_params[key]}" for key in sorted_keys]
+    )
+
+    # 3. 计算 MD5 指纹
+    md5_hash = hashlib.md5(fingerprint_source.encode("utf-8")).hexdigest()
+
+    # 4. 存储指纹源和指纹到 DocType 字段
+    # 假设 New Item Request 上有 fields: unique_code (Data)
+    doc.unique_code = md5_hash
+
+    return md5_hash
+
+
+# -----------------------------------------------------
+# 2. 查重操作函数 (用于前端按钮调用)
+# -----------------------------------------------------
+
+
+@frappe.whitelist()
+def check_duplicate_request(unique_code, current_docname):
+    """
+    检查系统中是否存在具有相同参数指纹且已提交的 New Item Request。
+    """
+    if not unique_code:
+        return {"duplicate": False, "message": "指纹为空，无法查重。"}
+
+    # 查找所有已提交（docstatus=1）且指纹相同的单据，排除当前单据
+    duplicate_name = frappe.db.get_value(
+        "New Item Request",
+        filters={
+            "docstatus": 1,
+            "unique_code": unique_code,
+            "name": ["!=", current_docname],
+        },
+        fieldname="name",
+        order_by="modified DESC",
+    )
+
+    if duplicate_name:
+        return {
+            "duplicate": True,
+            "name": duplicate_name,
+            "message": f"发现重复的物料参数组合！重复单据：{duplicate_name}。请核实！",
+        }
+    else:
+        return {"duplicate": False, "message": "当前参数组合未发现重复申请单。"}
 
 
 @frappe.whitelist()

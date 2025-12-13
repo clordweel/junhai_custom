@@ -1,5 +1,42 @@
 // New Item Request - Auto Load Parameters
 
+// 全局查重函数，可被多个按钮调用
+function run_duplicate_check(frm, callback) {
+    const unique_code = frm.doc.unique_code;
+
+    if (!unique_code) {
+        frappe.msgprint(__('单据未保存，无法生成指纹进行查重。请先保存或提交！'), __('操作受限'));
+        return;
+    }
+
+    frappe.call({
+        method: 'junhai_custom.custom_methods.check_duplicate_request',
+        args: {
+            unique_code: unique_code,
+            current_docname: frm.doc.name
+        },
+        callback: function (r) {
+            if (r.message && r.message.duplicate) {
+                // 发现重复，给出警告
+                frappe.throw({
+                    title: __('发现重复'),
+                    message: r.message.message,
+                    indicator: 'red'
+                });
+            } else {
+                // 没有重复，执行回调 (如果是 '创建物料' 按钮)
+                frappe.show_alert({
+                    message: r.message.message,
+                    indicator: 'green'
+                });
+                if (callback) {
+                    callback();
+                }
+            }
+        }
+    });
+}
+
 frappe.ui.form.on('New Item Request', {
     refresh: function (frm) {
         // --- 核心按钮逻辑 ---
@@ -9,51 +46,51 @@ frappe.ui.form.on('New Item Request', {
         const is_submitted = frm.doc.docstatus === 1;
         const item_not_generated = !frm.doc.generated_item;
 
+        // 1. 添加 "检查重复" 按钮 (只要单据已保存即可查重)
+        if (frm.doc.docstatus === 0 || is_submitted) {
+            frm.add_custom_button(__('检查参数重复'), function () {
+                run_duplicate_check(frm);
+            }, __('操作'));
+        }
+
         if (is_submitted && item_not_generated) {
 
-            // 2. 添加按钮到表单顶部
-            frm.add_custom_button(__('创建物料'), function () {
+            frm.add_custom_button(__('创建物料 (复核)'), function () {
 
-                frm.clear_custom_buttons(); // 清除按钮
+                // A. 首先执行重复检查
+                run_duplicate_check(frm, function () {
+                    // B. 如果查重通过，继续执行数据生成和跳转
 
-                // 调用后端新的数据生成函数
-                frappe.call({
-                    method: 'junhai_custom.custom_methods.generate_item_data_dict',
-                    args: {
-                        doc: frm.doc // 传递当前单据对象
-                    },
-                    callback: function (r) {
-                        if (r.message) {
-                            const item_data = r.message;
+                    frm.clear_custom_buttons();
 
-                            // 🌟 核心：跳转到新建 Item 表单并填充数据
-                            frappe.model.with_doctype('Item', function () {
-                                // 创建一个新的 Item 表单对象
-                                var new_item_doc = frappe.model.get_new_doc('Item');
+                    frappe.call({
+                        method: 'junhai_custom.custom_methods.generate_item_data_dict',
+                        args: {
+                            doc: frm.doc
+                        },
+                        callback: function (r) {
+                            if (r.message) {
+                                const item_data = r.message;
 
-                                // 将后端生成的 item_data 赋值给新的 Item Doc
-                                $.extend(new_item_doc, item_data);
+                                frappe.model.with_doctype('Item', function () {
+                                    var new_item_doc = frappe.model.get_new_doc('Item');
+                                    $.extend(new_item_doc, item_data);
+                                    new_item_doc.custom_new_item_request = frm.doc.name;
 
-                                // 可选：设置一个标记，表明数据来自请求单
-                                new_item_doc.custom_from_request = frm.doc.name;
-
-                                // 导航到新的 Item 创建表单，并传递数据
-                                frappe.set_route('Form', 'Item', new_item_doc.name);
-                            });
-
-                        } else if (r.exc) {
-                            // 后端抛出异常 (如格式化错误)
-                            frappe.msgprint(__('创建失败，请查看错误信息。'));
+                                    frappe.set_route('Form', 'Item', new_item_doc.name);
+                                });
+                            } else if (r.exc) {
+                                frm.reload_doc();
+                            }
+                        },
+                        error: function (r) {
                             frm.reload_doc();
                         }
-                    },
-                    error: function (r) {
-                        // 网络或系统错误处理
-                        frm.reload_doc();
-                    }
+                    });
                 });
             }, __('操作'));
         }
+
         // 3. 如果已生成物料，则显示链接而不是按钮
         else if (frm.doc.generated_item) {
             frm.add_custom_button(__('查看已建物料'), function () {
@@ -98,6 +135,7 @@ frappe.ui.form.on('New Item Request', {
                         new_row.parameter_name = row.parameter_name || row.name || '';
                         new_row.constraint_type = row.constraint_type || '';
                         new_row.readonly_value = row.readonly_value || 0;
+                        new_row.join_to_hash = row.join_to_hash || 0;
                         new_row.binding_field = row.binding_field || 0;
                         new_row.target_field = row.target_field || '';
 

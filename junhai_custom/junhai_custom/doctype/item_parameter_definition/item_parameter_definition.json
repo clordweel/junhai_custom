@@ -21,6 +21,7 @@
   "section_break_nnjr",
   "from_template",
   "readonly_value",
+  "join_to_hash",
   "column_break_tots"
  ],
  "fields": [
@@ -119,7 +120,8 @@
    "fieldname": "readonly_value",
    "fieldtype": "Check",
    "label": "Readonly Value",
-   "read_only": 1
+   "read_only": 1,
+   "read_only_depends_on": "eval:doc.from_template==true"
   },
   {
    "fieldname": "column_break_tots",
@@ -138,13 +140,20 @@
    "fieldtype": "Data",
    "label": "Target Field",
    "read_only_depends_on": "eval:doc.from_template==true"
+  },
+  {
+   "default": "0",
+   "fieldname": "join_to_hash",
+   "fieldtype": "Check",
+   "label": "Join To Hash",
+   "read_only_depends_on": "eval:doc.from_template==true"
   }
  ],
  "grid_page_length": 20,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-13 19:58:53.861475",
+ "modified": "2025-12-13 22:42:57.899826",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Parameter Definition",

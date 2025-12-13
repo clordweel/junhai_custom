@@ -12,7 +12,8 @@
   "constraint_type",
   "readonly_value",
   "binding_field",
-  "target_field"
+  "target_field",
+  "join_to_hash"
  ],
  "fields": [
   {
@@ -67,13 +68,20 @@
    "fieldname": "readonly_value",
    "fieldtype": "Check",
    "label": "Readonly Value"
+  },
+  {
+   "default": "0",
+   "description": "\u52a0\u5165 MD5 \u8ba1\u7b97\u53c2\u6570",
+   "fieldname": "join_to_hash",
+   "fieldtype": "Check",
+   "label": "Join To Hash"
   }
  ],
  "grid_page_length": 20,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-13 19:13:42.050147",
+ "modified": "2025-12-13 22:33:07.267336",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Parameter Template Definition",
