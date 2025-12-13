@@ -262,4 +262,6 @@ fixtures = [
     {"dt": "Report", "filters": [["module", "=", app_title]]},
     {"dt": "Client Script", "filters": [["module", "=", app_title]]},
     {"dt": "Server Script", "filters": [["module", "=", app_title]]},
+    {"dt": "Translation", "filters": []},
+    {"dt": "Item Group", "filters": []},
 ]

@@ -6,9 +6,11 @@
  "engine": "InnoDB",
  "field_order": [
   "parameter_name",
+  "column_break_izor",
   "parameter_default_value",
-  "column_break_nazn",
+  "section_break_xjgs",
   "constraint_type",
+  "column_break_nazn",
   "value_material",
   "value_surface",
   "value_float",
@@ -97,13 +99,21 @@
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
+  },
+  {
+   "fieldname": "column_break_izor",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_xjgs",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 20,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-12 13:05:47.412257",
+ "modified": "2025-12-12 18:40:25.827389",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Parameter Template Definition",

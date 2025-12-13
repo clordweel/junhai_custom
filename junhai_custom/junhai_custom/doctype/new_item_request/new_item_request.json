@@ -7,8 +7,10 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
+  "item_group",
   "template",
   "column_break_uhke",
+  "reason",
   "section_break_jwac",
   "item_parameters",
   "section_break_ypqq",
@@ -33,7 +35,8 @@
    "fieldname": "template",
    "fieldtype": "Link",
    "label": "Template",
-   "options": "Item Parameter Template"
+   "options": "Item Parameter Template",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_jwac",
@@ -48,19 +51,33 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Series",
    "options": "NEW-ITEM-.YYYY.-"
   },
   {
    "fieldname": "column_break_uhke",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Group",
+   "options": "Item Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-12 16:16:40.263357",
+ "modified": "2025-12-12 18:48:46.539692",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "New Item Request",

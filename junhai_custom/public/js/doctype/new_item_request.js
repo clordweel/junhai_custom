@@ -83,6 +83,10 @@ frappe.ui.form.on('New Item Request', {
                         indicator: 'orange'
                     }, 3);
                 }
+
+                if (r.message && r.message.item_group) {
+                    frm.set_value('item_group', r.message.item_group);
+                }
             },
             error: function () {
                 frappe.msgprint(__('获取物料模板数据失败。请联系管理员。'));
