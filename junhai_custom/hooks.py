@@ -137,13 +137,9 @@ doctype_js = {
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+    "Item": {"on_update": "junhai_custom.custom_methods.update_request_on_item_save"}
+}
 
 # Scheduled Tasks
 # ---------------
@@ -256,12 +252,31 @@ doctype_js = {
 # ignore_translatable_strings_from = []
 
 fixtures = [
-    {"dt": "Custom Field", "filters": [["module", "=", app_title]]},
-    {"dt": "Property Setter", "filters": [["module", "=", app_title]]},
     {"dt": "Print Format", "filters": [["module", "=", app_title]]},
     {"dt": "Report", "filters": [["module", "=", app_title]]},
     {"dt": "Client Script", "filters": [["module", "=", app_title]]},
     {"dt": "Server Script", "filters": [["module", "=", app_title]]},
     {"dt": "Translation", "filters": []},
     {"dt": "Item Group", "filters": []},
+    {"dt": "Custom Field", "filters": [["module", "=", app_title]]},
+    {
+        "dt": "Property Setter",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "New Item Request-naming_series-default",
+                    "New Item Request-naming_series-options",
+                    "Item-main-field_order",
+                    "Item-main-search_fields",
+                    "Item-section_break_11-collapsible",
+                    "Item-main-autoname",
+                    "Item-item_code-reqd",
+                    "Item-item_code-hidden",
+                    "Item-item_code-hidden",
+                ],
+            ]
+        ],
+    },
 ]

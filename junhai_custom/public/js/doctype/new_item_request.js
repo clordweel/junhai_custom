@@ -1,6 +1,66 @@
 // New Item Request - Auto Load Parameters
 
 frappe.ui.form.on('New Item Request', {
+    refresh: function (frm) {
+        // --- 核心按钮逻辑 ---
+
+        // 1. 只有在满足特定条件时才显示按钮
+        // 条件示例：单据已提交 (doc.docstatus == 1) 且 尚未生成物料 (doc.generated_item 为空)
+        const is_submitted = frm.doc.docstatus === 1;
+        const item_not_generated = !frm.doc.generated_item;
+
+        if (is_submitted && item_not_generated) {
+
+            // 2. 添加按钮到表单顶部
+            frm.add_custom_button(__('创建物料'), function () {
+
+                frm.clear_custom_buttons(); // 清除按钮
+
+                // 调用后端新的数据生成函数
+                frappe.call({
+                    method: 'junhai_custom.custom_methods.generate_item_data_dict',
+                    args: {
+                        doc: frm.doc // 传递当前单据对象
+                    },
+                    callback: function (r) {
+                        if (r.message) {
+                            const item_data = r.message;
+
+                            // 🌟 核心：跳转到新建 Item 表单并填充数据
+                            frappe.model.with_doctype('Item', function () {
+                                // 创建一个新的 Item 表单对象
+                                var new_item_doc = frappe.model.get_new_doc('Item');
+
+                                // 将后端生成的 item_data 赋值给新的 Item Doc
+                                $.extend(new_item_doc, item_data);
+
+                                // 可选：设置一个标记，表明数据来自请求单
+                                new_item_doc.custom_from_request = frm.doc.name;
+
+                                // 导航到新的 Item 创建表单，并传递数据
+                                frappe.set_route('Form', 'Item', new_item_doc.name);
+                            });
+
+                        } else if (r.exc) {
+                            // 后端抛出异常 (如格式化错误)
+                            frappe.msgprint(__('创建失败，请查看错误信息。'));
+                            frm.reload_doc();
+                        }
+                    },
+                    error: function (r) {
+                        // 网络或系统错误处理
+                        frm.reload_doc();
+                    }
+                });
+            }, __('操作'));
+        }
+        // 3. 如果已生成物料，则显示链接而不是按钮
+        else if (frm.doc.generated_item) {
+            frm.add_custom_button(__('查看已建物料'), function () {
+                frappe.set_route('Form', 'Item', frm.doc.generated_item);
+            }, __('查看'));
+        }
+    },
     // 监听主表单中 'template' 字段的变动 (您的实际字段名)
     template: function (frm) {
 
@@ -37,7 +97,9 @@ frappe.ui.form.on('New Item Request', {
                         // 映射常用字段
                         new_row.parameter_name = row.parameter_name || row.name || '';
                         new_row.constraint_type = row.constraint_type || '';
-                        new_row.readonly_value = row.readonly_value || 0;;
+                        new_row.readonly_value = row.readonly_value || 0;
+                        new_row.binding_field = row.binding_field || 0;
+                        new_row.target_field = row.target_field || '';
 
                         // 拷贝模板中已有的具体约束字段（如果存在）
                         if (row.value_material) new_row.value_material = row.value_material;

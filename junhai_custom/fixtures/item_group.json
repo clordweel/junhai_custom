@@ -1,19 +1,5 @@
 [
  {
-  "custom_description": "根节点",
-  "docstatus": 0,
-  "doctype": "Item Group",
-  "image": null,
-  "is_group": 1,
-  "item_group_defaults": [],
-  "item_group_name": "All Item Groups",
-  "modified": "2025-12-13 14:50:13.827715",
-  "name": "All Item Groups",
-  "old_parent": "",
-  "parent_item_group": "",
-  "taxes": []
- },
- {
   "custom_description": "原“原材料”，需加工或作为基础素材的物资",
   "docstatus": 0,
   "doctype": "Item Group",
@@ -865,6 +851,20 @@
   "name": "土地与建筑",
   "old_parent": "固定资产",
   "parent_item_group": "固定资产",
+  "taxes": []
+ },
+ {
+  "custom_description": "根节点",
+  "docstatus": 0,
+  "doctype": "Item Group",
+  "image": null,
+  "is_group": 1,
+  "item_group_defaults": [],
+  "item_group_name": "All Item Groups",
+  "modified": "2025-12-13 14:50:13.827715",
+  "name": "All Item Groups",
+  "old_parent": "",
+  "parent_item_group": "",
   "taxes": []
  }
 ]
