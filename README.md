@@ -1,33 +1,12 @@
-### Junhai Custom
+# ERPNext 君海自定义应用 (Junhai Custom)
 
-Custom Features For Junhai Componany.
+WIP
 
-### Installation
+## 手动系统设置清单
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+### 公司科目表
 
-```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch version-16-beta
-bench install-app junhai_custom
-```
+### 库存设置
 
-### Contributing
-
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
-
-```bash
-cd apps/junhai_custom
-pre-commit install
-```
-
-Pre-commit is configured to use the following tools for checking and formatting your code:
-
-- ruff
-- eslint
-- prettier
-- pyupgrade
-
-### License
-
-mit
+- 物料号字段: 单据模板编号（选择后物料单据才能正确显示模板编号选择）
+- 默认成本价计算方法: 移动平均
