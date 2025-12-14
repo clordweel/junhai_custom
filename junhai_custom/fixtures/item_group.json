@@ -810,21 +810,6 @@
   "taxes": []
  },
  {
-  "custom_code": "4040",
-  "custom_description": "扳手、钳子、卷尺、千斤顶",
-  "docstatus": 0,
-  "doctype": "Item Group",
-  "image": null,
-  "is_group": 0,
-  "item_group_defaults": [],
-  "item_group_name": "五金工具",
-  "modified": "2025-12-14 13:59:10.624947",
-  "name": "五金工具",
-  "old_parent": "MRO与工具",
-  "parent_item_group": "MRO与工具",
-  "taxes": []
- },
- {
   "custom_code": "4050",
   "custom_description": "维修自家行车/机床用的配件",
   "docstatus": 0,
@@ -1047,6 +1032,21 @@
   "name": "土地与建筑",
   "old_parent": "固定资产",
   "parent_item_group": "固定资产",
+  "taxes": []
+ },
+ {
+  "custom_code": "4040",
+  "custom_description": "扳手、钳子、卷尺、千斤顶",
+  "docstatus": 0,
+  "doctype": "Item Group",
+  "image": null,
+  "is_group": 0,
+  "item_group_defaults": [],
+  "item_group_name": "五金工具",
+  "modified": "2025-12-14 13:59:10.624947",
+  "name": "五金工具",
+  "old_parent": "MRO与工具",
+  "parent_item_group": "MRO与工具",
   "taxes": []
  }
 ]

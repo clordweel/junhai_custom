@@ -166,14 +166,20 @@ def generate_item_data_dict(doc):
 
     # --- 阶段三：最终校验和返回 ---
 
+    # 🌟 修正区域 1：物料名称校验逻辑变更
     if not final_item_name:
-        frappe.throw(
-            "模板配置错误：物料名称 (item_name) 字段未通过模板赋值，无法创建。",
-            title="配置错误",
+        # 如果 final_item_name 为空，我们不再抛出致命错误。
+        # 而是允许 Item DocType 使用自己的命名规则生成 Item Name/Code。
+        # 可以在日志中记录一个警告，但允许流程继续。
+        frappe.toast(
+            f"申请单 {doc.name}: 模板中未指定物料名称 (item_name) 的格式化规则。将依赖 Item DocType 的命名规则。",
+            "orange",
         )
+        # 注意：如果 Item DocType 强制要求 item_name 字段非空，那么最终创建时仍可能失败，
+        # 但这是 Item DocType 的职责，而不是这个格式化函数的职责。
 
-    # 查重提醒
-    if frappe.db.exists("Item", {"item_name": final_item_name}):
+    # 查重提醒 (仅在生成了名称时进行查重)
+    if final_item_name and frappe.db.exists("Item", {"item_name": final_item_name}):
         frappe.msgprint(
             f"注意：系统中已存在名为【{final_item_name}】的物料！请在新建页面核实。",
             title="查重提醒",

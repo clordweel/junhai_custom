@@ -143,7 +143,8 @@ doc_events = {
         "before_save": "junhai_custom.custom_methods.new_item_request.calculate_parameters_hash"
     },
     "Item": {
-        "on_update": "junhai_custom.custom_methods.new_item_request.update_request_on_item_save"
+        "on_update": "junhai_custom.custom_methods.new_item_request.update_request_on_item_save",
+        "before_insert": "junhai_custom.custom_methods.item.auto_set_item_code",
     },
 }
 
@@ -286,6 +287,8 @@ fixtures = [
                     "Item-item_code-hidden",
                     "Item-item_code-hidden",
                     "Item-main-naming_rule",
+                    "Item-naming_series-hidden",
+                    "Item-naming_series-read_only",
                     "Item-naming_series-options",
                     "Item-naming_series-default",
                     "Item-item_group-link_filters",
