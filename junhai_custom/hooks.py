@@ -139,9 +139,11 @@ doctype_js = {
 
 doc_events = {
     "New Item Request": {
-        "before_save": "junhai_custom.custom_methods.calculate_parameters_hash"
+        "before_save": "junhai_custom.custom_methods.new_item_request.calculate_parameters_hash"
     },
-    "Item": {"on_update": "junhai_custom.custom_methods.update_request_on_item_save"},
+    "Item": {
+        "on_update": "junhai_custom.custom_methods.new_item_request.update_request_on_item_save"
+    },
 }
 
 # Scheduled Tasks

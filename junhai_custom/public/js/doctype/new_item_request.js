@@ -10,7 +10,7 @@ function run_duplicate_check(frm, callback) {
     }
 
     frappe.call({
-        method: 'junhai_custom.custom_methods.check_duplicate_request',
+        method: 'junhai_custom.custom_methods.new_item_request.check_duplicate_request',
         args: {
             unique_code: unique_code,
             current_docname: frm.doc.name
@@ -64,7 +64,7 @@ frappe.ui.form.on('New Item Request', {
                     frm.clear_custom_buttons();
 
                     frappe.call({
-                        method: 'junhai_custom.custom_methods.generate_item_data_dict',
+                        method: 'junhai_custom.custom_methods.new_item_request.generate_item_data_dict',
                         args: {
                             doc: frm.doc
                         },
