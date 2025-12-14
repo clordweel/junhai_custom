@@ -27,6 +27,7 @@ app_license = "mit"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/junhai_custom/css/junhai_custom.css"
 # app_include_js = "/assets/junhai_custom/js/junhai_custom.js"
+app_include_js = ["/assets/junhai_custom/js/v16_link_hotfix.js"]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/junhai_custom/css/junhai_custom.css"
