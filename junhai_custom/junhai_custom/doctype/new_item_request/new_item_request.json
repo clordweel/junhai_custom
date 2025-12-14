@@ -15,6 +15,7 @@
   "item_parameters",
   "section_break_ypqq",
   "unique_code",
+  "generated_item",
   "amended_from"
  ],
  "fields": [
@@ -78,13 +79,20 @@
    "fieldname": "unique_code",
    "fieldtype": "Data",
    "label": "Unique Code"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "generated_item",
+   "fieldtype": "Link",
+   "label": "Generated Item",
+   "options": "Item"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-13 22:49:48.265289",
+ "modified": "2025-12-14 09:55:48.261339",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "New Item Request",

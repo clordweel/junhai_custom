@@ -46,9 +46,9 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "zh",
-  "modified": "2025-12-13 14:15:13.601528",
+  "modified": "2025-12-14 09:52:00.617475",
   "name": "b3g4306i37",
-  "source_text": "Drawing No",
+  "source_text": "Drawing Number",
   "translated_text": "图号"
  },
  {
@@ -206,5 +206,57 @@
   "name": "taood38eo7",
   "source_text": "Constraint Type",
   "translated_text": "约束类型"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-14 09:56:57.165165",
+  "name": "vgrah52io3",
+  "source_text": "Generated Item",
+  "translated_text": "已生成物料"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-14 09:57:39.362575",
+  "name": "vu1e5m2p5h",
+  "source_text": "Unique Code",
+  "translated_text": "唯一码"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-14 10:01:22.224655",
+  "name": "23m900bbm4",
+  "source_text": "Binding Field",
+  "translated_text": "绑定字段"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-14 10:02:38.096318",
+  "name": "2rdqbbf0ll",
+  "source_text": "Target Field",
+  "translated_text": "目标字段"
  }
 ]
