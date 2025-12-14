@@ -258,5 +258,18 @@
   "name": "2rdqbbf0ll",
   "source_text": "Target Field",
   "translated_text": "目标字段"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-14 12:22:44.201156",
+  "name": "kuapi6lulh",
+  "source_text": "Item Parameter Template",
+  "translated_text": "物料参数模板"
  }
 ]
