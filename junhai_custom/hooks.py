@@ -25,8 +25,7 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/junhai_custom/css/junhai_custom.css"
-# app_include_js = "/assets/junhai_custom/js/junhai_custom.js"
+app_include_css = ["/assets/junhai_custom/css/v16_patching_styles.css"]
 app_include_js = ["/assets/junhai_custom/js/v16_link_hotfix.js"]
 
 # include js, css files in header of web template
@@ -266,6 +265,10 @@ fixtures = [
     {"dt": "Server Script", "filters": [["module", "=", app_title]]},
     {"dt": "Translation", "filters": []},
     {"dt": "Item Group", "filters": []},
+    {"dt": "Item Surface", "filters": []},
+    {"dt": "Item Material", "filters": []},
+    {"dt": "Item Base Name", "filters": []},
+    {"dt": "Item Parameter Template", "filters": [["module", "=", app_title]]},
     {"dt": "Custom Field", "filters": [["module", "=", app_title]]},
     {"dt": "UOM", "filters": [["name", "in", ["件", "张", "台"]]]},
     {
