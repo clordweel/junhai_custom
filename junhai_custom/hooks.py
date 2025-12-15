@@ -267,7 +267,7 @@ fixtures = [
     {"dt": "Translation", "filters": []},
     {"dt": "Item Group", "filters": []},
     {"dt": "Custom Field", "filters": [["module", "=", app_title]]},
-    {"dt": "UOM", "filters": [["name", "in", ["件", "张", "台", "套"]]]},
+    {"dt": "UOM", "filters": [["name", "in", ["件", "张", "台"]]]},
     {
         "dt": "Property Setter",
         "filters": [
