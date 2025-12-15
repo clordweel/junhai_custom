@@ -92,7 +92,8 @@ doctype_js = {
 # ------------
 
 # before_install = "junhai_custom.install.before_install"
-# after_install = "junhai_custom.install.after_install"
+
+after_install = "junhai_custom.utils.setup.rename_uoms"
 
 # Uninstallation
 # ------------
@@ -266,6 +267,7 @@ fixtures = [
     {"dt": "Translation", "filters": []},
     {"dt": "Item Group", "filters": []},
     {"dt": "Custom Field", "filters": [["module", "=", app_title]]},
+    {"dt": "UOM", "filters": [["name", "in", ["件", "张", "台", "套"]]]},
     {
         "dt": "Property Setter",
         "filters": [
