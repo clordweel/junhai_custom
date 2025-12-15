@@ -93,7 +93,7 @@ doctype_js = {
 
 # before_install = "junhai_custom.install.before_install"
 
-after_install = "junhai_custom.utils.setup.rename_uoms"
+after_install = "junhai_custom.utils.setup.setup_uom_data"
 
 # Uninstallation
 # ------------
@@ -296,6 +296,7 @@ fixtures = [
                     "Item-item_group-link_filters",
                     "Item Group-main-search_fields",
                     "Item Group-main-field_order",
+                    "UOM-main-search_fields",
                 ],
             ]
         ],

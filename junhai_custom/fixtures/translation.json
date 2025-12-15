@@ -7,6 +7,19 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "zh",
+  "modified": "2025-12-15 12:22:36.404377",
+  "name": "0jsb27v76o",
+  "source_text": "Item Parameter Definition",
+  "translated_text": "物料参数定义"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
   "modified": "2025-12-11 11:11:19.959450",
   "name": "7rfeu6ob21",
   "source_text": "Standard with Numbers",
@@ -306,35 +319,9 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "zh",
-  "modified": "2025-12-15 09:52:56.866995",
-  "name": "8tp1mci5gk",
-  "source_text": "mm",
-  "translated_text": "毫米"
- },
- {
-  "context": null,
-  "contributed": 0,
-  "contribution_docname": null,
-  "contribution_status": "",
-  "docstatus": 0,
-  "doctype": "Translation",
-  "language": "zh",
   "modified": "2025-12-15 10:01:58.410650",
   "name": "e70jlos7mc",
   "source_text": "Item Parameter Template Definition",
   "translated_text": "物料参数模板定义"
- },
- {
-  "context": null,
-  "contributed": 0,
-  "contribution_docname": null,
-  "contribution_status": "",
-  "docstatus": 0,
-  "doctype": "Translation",
-  "language": "zh",
-  "modified": "2025-12-15 10:36:47.929618",
-  "name": "2jv0t8qumj",
-  "source_text": "Meter",
-  "translated_text": "米"
  }
 ]

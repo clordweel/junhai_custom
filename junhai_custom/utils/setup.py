@@ -1,59 +1,78 @@
 import frappe
 
 
-def rename_uoms():
+def setup_uom_data():
     """
-    批量将英文UOM重命名为中文。
-    使用 frappe.rename_doc 可以自动更新所有关联文档。
+    1. 执行重命名 (汉化)
+    2. 设置打印符号 (symbol)
     """
+    print(">>> [Setup] 开始配置 UOM 数据 (汉化 + 符号)...")
 
-    # 定义映射关系：{ "旧名称": "新名称" }
-    # 注意：确保旧名称是系统里实际存在的ID（大小写敏感）
-    uom_mapping = {
-        # === 原有列表 ===
-        "Meter": "米",
-        "Kilogram": "公斤",
-        "Nos": "个",
-        "Box": "箱",
-        "Set": "套",
-        "Pair": "双",
-        "Litre": "升",
-        "Hour": "小时",
-        "Minute": "分钟",
-        "Square Meter": "平方米",
-        "Cubic Meter": "立方米",
-        # === 核心补充 (重工制造) ===
-        "Tonne": "吨",  # 钢材、原材料核心单位
-        "Metric Ton": "吨",  # 某些系统预设叫 Metric Ton
-        "Gram": "克",  # 化学品
-        "Millimeter": "毫米",  # 核心尺寸单位
-        "Centimeter": "厘米",
-        # === 包装形态 ===
-        "Roll": "卷",  # 电缆、带钢
-        "Drum": "桶",  # 油漆、大桶油
-        "Bag": "袋",  # 耐火材料
-        "Pack": "包",  # 标准件包
-        "Packet": "包",
-        "Sheet": "张",  # 板材、砂纸
-        "Piece": "件",  # 通用计件
-        # === 时间周期 (项目/财务) ===
-        "Second": "秒",
-        "Day": "天",
-        "Week": "周",
-        "Month": "月",
-        "Year": "年",
-        # === 能源 ===
-        "Kilowatt Hour": "度",  # 或 千瓦时
+    # 格式： "旧英文名": ("新中文名", "符号")
+    # 如果已经是中文环境，旧名写成中文即可，脚本会处理
+    uom_data = {
+        # === 基础 ===
+        "Meter": ("米", "m"),
+        "Kg": ("千克", "kg"),
+        "Nos": ("个", "pcs"),
+        "Box": ("箱", "box"),
+        "Set": ("套", "set"),
+        "Pair": ("双", "pair"),
+        # === 补充清单 ===
+        "Tonne": ("吨", "t"),
+        "Metric Ton": ("吨", "t"),  # 覆盖
+        "Gram": ("克", "g"),
+        "Milligram": ("毫克", "mg"),
+        "Millimeter": ("毫米", "mm"),
+        "Centimeter": ("厘米", "cm"),
+        "Kilometer": ("公里", "km"),
+        # === 包装与形态 ===
+        "Drum": ("桶", "drum"),
+        "Bag": ("袋", "bag"),
+        "Roll": ("卷", "roll"),
+        # === 时间与物理 ===
+        "Hour": ("小时", "hr"),
+        "Minute": ("分钟", "min"),
+        "Second": ("秒", "s"),
+        "Kilowatt Hour": ("度", "kWh"),
+        "Watt": ("瓦", "W"),
+        "Volt": ("伏", "V"),
+        "Ampere": ("安", "A"),
+        # === 面积体积 ===
+        "Square Meter": ("平方米", "m²"),
+        "Cubic Meter": ("立方米", "m³"),
     }
 
-    for old_uom, new_uom in uom_mapping.items():
-        if frappe.db.exists("UOM", old_uom):
-            try:
-                if frappe.db.exists("UOM", new_uom):
-                    frappe.rename_doc("UOM", old_uom, new_uom, merge=True)
-                else:
-                    frappe.rename_doc("UOM", old_uom, new_uom)
-            except Exception as e:
-                print(f"❌ 错误: {str(e)}")
+    for src_name, (target_name, symbol) in uom_data.items():
+        # --- 1. 处理重命名 ---
+        final_uom_name = src_name  # 默认为原名
 
+        # 如果旧名字存在（比如 Meter），且还没改名
+        if frappe.db.exists("UOM", src_name):
+            # 检查目标名字是否存在（比如 米）
+            is_merge = frappe.db.exists("UOM", target_name)
+
+            # 如果源名字和目标名字不一样（防止重复改名 Meter -> Meter）
+            if src_name != target_name:
+                try:
+                    frappe.rename_doc("UOM", src_name, target_name, merge=is_merge)
+                    print(f"✅ 重命名: {src_name} -> {target_name}")
+                    final_uom_name = target_name
+                except Exception as e:
+                    print(f"⚠️ 重命名跳过: {e}")
+
+        # 也有可能系统里已经是“米”了，或者原名就是“米”
+        elif frappe.db.exists("UOM", target_name):
+            final_uom_name = target_name
+
+        # --- 2. 更新符号字段 ---
+        if frappe.db.exists("UOM", final_uom_name):
+            # 只有当符号还没设置，或者想强制更新时执行
+            current_symbol = frappe.db.get_value("UOM", final_uom_name, "symbol")
+
+            if current_symbol != symbol:
+                frappe.db.set_value("UOM", final_uom_name, "symbol", symbol)
+                print(f"   ⚙️ 设置符号: {final_uom_name} = {symbol}")
+
+    frappe.db.commit()
     print(">>> UOM 重命名补丁执行完毕。")

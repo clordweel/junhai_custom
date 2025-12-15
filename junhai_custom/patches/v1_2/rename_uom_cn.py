@@ -1,6 +1,5 @@
-from junhai_custom.utils.setup import rename_uoms
+from junhai_custom.utils.setup import setup_uom_data
 
 
 def execute():
-    rename_uoms()
-    print(">>> UOM 重命名补丁执行完毕。")
+    setup_uom_data()

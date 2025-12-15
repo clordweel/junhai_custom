@@ -1,7 +1,7 @@
 import frappe
 import hashlib
 import json
-from frappe.utils import now_datetime
+from frappe.utils import flt
 
 
 @frappe.whitelist()
@@ -86,7 +86,7 @@ def check_duplicate_request(unique_code, current_docname):
 @frappe.whitelist()
 def generate_item_data_dict(doc):
     """
-    接收 New Item Request 数据，解析参数和格式化规则，生成 Item DocType 的数据字典。
+    接收 New Item Request 数据，解析参数、格式化规则、UOM 子表，生成 Item DocType 的数据字典。
     """
 
     # --- 核心修正：处理 Frappe.call 传入的 JSON 字符串参数 ---
@@ -99,86 +99,94 @@ def generate_item_data_dict(doc):
     elif isinstance(doc, dict):
         doc = frappe.get_doc(doc)
 
-    # --- 阶段零：前置校验和初始化 ---
     if doc.docstatus != 1:
         frappe.throw("只能对已提交的物料申请单执行操作。", title="操作限制")
 
-    params = {}
-    format_rules = []
+    params = {}  # 用于 str.format() 拼接的参数字典
+    assignment_rules = []  # 用于直接或格式化赋值的规则列表
+    unit_conversions = []  # 用于单位转换子表的列表
 
-    # --- 阶段一：收集用户填写的参数值和格式化规则 ---
-
+    # --- 阶段一：收集参数值和所有赋值规则 ---
     for row in doc.item_parameters:
 
-        # 1. 判断是否为格式化行 (constraint_type == 'Format')
-        if row.constraint_type == "Format":
-            if row.binding_field == 1 and row.target_field:
-                # 格式模板存储在 parameter_value 字段
-                format_rules.append(
+        # 1. 收集到 params 字典中 (所有非 Format 的行)
+        if row.constraint_type != "Format":
+            value = row.parameter_value
+            params[row.parameter_name] = str(value) if value is not None else ""
+
+        # 2. 收集赋值规则 (Binding Rule)
+        if row.binding_field == 1 and row.target_field:
+            rule = {
+                "target_field": row.target_field,
+                "constraint_type": row.constraint_type,
+                "source_value": row.parameter_value,
+                "parameter_name": row.parameter_name,
+            }
+            assignment_rules.append(rule)
+
+    # --- 阶段二：处理单位转换子表 (UOMs) ---
+
+    # 🌟 关键：遍历 New Item Request.uoms 子表
+    if hasattr(doc, "uoms") and doc.uoms:
+        for row in doc.uoms:
+            factor = flt(row.conversion_factor)
+
+            # 排除转换系数为 1 的行，防止重复创建基准单位
+            if factor != 0:
+                unit_conversions.append(
                     {
-                        "target_field": row.target_field,
-                        "format_string": row.parameter_value,
+                        "doctype": "Item Unit Conversion",  # 目标 DocType
+                        "uom": row.uom,
+                        "conversion_factor": factor,
                     }
                 )
-            continue
 
-        # 2. 处理普通参数行 (constraint_type != 'Format')
-        value = row.parameter_value
-
-        # 存储参数到字典，确保值为字符串以便于 str.format() 拼接
-        params[row.parameter_name] = str(value) if value is not None else ""
-
-    # --- 阶段二：应用模板规则，构建 Item 字典 ---
+    # --- 阶段三：应用赋值规则，构建 Item 字典 ---
 
     item_fields = {
         "doctype": "Item",
         "is_stock_item": 1,
-        # 🌟 修正：使用 custom_new_item_request 字段存储来源申请单名称
+        # 继承主字段
         "custom_new_item_request": doc.name,
-        # 🌟 修正：从申请单继承 item_group
         "item_group": doc.item_group,
-        # description 字段不再有默认值，将完全由 format_rules 覆盖
+        "custom_unique_code": doc.unique_code,
+        # 🌟 附加单位转换子表数据
+        "uoms": unit_conversions,
     }
 
     final_item_name = None
 
-    for rule in format_rules:
+    for rule in assignment_rules:
         target_field = rule["target_field"]
-        format_string = rule["format_string"]
         final_value = None
 
-        try:
-            # 核心：使用参数字典 params 格式化字符串
-            final_value = format_string.format(**params)
-        except KeyError as e:
-            missing_param = str(e).strip("'")
-            frappe.throw(
-                f"字段【{target_field}】的格式化模板中引用的参数【{missing_param}】在申请单中未提供值或名称不匹配。",
-                title="格式化错误",
-            )
+        if rule["constraint_type"] == "Format":
+            format_string = rule["source_value"]
+            try:
+                final_value = format_string.format(**params)
+            except KeyError as e:
+                missing_param = str(e).strip("'")
+                frappe.throw(
+                    f"字段【{target_field}】的格式化模板中引用的参数【{missing_param}】在申请单中未提供值或名称不匹配。",
+                    title="格式化错误",
+                )
+        else:
+            final_value = rule["source_value"]
 
         if final_value is not None:
             item_fields[target_field] = final_value
 
             if target_field == "item_name":
                 final_item_name = final_value
-            # 🌟 修正：物料描述 (description) 现在也是一个普通的格式化字段，直接赋值。
 
-    # --- 阶段三：最终校验和返回 ---
+    # --- 阶段四：最终校验和返回 ---
 
-    # 🌟 修正区域 1：物料名称校验逻辑变更
     if not final_item_name:
-        # 如果 final_item_name 为空，我们不再抛出致命错误。
-        # 而是允许 Item DocType 使用自己的命名规则生成 Item Name/Code。
-        # 可以在日志中记录一个警告，但允许流程继续。
         frappe.toast(
             f"申请单 {doc.name}: 模板中未指定物料名称 (item_name) 的格式化规则。将依赖 Item DocType 的命名规则。",
             "orange",
         )
-        # 注意：如果 Item DocType 强制要求 item_name 字段非空，那么最终创建时仍可能失败，
-        # 但这是 Item DocType 的职责，而不是这个格式化函数的职责。
 
-    # 查重提醒 (仅在生成了名称时进行查重)
     if final_item_name and frappe.db.exists("Item", {"item_name": final_item_name}):
         frappe.msgprint(
             f"注意：系统中已存在名为【{final_item_name}】的物料！请在新建页面核实。",

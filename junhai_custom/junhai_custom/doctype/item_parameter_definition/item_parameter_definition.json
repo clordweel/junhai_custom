@@ -51,41 +51,47 @@
    "fieldname": "value_material",
    "fieldtype": "Link",
    "label": "Material Value",
-   "options": "Item Material"
+   "options": "Item Material",
+   "read_only_depends_on": "eval:doc.readonly_value"
   },
   {
    "depends_on": "eval:doc.constraint_type=='Surface'",
    "fieldname": "value_surface",
    "fieldtype": "Link",
    "label": "Surface Value",
-   "options": "Item Surface"
+   "options": "Item Surface",
+   "read_only_depends_on": "eval:doc.readonly_value"
   },
   {
    "depends_on": "eval:doc.constraint_type=='Float'",
    "fieldname": "value_float",
    "fieldtype": "Float",
    "label": "Float Value",
-   "precision": "3"
+   "precision": "3",
+   "read_only_depends_on": "eval:doc.readonly_value"
   },
   {
    "depends_on": "eval:doc.constraint_type=='Integer'",
    "fieldname": "value_integer",
    "fieldtype": "Int",
-   "label": "Integer Value"
+   "label": "Integer Value",
+   "read_only_depends_on": "eval:doc.readonly_value"
   },
   {
    "depends_on": "eval:doc.constraint_type=='Base Name'",
    "fieldname": "value_base_name",
    "fieldtype": "Link",
    "label": "Base Name Value",
-   "options": "Item Base Name"
+   "options": "Item Base Name",
+   "read_only_depends_on": "eval:doc.readonly_value"
   },
   {
    "depends_on": "eval:doc.constraint_type=='Unit'",
    "fieldname": "value_unit",
    "fieldtype": "Link",
    "label": "Unit Value",
-   "options": "UOM"
+   "options": "UOM",
+   "read_only_depends_on": "eval:doc.readonly_value"
   },
   {
    "fieldname": "description",
@@ -156,7 +162,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-15 09:45:08.521611",
+ "modified": "2025-12-15 13:12:14.132965",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Parameter Definition",
