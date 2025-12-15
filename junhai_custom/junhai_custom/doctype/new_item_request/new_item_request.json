@@ -13,6 +13,8 @@
   "reason",
   "section_break_jwac",
   "item_parameters",
+  "section_break_ztck",
+  "uoms",
   "section_break_ypqq",
   "unique_code",
   "generated_item",
@@ -86,13 +88,24 @@
    "fieldtype": "Link",
    "label": "Generated Item",
    "options": "Item"
+  },
+  {
+   "fieldname": "section_break_ztck",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "\u5982\u679c\u7269\u6599\u53c2\u6570\u5b50\u8868\u4e2d\u8bbe\u8ba1\u4e86\u9884\u586b\u5145\u7684\u9ed8\u8ba4\u5355\u4f4d\u5b57\u6bb5(stock_uom)\uff0c\u5219\u6b64\u5904\u9996\u884c\u5355\u4f4d\u5fc5\u987b\u662f\u76f8\u540c\u7684\u5355\u4f4d\u3002",
+   "fieldname": "uoms",
+   "fieldtype": "Table",
+   "label": "UOMs",
+   "options": "UOM Conversion Detail"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-14 09:55:48.261339",
+ "modified": "2025-12-15 09:48:25.950494",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "New Item Request",

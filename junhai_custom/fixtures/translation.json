@@ -271,5 +271,44 @@
   "name": "kuapi6lulh",
   "source_text": "Item Parameter Template",
   "translated_text": "物料参数模板"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-15 09:34:05.207256",
+  "name": "ti9qd1rtv2",
+  "source_text": "Join To Hash",
+  "translated_text": "参与哈希"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-15 09:34:38.962921",
+  "name": "u6li8onj57",
+  "source_text": "Readonly Value",
+  "translated_text": "只读值"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-15 09:52:56.866995",
+  "name": "8tp1mci5gk",
+  "source_text": "mm",
+  "translated_text": "毫米"
  }
 ]
