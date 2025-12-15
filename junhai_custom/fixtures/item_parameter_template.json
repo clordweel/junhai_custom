@@ -1,0 +1,248 @@
+[
+ {
+  "_liked_by": "[\"Administrator\"]",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Item Parameter Template",
+  "item_group": "紧固件",
+  "modified": "2025-12-15 23:22:05.200416",
+  "module": "Junhai Custom",
+  "name": "碳钢六角头螺栓模板 - 基础",
+  "parameters": [
+   {
+    "binding_field": 0,
+    "constraint_type": "Integer",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": null,
+    "parameter_name": "直径",
+    "readonly_value": 0,
+    "target_field": null
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Integer",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": null,
+    "parameter_name": "长度",
+    "readonly_value": 0,
+    "target_field": null
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Base Name",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "螺栓",
+    "parameter_name": "基础名",
+    "readonly_value": 1,
+    "target_field": null
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Surface",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "发黑",
+    "parameter_name": "表面",
+    "readonly_value": 1,
+    "target_field": "custom_surface_treatment"
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Data",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "4.8级",
+    "parameter_name": "材质",
+    "readonly_value": 1,
+    "target_field": null
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Data",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "GB/T 5780",
+    "parameter_name": "标准号",
+    "readonly_value": 1,
+    "target_field": "custom_tech_standard_number"
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Unit",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "个",
+    "parameter_name": "计件单位",
+    "readonly_value": 1,
+    "target_field": "stock_uom"
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Format",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "{材质} M{直径}x{长度} {基础名}",
+    "parameter_name": "名称",
+    "readonly_value": 1,
+    "target_field": "item_name"
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Format",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "M{直径}x{长度}",
+    "parameter_name": "规格",
+    "readonly_value": 1,
+    "target_field": "custom_specification"
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Format",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "材质: {材质}<br>表面: {表面}<br>单位: {计件单位}",
+    "parameter_name": "描述",
+    "readonly_value": 0,
+    "target_field": "description"
+   }
+  ],
+  "template_name": "碳钢六角头螺栓模板 - 基础"
+ },
+ {
+  "_liked_by": "[\"Administrator\"]",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Item Parameter Template",
+  "item_group": "板材",
+  "modified": "2025-12-15 23:23:08.332450",
+  "module": "Junhai Custom",
+  "name": "Q235B 碳钢板模板 - 标准",
+  "parameters": [
+   {
+    "binding_field": 0,
+    "constraint_type": "Integer",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "",
+    "parameter_name": "厚度",
+    "readonly_value": 0,
+    "target_field": null
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Integer",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "",
+    "parameter_name": "宽度",
+    "readonly_value": 0,
+    "target_field": null
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Integer",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "0",
+    "parameter_name": "参考长度",
+    "readonly_value": 0,
+    "target_field": null
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Float",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "0",
+    "parameter_name": "参考重量",
+    "readonly_value": 0,
+    "target_field": null
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Base Name",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "钢板",
+    "parameter_name": "基础名",
+    "readonly_value": 1,
+    "target_field": null
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Material",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "Q235B",
+    "parameter_name": "材质",
+    "readonly_value": 1,
+    "target_field": null
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Unit",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "千克",
+    "parameter_name": "计价单位",
+    "readonly_value": 1,
+    "target_field": "stock_uom"
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Unit",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "毫米",
+    "parameter_name": "计长单位",
+    "readonly_value": 1,
+    "target_field": null
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Unit",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "张",
+    "parameter_name": "计件单位",
+    "readonly_value": 1,
+    "target_field": null
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Format",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "{材质} {厚度}mm {基础名}",
+    "parameter_name": "名称",
+    "readonly_value": 1,
+    "target_field": "item_name"
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Format",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "{厚度}*{宽度}*{参考长度} ({材质})",
+    "parameter_name": "规格",
+    "readonly_value": 1,
+    "target_field": "custom_specification"
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Format",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "材质: {材质} | 厚度: {厚度} | 单位: {计价单位},{计长单位},{计件单位}",
+    "parameter_name": "描述",
+    "readonly_value": 0,
+    "target_field": "description"
+   }
+  ],
+  "template_name": "Q235B 碳钢板模板 - 标准"
+ }
+]

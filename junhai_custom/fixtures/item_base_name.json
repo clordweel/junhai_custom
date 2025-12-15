@@ -1,0 +1,44 @@
+[
+ {
+  "base_name": "角钢",
+  "docstatus": 0,
+  "doctype": "Item Base Name",
+  "modified": "2025-12-12 17:57:41.459747",
+  "name": "角钢"
+ },
+ {
+  "base_name": "螺栓",
+  "docstatus": 0,
+  "doctype": "Item Base Name",
+  "modified": "2025-12-15 15:13:35.610798",
+  "name": "螺栓"
+ },
+ {
+  "base_name": "平垫",
+  "docstatus": 0,
+  "doctype": "Item Base Name",
+  "modified": "2025-12-15 15:13:50.031254",
+  "name": "平垫"
+ },
+ {
+  "base_name": "弹垫",
+  "docstatus": 0,
+  "doctype": "Item Base Name",
+  "modified": "2025-12-15 15:13:59.318853",
+  "name": "弹垫"
+ },
+ {
+  "base_name": "螺母",
+  "docstatus": 0,
+  "doctype": "Item Base Name",
+  "modified": "2025-12-15 15:25:27.343235",
+  "name": "螺母"
+ },
+ {
+  "base_name": "钢板",
+  "docstatus": 0,
+  "doctype": "Item Base Name",
+  "modified": "2025-12-12 13:08:05.801207",
+  "name": "钢板"
+ }
+]

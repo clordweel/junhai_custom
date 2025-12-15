@@ -9,6 +9,7 @@
   "template_name",
   "item_group",
   "column_break_wtcb",
+  "module",
   "section_break_ccpc",
   "parameters",
   "section_break_1ke0",
@@ -58,13 +59,19 @@
    "in_list_view": 1,
    "label": "Item Group",
    "options": "Item Group"
+  },
+  {
+   "fieldname": "module",
+   "fieldtype": "Link",
+   "label": "Module (for export)",
+   "options": "Module Def"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-15 09:44:39.055997",
+ "modified": "2025-12-15 23:21:53.247189",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Parameter Template",

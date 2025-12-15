@@ -1,0 +1,24 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Item Material",
+  "is_group": 1,
+  "material_description": null,
+  "material_name": "金属材质",
+  "modified": "2025-12-12 10:37:27.038645",
+  "name": "金属材质",
+  "old_parent": "",
+  "parent_item_material": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Item Material",
+  "is_group": 0,
+  "material_description": null,
+  "material_name": "Q235B",
+  "modified": "2025-12-12 10:39:35.836120",
+  "name": "Q235B",
+  "old_parent": "金属材质",
+  "parent_item_material": "金属材质"
+ }
+]

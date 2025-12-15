@@ -525,21 +525,6 @@
   "taxes": []
  },
  {
-  "custom_code": "2034",
-  "custom_description": "通用碳钢螺栓、螺母、垫圈、销轴。(按数量/重量计价)。**【低值易耗、建议设最高库存】**",
-  "docstatus": 0,
-  "doctype": "Item Group",
-  "image": null,
-  "is_group": 1,
-  "item_group_defaults": [],
-  "item_group_name": "紧固件",
-  "modified": "2025-12-14 13:59:09.862062",
-  "name": "紧固件",
-  "old_parent": "机械标准件",
-  "parent_item_group": "机械标准件",
-  "taxes": []
- },
- {
   "custom_code": "2035",
   "custom_description": "高强度、不锈钢或防松螺栓/地脚螺栓。(按件计价)。**【关键件，启用批次或序列号】**",
   "docstatus": 0,
@@ -1047,6 +1032,21 @@
   "name": "板材",
   "old_parent": "钢材类",
   "parent_item_group": "钢材类",
+  "taxes": []
+ },
+ {
+  "custom_code": "2034",
+  "custom_description": "通用碳钢螺栓、螺母、垫圈、销轴。(按数量/重量计价)。**【低值易耗、建议设最高库存】**",
+  "docstatus": 0,
+  "doctype": "Item Group",
+  "image": null,
+  "is_group": 1,
+  "item_group_defaults": [],
+  "item_group_name": "紧固件",
+  "modified": "2025-12-14 13:59:09.862062",
+  "name": "紧固件",
+  "old_parent": "机械标准件",
+  "parent_item_group": "机械标准件",
   "taxes": []
  }
 ]
