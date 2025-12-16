@@ -9,7 +9,6 @@
   "naming_series",
   "template",
   "item_group",
-  "module",
   "column_break_uhke",
   "reason",
   "section_break_jwac",
@@ -100,19 +99,13 @@
    "fieldtype": "Table",
    "label": "UOMs",
    "options": "UOM Conversion Detail"
-  },
-  {
-   "fieldname": "module",
-   "fieldtype": "Link",
-   "label": "Module (for export)",
-   "options": "Module Def"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-16 11:00:01.295614",
+ "modified": "2025-12-16 15:34:18.154029",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "New Item Request",

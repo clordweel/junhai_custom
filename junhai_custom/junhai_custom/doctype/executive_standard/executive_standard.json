@@ -10,7 +10,9 @@
   "standard_name",
   "revision_year",
   "column_break_bqnm",
+  "standard_type",
   "status",
+  "section_break_qyop",
   "attachment"
  ],
  "fields": [
@@ -51,12 +53,22 @@
    "fieldtype": "Select",
    "label": "Status",
    "options": "Current\nAbolition\nComing"
+  },
+  {
+   "fieldname": "standard_type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Product Standard\nMethod Standard"
+  },
+  {
+   "fieldname": "section_break_qyop",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-16 13:59:05.125934",
+ "modified": "2025-12-16 14:26:46.737375",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Executive Standard",

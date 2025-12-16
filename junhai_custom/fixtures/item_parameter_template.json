@@ -5,7 +5,7 @@
   "docstatus": 0,
   "doctype": "Item Parameter Template",
   "item_group": "紧固件",
-  "modified": "2025-12-16 12:53:33.168271",
+  "modified": "2025-12-16 15:53:30.383314",
   "module": "Junhai Custom",
   "name": "碳钢六角头螺栓模板 - 基础",
   "parameters": [
@@ -31,13 +31,33 @@
    },
    {
     "binding_field": 1,
-    "constraint_type": "Data",
+    "constraint_type": "Executive Standard",
     "description": null,
     "join_to_hash": 1,
     "parameter_default_value": "GB/T 5781",
     "parameter_name": "执行标准",
-    "readonly_value": 1,
+    "readonly_value": 0,
     "target_field": "custom_tech_standard_number"
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Item Surface",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "发黑/氧化",
+    "parameter_name": "表面处理",
+    "readonly_value": 0,
+    "target_field": "custom_surface_treatment"
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Item Base Name",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "六角头螺栓",
+    "parameter_name": "基础名",
+    "readonly_value": 0,
+    "target_field": null
    },
    {
     "binding_field": 0,
@@ -52,30 +72,20 @@
    {
     "binding_field": 0,
     "constraint_type": "Data",
-    "description": null,
+    "description": "选 304 必须配 A2-70\n选 316 必须配 A4-70 或 A4-80\n选 Q235 通常配 4.8级\n选 35CrMo/45# 通常配 8.8级/10.9级",
     "join_to_hash": 0,
     "parameter_default_value": "4.8级",
     "parameter_name": "材料强度",
-    "readonly_value": 1,
-    "target_field": null
-   },
-   {
-    "binding_field": 0,
-    "constraint_type": "Data",
-    "description": null,
-    "join_to_hash": 0,
-    "parameter_default_value": "无",
-    "parameter_name": "垫圈面",
     "readonly_value": 0,
     "target_field": null
    },
    {
     "binding_field": 0,
     "constraint_type": "Data",
-    "description": "全牙、半牙",
-    "join_to_hash": 1,
+    "description": "5782/5780/5785，设为 半牙\n5783/5781/5786，设为 全牙",
+    "join_to_hash": 0,
     "parameter_default_value": "全牙",
-    "parameter_name": "牙型",
+    "parameter_name": "螺纹牙型",
     "readonly_value": 0,
     "target_field": null
    },
@@ -83,31 +93,31 @@
     "binding_field": 0,
     "constraint_type": "Data",
     "description": "粗牙、细牙",
-    "join_to_hash": 1,
+    "join_to_hash": 0,
     "parameter_default_value": "粗牙",
-    "parameter_name": "螺纹",
+    "parameter_name": "螺纹粗细",
     "readonly_value": 0,
     "target_field": null
    },
    {
     "binding_field": 0,
-    "constraint_type": "Item Base Name",
+    "constraint_type": "Float",
     "description": null,
     "join_to_hash": 1,
-    "parameter_default_value": "六角头螺栓",
-    "parameter_name": "基础名",
-    "readonly_value": 1,
+    "parameter_default_value": "0",
+    "parameter_name": "螺距",
+    "readonly_value": 0,
     "target_field": null
    },
    {
-    "binding_field": 1,
-    "constraint_type": "Item Surface",
+    "binding_field": 0,
+    "constraint_type": "Float",
     "description": null,
     "join_to_hash": 1,
-    "parameter_default_value": "发黑/氧化",
-    "parameter_name": "表面处理",
-    "readonly_value": 1,
-    "target_field": "custom_surface_treatment"
+    "parameter_default_value": "0",
+    "parameter_name": "螺纹长度",
+    "readonly_value": 0,
+    "target_field": null
    },
    {
     "binding_field": 1,
@@ -126,7 +136,7 @@
     "join_to_hash": 0,
     "parameter_default_value": "个",
     "parameter_name": "计件单位",
-    "readonly_value": 1,
+    "readonly_value": 0,
     "target_field": "stock_uom"
    },
    {
@@ -134,7 +144,7 @@
     "constraint_type": "Format",
     "description": null,
     "join_to_hash": 0,
-    "parameter_default_value": "{基础名} M{直径}x{长度} {执行标准} {加工精度}{牙型}",
+    "parameter_default_value": "{基础名} {加工精度} M{公称直径}x{公称长度} {材料强度} {表面处理}",
     "parameter_name": "名称",
     "readonly_value": 1,
     "target_field": "item_name"
@@ -144,8 +154,8 @@
     "constraint_type": "Format",
     "description": null,
     "join_to_hash": 0,
-    "parameter_default_value": "M{直径}x{长度}",
-    "parameter_name": "规格",
+    "parameter_default_value": "M{公称直径}x{螺距}x{公称长度}",
+    "parameter_name": "规格(细牙)",
     "readonly_value": 1,
     "target_field": "custom_specification"
    },
@@ -154,7 +164,17 @@
     "constraint_type": "Format",
     "description": null,
     "join_to_hash": 0,
-    "parameter_default_value": "材质: {材质}<br>表面: {表面}<br>单位: {计件单位}",
+    "parameter_default_value": "M{公称直径}x{公称长度}",
+    "parameter_name": "规格(粗牙)",
+    "readonly_value": 1,
+    "target_field": "custom_specification"
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Format",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "标准:{执行标准}; 材质:{主体材质}({材料强度}); 表面:{表面处理}; 牙型:{螺纹牙型}",
     "parameter_name": "描述",
     "readonly_value": 0,
     "target_field": "description"

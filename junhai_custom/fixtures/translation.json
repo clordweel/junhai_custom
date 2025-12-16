@@ -453,5 +453,31 @@
   "name": "l41rv79it3",
   "source_text": "Revision Year",
   "translated_text": "发布年份"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-16 14:26:15.699960",
+  "name": "kqd37r196l",
+  "source_text": "Method Standard",
+  "translated_text": "方法标准"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-16 14:26:25.043323",
+  "name": "kta7j19n8r",
+  "source_text": "Product Standard",
+  "translated_text": "产品标准"
  }
 ]
