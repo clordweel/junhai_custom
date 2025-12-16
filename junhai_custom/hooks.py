@@ -270,6 +270,7 @@ fixtures = [
     {"dt": "Item Material", "filters": []},
     {"dt": "Item Base Name", "filters": []},
     {"dt": "Item Parameter Template", "filters": [["module", "=", app_title]]},
+    # {"dt": "New Item Request", "filters": []},
     {"dt": "Custom Field", "filters": [["module", "=", app_title]]},
     {"dt": "UOM", "filters": [["name", "in", ["件", "张", "台"]]]},
     {

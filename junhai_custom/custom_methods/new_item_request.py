@@ -132,14 +132,14 @@ def generate_item_data_dict(doc):
             factor = flt(row.conversion_factor)
 
             # 排除转换系数为 1 的行，防止重复创建基准单位
-            if factor != 0:
-                unit_conversions.append(
-                    {
-                        "doctype": "Item Unit Conversion",  # 目标 DocType
-                        "uom": row.uom,
-                        "conversion_factor": factor,
-                    }
-                )
+            # if factor != 1:
+            unit_conversions.append(
+                {
+                    "doctype": "Item Unit Conversion",  # 目标 DocType
+                    "uom": row.uom,
+                    "conversion_factor": factor,
+                }
+            )
 
     # --- 阶段三：应用赋值规则，构建 Item 字典 ---
 

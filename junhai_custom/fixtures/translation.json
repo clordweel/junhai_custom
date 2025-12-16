@@ -475,9 +475,35 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "zh",
-  "modified": "2025-12-16 14:26:25.043323",
+  "modified": "2025-12-16 21:30:53.581627",
   "name": "kta7j19n8r",
   "source_text": "Product Standard",
-  "translated_text": "产品标准"
+  "translated_text": "成品标准"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-16 21:30:33.708063",
+  "name": "de142b9eh2",
+  "source_text": "Dimension Standard",
+  "translated_text": "公差标准"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-16 21:34:38.203944",
+  "name": "fqeidl38a7",
+  "source_text": "Material Code",
+  "translated_text": "材质代号"
  }
 ]

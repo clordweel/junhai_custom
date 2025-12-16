@@ -13,6 +13,8 @@
   "disabled",
   "section_break_ccpc",
   "parameters",
+  "section_break_ndcs",
+  "uoms",
   "section_break_1ke0",
   "amended_from"
  ],
@@ -73,12 +75,22 @@
    "fieldtype": "Check",
    "label": "Disabled",
    "search_index": 1
+  },
+  {
+   "fieldname": "section_break_ndcs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "uoms",
+   "fieldtype": "Table",
+   "label": "UOMs",
+   "options": "UOM Conversion Detail"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-16 13:40:35.647329",
+ "modified": "2025-12-16 23:16:42.762228",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Parameter Template",

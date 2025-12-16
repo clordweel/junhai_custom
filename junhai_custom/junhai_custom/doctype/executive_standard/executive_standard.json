@@ -58,7 +58,7 @@
    "fieldname": "standard_type",
    "fieldtype": "Select",
    "label": "Type",
-   "options": "Product Standard\nMethod Standard"
+   "options": "Product Standard\nMethod Standard\nDimension Standard"
   },
   {
    "fieldname": "section_break_qyop",
@@ -68,7 +68,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-16 14:26:46.737375",
+ "modified": "2025-12-16 21:30:09.994505",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Executive Standard",

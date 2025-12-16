@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:material_name",
  "creation": "2025-12-12 10:30:12.377760",
@@ -8,6 +9,7 @@
  "field_order": [
   "section_break_yf4a",
   "material_name",
+  "material_code",
   "description",
   "column_break_wrjl",
   "disabled"
@@ -44,12 +46,22 @@
    "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Description"
+  },
+  {
+   "fieldname": "material_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Material Code",
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
+ "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-16 10:31:51.669286",
+ "make_attachments_public": 1,
+ "modified": "2025-12-16 23:05:34.705308",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Material",
@@ -72,6 +84,7 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "search_fields": "description",
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": []

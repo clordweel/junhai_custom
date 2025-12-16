@@ -4,169 +4,6 @@
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Item Parameter Template",
-  "item_group": "紧固件",
-  "modified": "2025-12-16 16:03:34.502904",
-  "module": "Junhai Custom",
-  "name": "GB/T 5781 六角头螺栓模板 - V1",
-  "parameters": [
-   {
-    "binding_field": 0,
-    "constraint_type": "Integer",
-    "description": "螺纹的大径，用于螺栓、螺母、垫圈",
-    "join_to_hash": 1,
-    "parameter_default_value": null,
-    "parameter_name": "公称直径",
-    "readonly_value": 0,
-    "target_field": null
-   },
-   {
-    "binding_field": 0,
-    "constraint_type": "Integer",
-    "description": "螺栓的有效长度（不含头，沉头除外）",
-    "join_to_hash": 1,
-    "parameter_default_value": null,
-    "parameter_name": "公称长度",
-    "readonly_value": 0,
-    "target_field": null
-   },
-   {
-    "binding_field": 1,
-    "constraint_type": "Executive Standard",
-    "description": null,
-    "join_to_hash": 1,
-    "parameter_default_value": "GB/T 5781",
-    "parameter_name": "执行标准",
-    "readonly_value": 0,
-    "target_field": "custom_tech_standard_number"
-   },
-   {
-    "binding_field": 1,
-    "constraint_type": "Item Surface",
-    "description": null,
-    "join_to_hash": 1,
-    "parameter_default_value": "发黑/氧化",
-    "parameter_name": "表面处理",
-    "readonly_value": 0,
-    "target_field": "custom_surface_treatment"
-   },
-   {
-    "binding_field": 0,
-    "constraint_type": "Item Base Name",
-    "description": null,
-    "join_to_hash": 1,
-    "parameter_default_value": "六角头螺栓",
-    "parameter_name": "基础名",
-    "readonly_value": 0,
-    "target_field": null
-   },
-   {
-    "binding_field": 0,
-    "constraint_type": "Data",
-    "description": null,
-    "join_to_hash": 0,
-    "parameter_default_value": "C级",
-    "parameter_name": "加工精度",
-    "readonly_value": 0,
-    "target_field": null
-   },
-   {
-    "binding_field": 0,
-    "constraint_type": "Data",
-    "description": "选 304 必须配 A2-70\n选 316 必须配 A4-70 或 A4-80\n选 Q235 通常配 4.8级\n选 35CrMo/45# 通常配 8.8级/10.9级",
-    "join_to_hash": 0,
-    "parameter_default_value": "4.8级",
-    "parameter_name": "材料强度",
-    "readonly_value": 0,
-    "target_field": null
-   },
-   {
-    "binding_field": 0,
-    "constraint_type": "Data",
-    "description": "5782/5780/5785，设为 半牙\n5783/5781/5786，设为 全牙",
-    "join_to_hash": 0,
-    "parameter_default_value": "全牙",
-    "parameter_name": "螺纹牙型",
-    "readonly_value": 0,
-    "target_field": null
-   },
-   {
-    "binding_field": 0,
-    "constraint_type": "Data",
-    "description": "粗牙、细牙",
-    "join_to_hash": 0,
-    "parameter_default_value": "粗牙",
-    "parameter_name": "螺纹粗细",
-    "readonly_value": 0,
-    "target_field": null
-   },
-   {
-    "binding_field": 0,
-    "constraint_type": "Float",
-    "description": null,
-    "join_to_hash": 1,
-    "parameter_default_value": "1.5",
-    "parameter_name": "螺距",
-    "readonly_value": 0,
-    "target_field": null
-   },
-   {
-    "binding_field": 1,
-    "constraint_type": "Item Material",
-    "description": null,
-    "join_to_hash": 0,
-    "parameter_default_value": "Q235B",
-    "parameter_name": "主体材质",
-    "readonly_value": 1,
-    "target_field": "custom_body_material"
-   },
-   {
-    "binding_field": 1,
-    "constraint_type": "Unit",
-    "description": null,
-    "join_to_hash": 0,
-    "parameter_default_value": "个",
-    "parameter_name": "计件单位",
-    "readonly_value": 0,
-    "target_field": "stock_uom"
-   },
-   {
-    "binding_field": 1,
-    "constraint_type": "Format",
-    "description": null,
-    "join_to_hash": 0,
-    "parameter_default_value": "{基础名} {加工精度} M{公称直径}x{公称长度} {材料强度} {表面处理}",
-    "parameter_name": "名称",
-    "readonly_value": 1,
-    "target_field": "item_name"
-   },
-   {
-    "binding_field": 1,
-    "constraint_type": "Format",
-    "description": null,
-    "join_to_hash": 0,
-    "parameter_default_value": "M{公称直径}x{公称长度}",
-    "parameter_name": "规格",
-    "readonly_value": 1,
-    "target_field": "custom_specification"
-   },
-   {
-    "binding_field": 1,
-    "constraint_type": "Format",
-    "description": null,
-    "join_to_hash": 0,
-    "parameter_default_value": "标准:{执行标准}; 材质:{主体材质}({材料强度}); 表面:{表面处理}; 牙型:{螺纹牙型}",
-    "parameter_name": "描述",
-    "readonly_value": 0,
-    "target_field": "description"
-   }
-  ],
-  "template_name": "GB/T 5781 六角头螺栓模板 - V1"
- },
- {
-  "amended_from": null,
-  "disabled": 0,
-  "docstatus": 0,
-  "doctype": "Item Parameter Template",
   "item_group": "板材",
   "modified": "2025-12-16 13:21:10.418025",
   "module": "Junhai Custom",
@@ -293,7 +130,8 @@
     "target_field": "description"
    }
   ],
-  "template_name": "钢板模板 - Q235B"
+  "template_name": "钢板模板 - Q235B",
+  "uoms": []
  },
  {
   "amended_from": null,
@@ -301,14 +139,14 @@
   "docstatus": 0,
   "doctype": "Item Parameter Template",
   "item_group": "紧固件",
-  "modified": "2025-12-16 16:02:34.585573",
+  "modified": "2025-12-16 23:19:25.829550",
   "module": "Junhai Custom",
-  "name": "GB/T 5781 六角头螺栓 (细牙) 模板 - V1",
+  "name": "GB/T 5780 六角头螺栓模板",
   "parameters": [
    {
     "binding_field": 0,
     "constraint_type": "Integer",
-    "description": "螺纹的大径，用于螺栓、螺母、垫圈",
+    "description": "螺纹的大径，用于螺栓、螺母、垫圈。",
     "join_to_hash": 1,
     "parameter_default_value": null,
     "parameter_name": "公称直径",
@@ -318,7 +156,7 @@
    {
     "binding_field": 0,
     "constraint_type": "Integer",
-    "description": "螺栓的有效长度（不含头，沉头除外）",
+    "description": "螺栓的有效长度（不含头，沉头除外）。",
     "join_to_hash": 1,
     "parameter_default_value": null,
     "parameter_name": "公称长度",
@@ -330,20 +168,10 @@
     "constraint_type": "Executive Standard",
     "description": null,
     "join_to_hash": 1,
-    "parameter_default_value": "GB/T 5781",
+    "parameter_default_value": "GB/T 5780",
     "parameter_name": "执行标准",
-    "readonly_value": 0,
+    "readonly_value": 1,
     "target_field": "custom_tech_standard_number"
-   },
-   {
-    "binding_field": 1,
-    "constraint_type": "Item Surface",
-    "description": null,
-    "join_to_hash": 1,
-    "parameter_default_value": "发黑/氧化",
-    "parameter_name": "表面处理",
-    "readonly_value": 0,
-    "target_field": "custom_surface_treatment"
    },
    {
     "binding_field": 0,
@@ -352,17 +180,27 @@
     "join_to_hash": 1,
     "parameter_default_value": "六角头螺栓",
     "parameter_name": "基础名",
-    "readonly_value": 0,
+    "readonly_value": 1,
     "target_field": null
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Item Surface",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "发黑/氧化",
+    "parameter_name": "表面",
+    "readonly_value": 1,
+    "target_field": "custom_surface_treatment"
    },
    {
     "binding_field": 0,
     "constraint_type": "Data",
-    "description": null,
+    "description": "5780/5781 (C级)：表面光洁度差，公差大，通常用于建筑、临时固定；\n5782/5783 (A/B级)：用于精密机械；",
     "join_to_hash": 0,
     "parameter_default_value": "C级",
-    "parameter_name": "加工精度",
-    "readonly_value": 0,
+    "parameter_name": "精度",
+    "readonly_value": 1,
     "target_field": null
    },
    {
@@ -371,38 +209,38 @@
     "description": "选 304 必须配 A2-70\n选 316 必须配 A4-70 或 A4-80\n选 Q235 通常配 4.8级\n选 35CrMo/45# 通常配 8.8级/10.9级",
     "join_to_hash": 0,
     "parameter_default_value": "4.8级",
-    "parameter_name": "材料强度",
-    "readonly_value": 0,
+    "parameter_name": "强度",
+    "readonly_value": 1,
     "target_field": null
    },
    {
     "binding_field": 0,
     "constraint_type": "Data",
-    "description": "5782/5780/5785，设为 半牙\n5783/5781/5786，设为 全牙",
+    "description": "5782/5780/5785，设为 半牙；\n5783/5781/5786，设为 全牙；",
     "join_to_hash": 0,
-    "parameter_default_value": "全牙",
-    "parameter_name": "螺纹牙型",
-    "readonly_value": 0,
+    "parameter_default_value": "半牙",
+    "parameter_name": "牙型",
+    "readonly_value": 1,
     "target_field": null
    },
    {
     "binding_field": 0,
     "constraint_type": "Data",
-    "description": "粗牙、细牙",
+    "description": "分为粗牙、细牙，5785/5786 是细牙标准。",
     "join_to_hash": 0,
-    "parameter_default_value": "细牙",
-    "parameter_name": "螺纹粗细",
-    "readonly_value": 0,
+    "parameter_default_value": "粗牙",
+    "parameter_name": "粗细",
+    "readonly_value": 1,
     "target_field": null
    },
    {
     "binding_field": 0,
     "constraint_type": "Float",
-    "description": null,
+    "description": "一般默认粗牙螺距 1.5，细牙螺距 1.25。",
     "join_to_hash": 1,
-    "parameter_default_value": "1.25",
+    "parameter_default_value": "1.5",
     "parameter_name": "螺距",
-    "readonly_value": 0,
+    "readonly_value": 1,
     "target_field": null
    },
    {
@@ -410,8 +248,8 @@
     "constraint_type": "Item Material",
     "description": null,
     "join_to_hash": 0,
-    "parameter_default_value": "Q235B",
-    "parameter_name": "主体材质",
+    "parameter_default_value": "Q235B 碳钢",
+    "parameter_name": "材质",
     "readonly_value": 1,
     "target_field": "custom_body_material"
    },
@@ -421,8 +259,8 @@
     "description": null,
     "join_to_hash": 0,
     "parameter_default_value": "个",
-    "parameter_name": "计件单位",
-    "readonly_value": 0,
+    "parameter_name": "单位",
+    "readonly_value": 1,
     "target_field": "stock_uom"
    },
    {
@@ -430,7 +268,7 @@
     "constraint_type": "Format",
     "description": null,
     "join_to_hash": 0,
-    "parameter_default_value": "{基础名} {加工精度} M{公称直径}x{公称长度} {材料强度} {表面处理}",
+    "parameter_default_value": "{基础名} {精度} M{公称直径}x{公称长度} {强度}",
     "parameter_name": "名称",
     "readonly_value": 1,
     "target_field": "item_name"
@@ -440,7 +278,7 @@
     "constraint_type": "Format",
     "description": null,
     "join_to_hash": 0,
-    "parameter_default_value": "M{公称直径}x{螺距}x{公称长度}",
+    "parameter_default_value": "M{公称直径}x{公称长度}",
     "parameter_name": "规格",
     "readonly_value": 1,
     "target_field": "custom_specification"
@@ -450,12 +288,22 @@
     "constraint_type": "Format",
     "description": null,
     "join_to_hash": 0,
-    "parameter_default_value": "标准:{执行标准}; 材质:{主体材质}({材料强度}); 表面:{表面处理}; 牙型:{螺纹牙型}",
+    "parameter_default_value": "标准:{执行标准}; 材质:{材质}({强度}); 表面:{表面}; 牙型:{牙型}; 粗细:{粗细};",
     "parameter_name": "描述",
-    "readonly_value": 0,
+    "readonly_value": 1,
     "target_field": "description"
    }
   ],
-  "template_name": "GB/T 5781 六角头螺栓 (细牙) 模板 - V1"
+  "template_name": "GB/T 5780 六角头螺栓模板",
+  "uoms": [
+   {
+    "conversion_factor": 1.0,
+    "uom": "个"
+   },
+   {
+    "conversion_factor": 1000.0,
+    "uom": "件"
+   }
+  ]
  }
 ]
