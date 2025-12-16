@@ -401,5 +401,57 @@
   "name": "65g1rdpsgk",
   "source_text": "Executive Standard",
   "translated_text": "执行标准"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-16 13:31:17.419909",
+  "name": "kjmh4vnbta",
+  "source_text": "Standard Code",
+  "translated_text": "标准代码"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-16 13:31:36.831812",
+  "name": "kpon0cctha",
+  "source_text": "Standard Name",
+  "translated_text": "标准名称"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-16 13:31:57.598259",
+  "name": "l08n4m0i10",
+  "source_text": "Attachment (PDF)",
+  "translated_text": "附件（PDF）"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-16 13:32:09.765386",
+  "name": "l41rv79it3",
+  "source_text": "Revision Year",
+  "translated_text": "发布年份"
  }
 ]
