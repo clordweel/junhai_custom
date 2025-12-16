@@ -45,8 +45,8 @@ app_include_js = ["/assets/junhai_custom/js/v16_link_hotfix.js"]
 # include js in doctype views
 
 doctype_js = {
-    "New Item Request": "public/js/doctype/new_item_request.js",
-    "Item Parameter Template": "public/js/doctype/item_parameter_template.js",
+    # "New Item Request": "public/js/doctype/new_item_request.js",
+    # "Item Parameter Template": "public/js/doctype/item_parameter_template.js",
 }
 
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
