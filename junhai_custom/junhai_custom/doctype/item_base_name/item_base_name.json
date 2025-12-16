@@ -6,7 +6,15 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "base_name"
+  "base_name",
+  "description",
+  "column_break_bzvv",
+  "is_group",
+  "disabled",
+  "lft",
+  "rgt",
+  "parent_item_base_name",
+  "old_parent"
  ],
  "fields": [
   {
@@ -16,16 +24,69 @@
    "label": "Base Name",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Item Base Name"
+  },
+  {
+   "fieldname": "parent_item_base_name",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Parent Item Base Name",
+   "options": "Item Base Name"
+  },
+  {
+   "fieldname": "column_break_bzvv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled",
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_tree": 1,
  "links": [],
- "modified": "2025-12-12 12:56:19.740307",
+ "modified": "2025-12-16 09:29:04.457256",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Base Name",
  "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_item_base_name",
  "owner": "Administrator",
  "permissions": [
   {

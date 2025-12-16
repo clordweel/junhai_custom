@@ -1,13 +1,128 @@
 [
  {
+  "description": "默认状态，无任何表面处理，表面有油",
+  "disabled": 0,
   "docstatus": 0,
   "doctype": "Item Surface",
-  "is_group": 0,
-  "modified": "2025-12-15 16:13:47.404826",
+  "modified": "2025-12-16 10:33:19.512696",
+  "name": "本色/发黑",
+  "surface_name": "本色/发黑"
+ },
+ {
+  "description": "最常见的表面处理，银白色，防锈能力中等",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Surface",
+  "modified": "2025-12-16 10:33:19.518111",
+  "name": "电镀白锌",
+  "surface_name": "电镀白锌"
+ },
+ {
+  "description": "金黄色，防锈能力略优于白锌，常见于老式设备",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Surface",
+  "modified": "2025-12-16 10:33:19.523449",
+  "name": "电镀彩锌",
+  "surface_name": "电镀彩锌"
+ },
+ {
+  "description": "黑色，用于需要隐藏或黑色外观的场合，防锈一般",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Surface",
+  "modified": "2025-12-16 10:33:19.528702",
+  "name": "电镀黑锌",
+  "surface_name": "电镀黑锌"
+ },
+ {
+  "description": "低成本，防锈能力差，仅用于室内或临时防锈",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Surface",
+  "modified": "2025-12-16 10:33:19.534053",
   "name": "发黑/氧化",
-  "old_parent": "",
-  "parent_item_surface": null,
-  "surface_description": null,
   "surface_name": "发黑/氧化"
+ },
+ {
+  "description": "俗称热镀锌，锌层厚，表面粗糙，用于户外长期防腐 (GB/T 13912)",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Surface",
+  "modified": "2025-12-16 10:33:19.539217",
+  "name": "热浸锌",
+  "surface_name": "热浸锌"
+ },
+ {
+  "description": "高防腐，无氢脆风险，适合高强度螺栓 (10.9级以上推荐)",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Surface",
+  "modified": "2025-12-16 10:33:19.544437",
+  "name": "达克罗",
+  "surface_name": "达克罗"
+ },
+ {
+  "description": "表面光亮，硬度高，耐磨性好，用于轴类或装饰件",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Surface",
+  "modified": "2025-12-16 10:33:19.549643",
+  "name": "镀铬",
+  "surface_name": "镀铬"
+ },
+ {
+  "description": "表面银亮微黄，导电性好，抗氧化，常用于电子连接件",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Surface",
+  "modified": "2025-12-16 10:33:19.555197",
+  "name": "镀镍",
+  "surface_name": "镀镍"
+ },
+ {
+  "description": "不锈钢专用，清除杂质并形成氧化膜，保持金属本色",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Surface",
+  "modified": "2025-12-16 10:33:19.560903",
+  "name": "酸洗钝化",
+  "surface_name": "酸洗钝化"
+ },
+ {
+  "description": "铝合金专用，增加耐腐蚀和硬度，本色或黑色",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Surface",
+  "modified": "2025-12-16 10:33:19.566208",
+  "name": "阳极氧化",
+  "surface_name": "阳极氧化"
+ },
+ {
+  "description": "铝合金专用，表面硬度极高，耐磨，通常为深灰色",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Surface",
+  "modified": "2025-12-16 10:33:19.571443",
+  "name": "硬质氧化",
+  "surface_name": "硬质氧化"
+ },
+ {
+  "description": "钣金件常用，颜色多样，表面有一定厚度",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Surface",
+  "modified": "2025-12-16 10:33:19.576689",
+  "name": "静电喷塑",
+  "surface_name": "静电喷塑"
+ },
+ {
+  "description": "利用钢丸喷打，去除氧化皮，表面呈哑光磨砂状",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Surface",
+  "modified": "2025-12-16 10:33:19.581951",
+  "name": "喷砂/抛丸",
+  "surface_name": "喷砂/抛丸"
  }
 ]

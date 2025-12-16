@@ -8,55 +8,14 @@
  "field_order": [
   "section_break_yf4a",
   "material_name",
-  "material_description",
+  "description",
   "column_break_wrjl",
-  "is_group",
-  "lft",
-  "rgt",
-  "old_parent",
-  "parent_item_material"
+  "disabled"
  ],
  "fields": [
   {
    "fieldname": "section_break_yf4a",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "lft",
-   "fieldtype": "Int",
-   "hidden": 1,
-   "label": "Left",
-   "no_copy": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "rgt",
-   "fieldtype": "Int",
-   "hidden": 1,
-   "label": "Right",
-   "no_copy": 1,
-   "read_only": 1
-  },
-  {
-   "default": "0",
-   "fieldname": "is_group",
-   "fieldtype": "Check",
-   "label": "Is Group"
-  },
-  {
-   "fieldname": "old_parent",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "label": "Old Parent",
-   "options": "Item Material"
-  },
-  {
-   "fieldname": "parent_item_material",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "ignore_user_permissions": 1,
-   "label": "Parent Item Material",
-   "options": "Item Material"
   },
   {
    "allow_in_quick_entry": 1,
@@ -69,22 +28,28 @@
    "unique": 1
   },
   {
+   "fieldname": "column_break_wrjl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled",
+   "search_index": 1
+  },
+  {
    "allow_in_quick_entry": 1,
-   "fieldname": "material_description",
+   "fieldname": "description",
    "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Description"
-  },
-  {
-   "fieldname": "column_break_wrjl",
-   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "is_tree": 1,
  "links": [],
- "modified": "2025-12-15 09:44:55.036896",
+ "modified": "2025-12-16 10:31:51.669286",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Material",

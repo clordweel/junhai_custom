@@ -8,13 +8,9 @@
  "field_order": [
   "section_break_yzl1",
   "surface_name",
-  "surface_description",
+  "description",
   "column_break_lduw",
-  "lft",
-  "rgt",
-  "is_group",
-  "old_parent",
-  "parent_item_surface"
+  "disabled"
  ],
  "fields": [
   {
@@ -22,45 +18,10 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "lft",
-   "fieldtype": "Int",
-   "hidden": 1,
-   "label": "Left",
-   "no_copy": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "rgt",
-   "fieldtype": "Int",
-   "hidden": 1,
-   "label": "Right",
-   "no_copy": 1,
-   "read_only": 1
-  },
-  {
-   "default": "0",
-   "fieldname": "is_group",
-   "fieldtype": "Check",
-   "label": "Is Group"
-  },
-  {
-   "fieldname": "old_parent",
-   "fieldtype": "Link",
-   "label": "Old Parent",
-   "options": "Item Surface"
-  },
-  {
-   "fieldname": "parent_item_surface",
-   "fieldtype": "Link",
-   "ignore_user_permissions": 1,
-   "label": "Parent Item Surface",
-   "options": "Item Surface"
-  },
-  {
    "fieldname": "surface_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Surface Name",
+   "label": "Name",
    "reqd": 1,
    "unique": 1
   },
@@ -69,16 +30,22 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "surface_description",
+   "fieldname": "description",
    "fieldtype": "Small Text",
-   "label": "Surface Description"
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled",
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "is_tree": 1,
  "links": [],
- "modified": "2025-12-15 09:44:45.677866",
+ "modified": "2025-12-16 10:18:16.742051",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Surface",

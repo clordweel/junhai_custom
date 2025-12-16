@@ -1,62 +1,32 @@
 [
  {
-  "_liked_by": "[\"Administrator\"]",
   "amended_from": null,
+  "disabled": 0,
   "docstatus": 0,
   "doctype": "Item Parameter Template",
   "item_group": "紧固件",
-  "modified": "2025-12-15 23:22:05.200416",
+  "modified": "2025-12-16 11:22:41.699198",
   "module": "Junhai Custom",
   "name": "碳钢六角头螺栓模板 - 基础",
   "parameters": [
    {
     "binding_field": 0,
     "constraint_type": "Integer",
-    "description": null,
+    "description": "螺纹的大径，用于螺栓、螺母、垫圈",
     "join_to_hash": 1,
     "parameter_default_value": null,
-    "parameter_name": "直径",
+    "parameter_name": "公称直径",
     "readonly_value": 0,
     "target_field": null
    },
    {
     "binding_field": 0,
     "constraint_type": "Integer",
-    "description": null,
+    "description": "螺栓的有效长度（不含头，沉头除外）",
     "join_to_hash": 1,
     "parameter_default_value": null,
-    "parameter_name": "长度",
+    "parameter_name": "公称长度",
     "readonly_value": 0,
-    "target_field": null
-   },
-   {
-    "binding_field": 0,
-    "constraint_type": "Base Name",
-    "description": null,
-    "join_to_hash": 0,
-    "parameter_default_value": "螺栓",
-    "parameter_name": "基础名",
-    "readonly_value": 1,
-    "target_field": null
-   },
-   {
-    "binding_field": 1,
-    "constraint_type": "Surface",
-    "description": null,
-    "join_to_hash": 1,
-    "parameter_default_value": "发黑",
-    "parameter_name": "表面",
-    "readonly_value": 1,
-    "target_field": "custom_surface_treatment"
-   },
-   {
-    "binding_field": 0,
-    "constraint_type": "Data",
-    "description": null,
-    "join_to_hash": 0,
-    "parameter_default_value": "4.8级",
-    "parameter_name": "材质",
-    "readonly_value": 1,
     "target_field": null
    },
    {
@@ -65,9 +35,59 @@
     "description": null,
     "join_to_hash": 1,
     "parameter_default_value": "GB/T 5780",
-    "parameter_name": "标准号",
+    "parameter_name": "国标",
     "readonly_value": 1,
     "target_field": "custom_tech_standard_number"
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Data",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "4.8级",
+    "parameter_name": "材料强度",
+    "readonly_value": 1,
+    "target_field": null
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Data",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "C级",
+    "parameter_name": "加工精度",
+    "readonly_value": 0,
+    "target_field": null
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Item Material",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "Q235B",
+    "parameter_name": "主体材质",
+    "readonly_value": 1,
+    "target_field": "custom_body_material"
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Item Surface",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "发黑/氧化",
+    "parameter_name": "表面处理",
+    "readonly_value": 1,
+    "target_field": "custom_surface_treatment"
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Item Base Name",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "六角头螺栓",
+    "parameter_name": "基础名",
+    "readonly_value": 1,
+    "target_field": null
    },
    {
     "binding_field": 1,
@@ -84,7 +104,7 @@
     "constraint_type": "Format",
     "description": null,
     "join_to_hash": 0,
-    "parameter_default_value": "{材质} M{直径}x{长度} {基础名}",
+    "parameter_default_value": "M{公称直径}x{公称长度} {基础名} {强度等级}",
     "parameter_name": "名称",
     "readonly_value": 1,
     "target_field": "item_name"
@@ -113,14 +133,14 @@
   "template_name": "碳钢六角头螺栓模板 - 基础"
  },
  {
-  "_liked_by": "[\"Administrator\"]",
   "amended_from": null,
+  "disabled": 0,
   "docstatus": 0,
   "doctype": "Item Parameter Template",
   "item_group": "板材",
-  "modified": "2025-12-15 23:23:08.332450",
+  "modified": "2025-12-16 11:36:39.429887",
   "module": "Junhai Custom",
-  "name": "Q235B 碳钢板模板 - 标准",
+  "name": "钢板模板 - Q235B",
   "parameters": [
    {
     "binding_field": 0,
@@ -164,7 +184,7 @@
    },
    {
     "binding_field": 0,
-    "constraint_type": "Base Name",
+    "constraint_type": "Item Base Name",
     "description": null,
     "join_to_hash": 1,
     "parameter_default_value": "钢板",
@@ -174,7 +194,7 @@
    },
    {
     "binding_field": 0,
-    "constraint_type": "Material",
+    "constraint_type": "Item Material",
     "description": null,
     "join_to_hash": 1,
     "parameter_default_value": "Q235B",
@@ -243,6 +263,6 @@
     "target_field": "description"
    }
   ],
-  "template_name": "Q235B 碳钢板模板 - 标准"
+  "template_name": "钢板模板 - Q235B"
  }
 ]

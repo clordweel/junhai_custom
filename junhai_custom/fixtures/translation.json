@@ -362,5 +362,31 @@
   "name": "o3t496m37t",
   "source_text": "Item Surface",
   "translated_text": "物料表面"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-15 23:24:19.612254",
+  "name": "4b4jm6248u",
+  "source_text": "Item Material",
+  "translated_text": "物料材质"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-16 11:15:21.062014",
+  "name": "4uqjrh9i0v",
+  "source_text": "Body Material",
+  "translated_text": "主体材质"
  }
 ]
