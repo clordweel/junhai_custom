@@ -264,11 +264,13 @@ fixtures = [
     {"dt": "Client Script", "filters": [["module", "=", app_title]]},
     {"dt": "Server Script", "filters": [["module", "=", app_title]]},
     {"dt": "Translation", "filters": []},
+    {"dt": "Executive Standard", "filters": []},
     {"dt": "Item Group", "filters": []},
     {"dt": "Item Surface", "filters": []},
     {"dt": "Item Material", "filters": []},
     {"dt": "Item Base Name", "filters": []},
     {"dt": "Item Parameter Template", "filters": [["module", "=", app_title]]},
+    {"dt": "New Item Request", "filters": [["module", "=", app_title]]},
     {"dt": "Custom Field", "filters": [["module", "=", app_title]]},
     {"dt": "UOM", "filters": [["name", "in", ["件", "张", "台"]]]},
     {

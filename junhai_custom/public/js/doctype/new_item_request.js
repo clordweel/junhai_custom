@@ -15,7 +15,7 @@ function run_duplicate_check(frm, callback) {
             unique_code: unique_code,
             current_docname: frm.doc.name
         },
-        callback: function (r) {
+        callback(r) {
             if (r.message && r.message.duplicate) {
                 // 发现重复，给出警告
                 frappe.throw({
@@ -38,7 +38,7 @@ function run_duplicate_check(frm, callback) {
 }
 
 frappe.ui.form.on('New Item Request', {
-    refresh: function (frm) {
+    refresh(frm) {
         // --- 核心按钮逻辑 ---
 
         // 1. 只有在满足特定条件时才显示按钮
@@ -68,7 +68,7 @@ frappe.ui.form.on('New Item Request', {
                         args: {
                             doc: frm.doc
                         },
-                        callback: function (r) {
+                        callback(r) {
                             if (r.message) {
                                 const item_data = r.message;
 
@@ -83,7 +83,7 @@ frappe.ui.form.on('New Item Request', {
                                 frm.reload_doc();
                             }
                         },
-                        error: function (r) {
+                        error(r) {
                             frm.reload_doc();
                         }
                     });
@@ -99,7 +99,7 @@ frappe.ui.form.on('New Item Request', {
         }
     },
     // 监听主表单中 'template' 字段的变动 (您的实际字段名)
-    template: function (frm) {
+    template(frm) {
 
         // 如果模板字段被清空，则清除子表数据
         if (!frm.doc.template) {
@@ -118,7 +118,7 @@ frappe.ui.form.on('New Item Request', {
                 doctype: 'Item Parameter Template',
                 name: frm.doc.template // 使用实际字段名 template
             },
-            callback: function (r) {
+            callback(r) {
                 // 检查返回的数据和模板子表 'parameters'
                 if (r.message && r.message.parameters) {
                     var template = r.message;
@@ -146,6 +146,7 @@ frappe.ui.form.on('New Item Request', {
                         if (row.value_integer !== undefined) new_row.value_integer = row.value_integer;
                         if (row.value_base_name) new_row.value_base_name = row.value_base_name;
                         if (row.value_unit) new_row.value_unit = row.value_unit;
+                        if (row.value_standard_code) new_row.value_standard_code = row.value_standard_code;
 
                         // 兼容模板中可能的默认值字段名（parameter_default_value / parameter_value / default）
                         var defaultVal = null;
@@ -168,6 +169,8 @@ frappe.ui.form.on('New Item Request', {
                                     new_row.value_base_name = defaultVal; break;
                                 case 'Unit':
                                     new_row.value_unit = defaultVal; break;
+                                case 'Standard Code':
+                                    new_row.value_standard_code = defaultVal; break;
                                 default:
                                     new_row.parameter_value = defaultVal;
                             }
@@ -189,7 +192,7 @@ frappe.ui.form.on('New Item Request', {
                     frm.set_value('item_group', r.message.item_group);
                 }
             },
-            error: function () {
+            error() {
                 frappe.msgprint(__('获取物料模板数据失败。请联系管理员。'));
             }
         });
@@ -198,17 +201,18 @@ frappe.ui.form.on('New Item Request', {
 
 frappe.ui.form.on('Item Parameter Definition', { // 监听子表事件
     // 监听所有动态输入字段的变动
-    value_material: function (frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_material'); },
-    value_surface: function (frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_surface'); },
-    value_float: function (frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_float'); },
-    value_integer: function (frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_integer'); },
-    value_base_name: function (frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_base_name'); },
-    value_unit: function (frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_unit'); },
+    value_material(frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_material'); },
+    value_surface(frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_surface'); },
+    value_float(frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_float'); },
+    value_integer(frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_integer'); },
+    value_base_name(frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_base_name'); },
+    value_unit(frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_unit'); },
+    value_standard_code(frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_standard_code'); },
 
     // 监听约束类型变化，用于清空不相关的字段 (防脏数据)
-    constraint_type: function (frm, cdt, cdn) {
+    constraint_type(frm, cdt, cdn) {
         var row = locals[cdt][cdn];
-        var fields_to_clear = ['value_material', 'value_surface', 'value_float', 'value_integer', 'value_base_name', 'value_unit'];
+        var fields_to_clear = ['value_material', 'value_surface', 'value_float', 'value_integer', 'value_base_name', 'value_unit', 'value_standard_code'];
 
         fields_to_clear.forEach(function (fieldname) {
             if (row[fieldname] !== null && row[fieldname] !== undefined) {

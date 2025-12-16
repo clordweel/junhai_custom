@@ -33,7 +33,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Constraint Type",
-   "options": "Data\nInteger\nFloat\nItem Base Name\nItem Material\nItem Surface\nUnit\nFormat",
+   "options": "Data\nInteger\nFloat\nItem Base Name\nItem Material\nItem Surface\nExecutive Standard\nUnit\nFormat",
    "reqd": 1,
    "translatable": 1
   },
@@ -91,7 +91,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-16 11:20:32.477396",
+ "modified": "2025-12-16 13:53:03.613637",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Parameter Template Definition",

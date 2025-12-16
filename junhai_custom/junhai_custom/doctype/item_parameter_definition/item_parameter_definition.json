@@ -15,6 +15,7 @@
   "value_base_name",
   "value_material",
   "value_surface",
+  "value_standard_code",
   "value_unit",
   "binding_field",
   "target_field",
@@ -41,7 +42,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Constraint Type",
-   "options": "Data\nInteger\nFloat\nItem Base Name\nItem Material\nItem Surface\nUnit\nFormat",
+   "options": "Data\nInteger\nFloat\nItem Base Name\nItem Material\nItem Surface\nExecutive Standard\nUnit\nFormat",
    "read_only_depends_on": "eval:doc.from_template==true",
    "reqd": 1,
    "translatable": 1
@@ -50,7 +51,7 @@
    "depends_on": "eval:doc.constraint_type=='Item Material'",
    "fieldname": "value_material",
    "fieldtype": "Link",
-   "label": "Material Value",
+   "label": "Item Material",
    "options": "Item Material",
    "read_only_depends_on": "eval:doc.readonly_value"
   },
@@ -58,7 +59,7 @@
    "depends_on": "eval:doc.constraint_type=='Item Surface'",
    "fieldname": "value_surface",
    "fieldtype": "Link",
-   "label": "Surface Value",
+   "label": "Item Surface",
    "options": "Item Surface",
    "read_only_depends_on": "eval:doc.readonly_value"
   },
@@ -66,7 +67,7 @@
    "depends_on": "eval:doc.constraint_type=='Float'",
    "fieldname": "value_float",
    "fieldtype": "Float",
-   "label": "Float Value",
+   "label": "Float",
    "precision": "3",
    "read_only_depends_on": "eval:doc.readonly_value"
   },
@@ -74,14 +75,14 @@
    "depends_on": "eval:doc.constraint_type=='Integer'",
    "fieldname": "value_integer",
    "fieldtype": "Int",
-   "label": "Integer Value",
+   "label": "Integer",
    "read_only_depends_on": "eval:doc.readonly_value"
   },
   {
    "depends_on": "eval:doc.constraint_type=='Item Base Name'",
    "fieldname": "value_base_name",
    "fieldtype": "Link",
-   "label": "Base Name Value",
+   "label": "Item Base Name",
    "link_filters": "[[\"Item Base Name\",\"is_group\",\"=\",0],[\"Item Base Name\",\"disabled\",\"=\",0]]",
    "options": "Item Base Name",
    "read_only_depends_on": "eval:doc.readonly_value"
@@ -90,7 +91,7 @@
    "depends_on": "eval:doc.constraint_type=='Unit'",
    "fieldname": "value_unit",
    "fieldtype": "Link",
-   "label": "Unit Value",
+   "label": "Unit",
    "options": "UOM",
    "read_only_depends_on": "eval:doc.readonly_value"
   },
@@ -157,13 +158,21 @@
    "fieldtype": "Check",
    "label": "Join To Hash",
    "read_only_depends_on": "eval:doc.from_template==true"
+  },
+  {
+   "depends_on": "eval:doc.constraint_type=='Executive Standard'",
+   "fieldname": "value_standard_code",
+   "fieldtype": "Link",
+   "label": "Standard Code",
+   "options": "Executive Standard",
+   "read_only_depends_on": "eval:doc.readonly_value"
   }
  ],
  "grid_page_length": 20,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-16 11:20:19.470878",
+ "modified": "2025-12-16 14:05:27.202588",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Parameter Definition",
