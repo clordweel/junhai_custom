@@ -1,0 +1,16 @@
+[
+ {
+  "currency_name": "CNY",
+  "docstatus": 0,
+  "doctype": "Currency",
+  "enabled": 1,
+  "fraction": "分",
+  "fraction_units": 100,
+  "modified": "2025-12-17 11:57:12.459862",
+  "name": "CNY",
+  "number_format": "#,###.##",
+  "smallest_currency_fraction_value": 0.01,
+  "symbol": "￥",
+  "symbol_on_right": 0
+ }
+]

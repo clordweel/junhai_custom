@@ -273,6 +273,7 @@ fixtures = [
     # {"dt": "New Item Request", "filters": []},
     {"dt": "Custom Field", "filters": [["module", "=", app_title]]},
     {"dt": "UOM", "filters": [["name", "in", ["件", "张", "台"]]]},
+    {"dt": "Currency", "filters": [["name", "in", ["CNY"]]]},
     {
         "dt": "Property Setter",
         "filters": [
