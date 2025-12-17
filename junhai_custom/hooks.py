@@ -25,7 +25,10 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-app_include_css = ["/assets/junhai_custom/css/v16_patching_styles.css"]
+app_include_css = [
+    # "/assets/junhai_custom/css/junhai_standard.css",
+    "/assets/junhai_custom/css/v16_patching_styles.css",
+]
 app_include_js = ["/assets/junhai_custom/js/v16_link_hotfix.js"]
 
 # include js, css files in header of web template
@@ -260,6 +263,7 @@ doc_events = {
 
 fixtures = [
     {"dt": "Print Format", "filters": [["module", "=", app_title]]},
+    {"dt": "Print Style", "filters": [["name", "=", "Standard"]]},
     {"dt": "Report", "filters": [["module", "=", app_title]]},
     {"dt": "Client Script", "filters": [["module", "=", app_title]]},
     {"dt": "Server Script", "filters": [["module", "=", app_title]]},

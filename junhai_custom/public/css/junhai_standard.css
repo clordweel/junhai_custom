@@ -1,0 +1,7 @@
+:root {
+    --text-base: 13px;
+}
+
+body {
+    font-family: "HarmonyOS Sans SC", "HarmonyOSHans-Regular", "HarmonyOSHans-fallback", "PingFangSC-Regular", "Microsoft YaHei", "Arial", "Helvetica", sans-serif !important;
+}
