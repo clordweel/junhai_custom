@@ -146,12 +146,6 @@ doc_events = {
         "on_update": "junhai_custom.custom_methods.new_item_request.update_request_on_item_save",
         "before_insert": "junhai_custom.custom_methods.item.auto_set_item_code",
     },
-    "Purchase Order": {
-        "validate": "junhai_custom.custom_methods.purchase_order.validate",
-    },
-    "Purchase Invoice": {
-        "validate": "junhai_custom.custom_methods.purchase_invoice.validate",
-    },
 }
 
 # Scheduled Tasks
