@@ -26,7 +26,7 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 app_include_css = [
-    # "/assets/junhai_custom/css/junhai_standard.css",
+    "/assets/junhai_custom/css/junhai_standard.css",
     "/assets/junhai_custom/css/v16_patching_styles.css",
 ]
 app_include_js = ["/assets/junhai_custom/js/v16_link_hotfix.js"]
