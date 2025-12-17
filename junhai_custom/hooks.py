@@ -140,14 +140,17 @@ after_install = "junhai_custom.utils.setup.setup_uom_data"
 
 doc_events = {
     "New Item Request": {
-        "before_save": "junhai_custom.custom_methods.new_item_request.calculate_parameters_hash"
+        "before_save": "junhai_custom.custom_methods.new_item_request.calculate_parameters_hash",
     },
     "Item": {
         "on_update": "junhai_custom.custom_methods.new_item_request.update_request_on_item_save",
         "before_insert": "junhai_custom.custom_methods.item.auto_set_item_code",
     },
     "Purchase Order": {
-        "validate": "junhai_custom.custom_methods.purchase_order.purchase_order_validate",
+        "validate": "junhai_custom.custom_methods.purchase_order.validate",
+    },
+    "Purchase Invoice": {
+        "validate": "junhai_custom.custom_methods.purchase_invoice.validate",
     },
 }
 
