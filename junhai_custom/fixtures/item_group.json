@@ -1005,21 +1005,6 @@
   "taxes": []
  },
  {
-  "custom_code": "4040",
-  "custom_description": "扳手、钳子、卷尺、千斤顶",
-  "docstatus": 0,
-  "doctype": "Item Group",
-  "image": null,
-  "is_group": 0,
-  "item_group_defaults": [],
-  "item_group_name": "五金工具",
-  "modified": "2025-12-14 13:59:10.624947",
-  "name": "五金工具",
-  "old_parent": "MRO与工具",
-  "parent_item_group": "MRO与工具",
-  "taxes": []
- },
- {
   "custom_code": "1011",
   "custom_description": "中厚板、薄板、耐磨钢板。(按重量计价：Kg)。**【启用批次管理】**",
   "docstatus": 0,
@@ -1047,6 +1032,21 @@
   "name": "紧固件",
   "old_parent": "机械标准件",
   "parent_item_group": "机械标准件",
+  "taxes": []
+ },
+ {
+  "custom_code": "4040",
+  "custom_description": "扳手、钳子、卷尺、千斤顶",
+  "docstatus": 0,
+  "doctype": "Item Group",
+  "image": null,
+  "is_group": 0,
+  "item_group_defaults": [],
+  "item_group_name": "五金工具",
+  "modified": "2025-12-14 13:59:10.624947",
+  "name": "五金工具",
+  "old_parent": "MRO与工具",
+  "parent_item_group": "MRO与工具",
   "taxes": []
  }
 ]
