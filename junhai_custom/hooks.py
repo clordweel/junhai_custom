@@ -11,15 +11,15 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "junhai_custom",
-# 		"logo": "/assets/junhai_custom/logo.png",
-# 		"title": "Junhai Custom",
-# 		"route": "/junhai_custom",
-# 		"has_permission": "junhai_custom.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+    {
+        "name": "junhai_custom",
+        "logo": "/assets/junhai_custom/images/jh-app-logo.svg",
+        "title": "Junhai Custom",
+		"route": "/app/overview",
+		"has_permission": "junhai_custom.check_app_permission",
+    }
+]
 
 # Includes in <head>
 # ------------------

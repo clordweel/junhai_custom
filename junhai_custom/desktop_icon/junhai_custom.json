@@ -1,22 +1,34 @@
 {
  "app": "junhai_custom",
- "creation": "2025-12-12 09:00:12.280130",
+ "creation": "2025-12-19 08:33:02.947928",
  "docstatus": 0,
  "doctype": "Desktop Icon",
  "hidden": 0,
- "icon": "bolt",
  "icon_type": "App",
- "idx": 100,
+ "idx": 99,
  "label": "Junhai Custom",
- "link": "",
  "link_to": "Junhai Custom",
  "link_type": "Workspace",
- "logo_url": "",
- "modified": "2025-12-12 09:17:25.600260",
+ "logo_url": "/assets/junhai_custom/images/jh-app-logo.svg",
+ "modified": "2025-12-19 09:39:11.232996",
  "modified_by": "Administrator",
  "name": "Junhai Custom",
  "owner": "Administrator",
- "roles": [],
- "sidebar": "",
+ "roles": [
+  {
+   "creation": "2025-12-19 08:33:02.947928",
+   "docstatus": 0,
+   "doctype": "Has Role",
+   "idx": 1,
+   "modified": "2025-12-19 09:39:11.232996",
+   "modified_by": "Administrator",
+   "name": "cctoglmcii",
+   "owner": "Administrator",
+   "parent": "Junhai Custom",
+   "parentfield": "roles",
+   "parenttype": "Desktop Icon",
+   "role": "HR Manager"
+  }
+ ],
  "standard": 1
 }
