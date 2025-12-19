@@ -139,7 +139,7 @@
   "docstatus": 0,
   "doctype": "Item Parameter Template",
   "item_group": "紧固件",
-  "modified": "2025-12-16 23:19:25.829550",
+  "modified": "2025-12-18 13:54:02.173534",
   "module": "Junhai Custom",
   "name": "GB/T 5780 六角头螺栓模板",
   "parameters": [
@@ -248,9 +248,9 @@
     "constraint_type": "Item Material",
     "description": null,
     "join_to_hash": 0,
-    "parameter_default_value": "Q235B 碳钢",
+    "parameter_default_value": "45# 钢",
     "parameter_name": "材质",
-    "readonly_value": 1,
+    "readonly_value": 0,
     "target_field": "custom_body_material"
    },
    {
@@ -305,5 +305,179 @@
     "uom": "件"
    }
   ]
+ },
+ {
+  "amended_from": null,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Parameter Template",
+  "item_group": "传动部件",
+  "modified": "2025-12-18 14:54:53.636895",
+  "module": "Junhai Custom",
+  "name": "小齿轮模板 - 平键、单键",
+  "parameters": [
+   {
+    "binding_field": 1,
+    "constraint_type": "Data",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": null,
+    "parameter_name": "图号",
+    "readonly_value": 0,
+    "target_field": "custom_drawing_number"
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Integer",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": null,
+    "parameter_name": "齿数",
+    "readonly_value": 0,
+    "target_field": null
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Integer",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": null,
+    "parameter_name": "模数",
+    "readonly_value": 0,
+    "target_field": null
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Integer",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": null,
+    "parameter_name": "厚度",
+    "readonly_value": 0,
+    "target_field": null
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Integer",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": null,
+    "parameter_name": "内径",
+    "readonly_value": 0,
+    "target_field": null
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Item Base Name",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "小齿轮",
+    "parameter_name": "基础名",
+    "readonly_value": 1,
+    "target_field": null
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Integer",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "1",
+    "parameter_name": "允许外包",
+    "readonly_value": 1,
+    "target_field": "is_sub_contracted_item"
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Format",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "{基础名} M{模数}Z{齿数}H{厚度} ({内径})",
+    "parameter_name": "名称",
+    "readonly_value": 1,
+    "target_field": "item_name"
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Format",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "M{模数}Z{齿数}H{厚度} ({内径})",
+    "parameter_name": "规格",
+    "readonly_value": 1,
+    "target_field": "custom_specification"
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Format",
+    "description": null,
+    "join_to_hash": 0,
+    "parameter_default_value": null,
+    "parameter_name": "描述",
+    "readonly_value": 0,
+    "target_field": "description"
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Item Material",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "45# 钢",
+    "parameter_name": "材质",
+    "readonly_value": 0,
+    "target_field": "custom_body_material"
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Integer",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": null,
+    "parameter_name": "键宽",
+    "readonly_value": 0,
+    "target_field": null
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Float",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": null,
+    "parameter_name": "键槽深",
+    "readonly_value": 0,
+    "target_field": null
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Integer",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "1",
+    "parameter_name": "键数",
+    "readonly_value": 1,
+    "target_field": null
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Integer",
+    "description": "键之间的角度，一般为90°，如果为单键填0°",
+    "join_to_hash": 1,
+    "parameter_default_value": "0",
+    "parameter_name": "键角度",
+    "readonly_value": 1,
+    "target_field": null
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Data",
+    "description": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "平键",
+    "parameter_name": "键类型",
+    "readonly_value": 1,
+    "target_field": null
+   }
+  ],
+  "template_name": "小齿轮模板 - 平键、单键",
+  "uoms": []
  }
 ]

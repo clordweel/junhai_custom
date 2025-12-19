@@ -465,21 +465,6 @@
   "taxes": []
  },
  {
-  "custom_code": "2031",
-  "custom_description": "轴承、减速机、联轴器、皮带轮",
-  "docstatus": 0,
-  "doctype": "Item Group",
-  "image": null,
-  "is_group": 0,
-  "item_group_defaults": [],
-  "item_group_name": "传动部件",
-  "modified": "2025-12-14 13:59:09.691421",
-  "name": "传动部件",
-  "old_parent": "机械标准件",
-  "parent_item_group": "机械标准件",
-  "taxes": []
- },
- {
   "custom_code": "2032",
   "custom_description": "液压站组件、泵、阀、气缸、油管接头",
   "docstatus": 0,
@@ -1030,6 +1015,21 @@
   "item_group_name": "紧固件",
   "modified": "2025-12-14 13:59:09.862062",
   "name": "紧固件",
+  "old_parent": "机械标准件",
+  "parent_item_group": "机械标准件",
+  "taxes": []
+ },
+ {
+  "custom_code": "2031",
+  "custom_description": "轴承、减速机、联轴器、皮带轮",
+  "docstatus": 0,
+  "doctype": "Item Group",
+  "image": null,
+  "is_group": 0,
+  "item_group_defaults": [],
+  "item_group_name": "传动部件",
+  "modified": "2025-12-14 13:59:09.691421",
+  "name": "传动部件",
   "old_parent": "机械标准件",
   "parent_item_group": "机械标准件",
   "taxes": []
