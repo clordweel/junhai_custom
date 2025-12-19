@@ -518,5 +518,31 @@
   "name": "fqeidl38a7",
   "source_text": "Material Code",
   "translated_text": "材质代号"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-20 03:30:51.832080",
+  "name": "3pmlic0obm",
+  "source_text": "Tax Mapping",
+  "translated_text": "税率映射"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-20 03:35:56.697462",
+  "name": "6ov59s7ohh",
+  "source_text": "Exportable",
+  "translated_text": "可导出"
  }
 ]
