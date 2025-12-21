@@ -20,16 +20,6 @@
   "name": "Q355B 低合金钢"
  },
  {
-  "description": "优质碳素结构钢，综合力学性能好，机械加工最常用（轴类、齿轮）",
-  "disabled": 0,
-  "docstatus": 0,
-  "doctype": "Item Material",
-  "material_code": "45#",
-  "material_name": "45# 钢",
-  "modified": "2025-12-16 10:44:51.834425",
-  "name": "45# 钢"
- },
- {
   "description": "合金结构钢，调质处理后性能极佳，用于高负荷零件（如高强螺栓、曲轴）",
   "disabled": 0,
   "docstatus": 0,
@@ -158,5 +148,15 @@
   "material_name": "PTFE 特氟龙",
   "modified": "2025-12-16 10:44:51.903855",
   "name": "PTFE 特氟龙"
+ },
+ {
+  "description": "优质碳素结构钢，综合力学性能好，机械加工最常用（轴类、齿轮）",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Material",
+  "material_code": "45#",
+  "material_name": "45# 钢",
+  "modified": "2025-12-16 10:44:51.834425",
+  "name": "45# 钢"
  }
 ]

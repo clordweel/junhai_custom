@@ -16,8 +16,8 @@ add_to_apps_screen = [
         "name": "junhai_custom",
         "logo": "/assets/junhai_custom/images/jh-app-logo.svg",
         "title": "Junhai Custom",
-		"route": "/app/overview",
-		"has_permission": "junhai_custom.check_app_permission",
+        "route": "/app/overview",
+        "has_permission": "junhai_custom.check_app_permission",
     }
 ]
 
@@ -50,6 +50,7 @@ app_include_js = ["/assets/junhai_custom/js/v16_link_hotfix.js"]
 doctype_js = {
     # "New Item Request": "public/js/doctype/new_item_request.js",
     # "Item Parameter Template": "public/js/doctype/item_parameter_template.js",
+    "Item Group": "public/js/doctype/item_group.js",
 }
 
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
@@ -148,29 +149,28 @@ doc_events = {
     "Item": {
         "on_update": "junhai_custom.custom_methods.new_item_request.update_request_on_item_save",
         "before_insert": "junhai_custom.custom_methods.item.auto_set_item_code",
+        "validate": "junhai_custom.utils.tax_logic.update_item_tax_data",
     },
 }
 
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"junhai_custom.tasks.all"
-# 	],
-# 	"daily": [
-# 		"junhai_custom.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"junhai_custom.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"junhai_custom.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"junhai_custom.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+    # 	"all": [
+    # 		"junhai_custom.tasks.all"
+    # 	],
+    "daily": ["junhai_custom.utils.tax_logic.daily_tax_audit"],
+    # 	"hourly": [
+    # 		"junhai_custom.tasks.hourly"
+    # 	],
+    # 	"weekly": [
+    # 		"junhai_custom.tasks.weekly"
+    # 	],
+    # 	"monthly": [
+    # 		"junhai_custom.tasks.monthly"
+    # 	],
+}
 
 # Testing
 # -------
@@ -275,6 +275,7 @@ fixtures = [
     {"dt": "Item Base Name", "filters": []},
     {"dt": "Item Parameter Template", "filters": [["module", "=", app_title]]},
     # {"dt": "New Item Request", "filters": []},
+    {"dt": "Social Login Key", "filters": [["name", "=", "logto"]]},
     {"dt": "Custom Field", "filters": [["module", "=", app_title]]},
     {"dt": "UOM", "filters": [["name", "in", ["件", "张", "台"]]]},
     {"dt": "Currency", "filters": [["name", "in", ["CNY"]]]},

@@ -273,22 +273,6 @@
  },
  {
   "default_value": null,
-  "doc_type": "Item Group",
-  "docstatus": 0,
-  "doctype": "Property Setter",
-  "doctype_or_field": "DocType",
-  "field_name": null,
-  "is_system_generated": 0,
-  "modified": "2025-12-14 14:04:27.672458",
-  "module": null,
-  "name": "Item Group-main-field_order",
-  "property": "field_order",
-  "property_type": "Data",
-  "row_name": null,
-  "value": "[\"gs\", \"item_group_name\", \"custom_code\", \"custom_description\", \"parent_item_group\", \"is_group\", \"image\", \"column_break_5\", \"defaults\", \"item_group_defaults\", \"sec_break_taxes\", \"taxes\", \"lft\", \"old_parent\", \"rgt\"]"
- },
- {
-  "default_value": null,
   "doc_type": "Item",
   "docstatus": 0,
   "doctype": "Property Setter",
@@ -1070,5 +1054,21 @@
   "property_type": "JSON",
   "row_name": null,
   "value": "[[\"Item Group\",\"custom_code\",\"is\",\"set\"],[\"Item Group\",\"is_group\",\"=\",0]]"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Item Group",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocType",
+  "field_name": null,
+  "is_system_generated": 0,
+  "modified": "2025-12-21 14:50:17.203622",
+  "module": null,
+  "name": "Item Group-main-field_order",
+  "property": "field_order",
+  "property_type": "Data",
+  "row_name": null,
+  "value": "[\"gs\", \"item_group_name\", \"custom_code\", \"custom_standard_tax_rate\", \"custom_description\", \"parent_item_group\", \"is_group\", \"image\", \"column_break_5\", \"defaults\", \"item_group_defaults\", \"sec_break_taxes\", \"taxes\", \"lft\", \"old_parent\", \"rgt\"]"
  }
 ]

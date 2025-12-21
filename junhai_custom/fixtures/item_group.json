@@ -2,6 +2,7 @@
  {
   "custom_code": null,
   "custom_description": "根节点",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -17,6 +18,7 @@
  {
   "custom_code": "0000",
   "custom_description": "存放已停用或计划删除的物料组。**严禁新建物料或进行任何交易。**",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -32,6 +34,7 @@
  {
   "custom_code": "1000",
   "custom_description": "原“原材料”，需加工或作为基础素材的物资",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -47,6 +50,7 @@
  {
   "custom_code": "1010",
   "custom_description": "核心黑色金属材料，建议启用批次管理",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -62,6 +66,7 @@
  {
   "custom_code": "1012",
   "custom_description": "角钢、槽钢、H型钢、工字钢",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -77,6 +82,7 @@
  {
   "custom_code": "1013",
   "custom_description": "无缝管、焊管、流体管",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -92,6 +98,7 @@
  {
   "custom_code": "1011",
   "custom_description": "中厚板、薄板、耐磨钢板。**【启用批次管理】**",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -107,6 +114,7 @@
  {
   "custom_code": "1014",
   "custom_description": "轮带、托轮、大齿圈毛坯（按重量计价）。**【高价值、建议启用序列号或批次】**",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -122,6 +130,7 @@
  {
   "custom_code": "1015",
   "custom_description": "平台踏板、钢格栅、不锈钢滤网",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -137,6 +146,7 @@
  {
   "custom_code": "1050",
   "custom_description": "铜、铝、钛等有色金属及其合金材料",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -152,6 +162,7 @@
  {
   "custom_code": "1051",
   "custom_description": "铝板、铝棒、铝型材。(按重量计价：Kg)。**【启用批次管理】**",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -167,6 +178,7 @@
  {
   "custom_code": "1020",
   "custom_description": "橡胶、塑料、绝缘材料等固体素材",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -182,6 +194,7 @@
  {
   "custom_code": "1021",
   "custom_description": "进料口挡板、减震垫、橡胶皮（按张/公斤）",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -197,6 +210,7 @@
  {
   "custom_code": "1022",
   "custom_description": "尼龙棒、四氟板、聚氨酯衬板",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -212,6 +226,7 @@
  {
   "custom_code": "1023",
   "custom_description": "硅酸铝纤维、石棉板、电柜绝缘纸",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -227,6 +242,7 @@
  {
   "custom_code": "1030",
   "custom_description": "【行业专用】回转窑/球磨机内衬材料",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -242,6 +258,7 @@
  {
   "custom_code": "1031",
   "custom_description": "高铝砖、镁铝尖晶石砖、粘土砖",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -257,6 +274,7 @@
  {
   "custom_code": "1032",
   "custom_description": "耐火浇注料、耐火泥、高温胶",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -272,6 +290,7 @@
  {
   "custom_code": "1040",
   "custom_description": "液体或膏状化学品",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -287,6 +306,7 @@
  {
   "custom_code": "1041",
   "custom_description": "底漆、面漆、稀释剂、固化剂（危化品）。**【注意有效期管理】**",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -302,6 +322,7 @@
  {
   "custom_code": "1042",
   "custom_description": "齿轮油、液压油、润滑脂（出厂加注）",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -317,6 +338,7 @@
  {
   "custom_code": "1043",
   "custom_description": "螺纹锁固剂、密封胶、清洗剂",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -332,6 +354,7 @@
  {
   "custom_code": "2000",
   "custom_description": "按个/套计量，直接用于装配的成品物资",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -347,6 +370,7 @@
  {
   "custom_code": "2010",
   "custom_description": "高价值，需防盗和序列号管理",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -362,6 +386,7 @@
  {
   "custom_code": "2011",
   "custom_description": "PLC、HMI、传感器、仪表。**【启用序列号管理】**",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -377,6 +402,7 @@
  {
   "custom_code": "2012",
   "custom_description": "电机、变频器、软启动、接触器",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -392,6 +418,7 @@
  {
   "custom_code": "2013",
   "custom_description": "断路器、继电器、接线端子、按钮指示灯",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -407,6 +434,7 @@
  {
   "custom_code": "2014",
   "custom_description": "线槽、导轨、铜排、线号管。价值低但用量大。",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -422,6 +450,7 @@
  {
   "custom_code": "2020",
   "custom_description": "外购的柜体及附件",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -437,6 +466,7 @@
  {
   "custom_code": "2021",
   "custom_description": "非标定制的主柜体、操作台（建议一物一码）",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -452,6 +482,7 @@
  {
   "custom_code": "2022",
   "custom_description": "机柜风扇、滤网、文件架、PDU、导轨",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -467,6 +498,7 @@
  {
   "custom_code": "2030",
   "custom_description": "通用机械零部件",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -482,6 +514,7 @@
  {
   "custom_code": "2031",
   "custom_description": "轴承、减速机、联轴器、皮带轮",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -497,6 +530,7 @@
  {
   "custom_code": "2032",
   "custom_description": "液压站组件、泵、阀、气缸、油管接头",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -512,6 +546,7 @@
  {
   "custom_code": "2039",
   "custom_description": "定制长度或弯曲的液压管、接头总成。用于BOM。",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -527,6 +562,7 @@
  {
   "custom_code": "2033",
   "custom_description": "O型圈、油封、密封垫片（标准成品）",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -542,13 +578,14 @@
  {
   "custom_code": "2034",
   "custom_description": "通用碳钢螺栓、螺母、垫圈。(按数量/重量计价)。",
+  "custom_standard_tax_rate": 13.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
   "is_group": 1,
   "item_group_defaults": [],
   "item_group_name": "紧固件",
-  "modified": "2025-12-20 02:54:32.012565",
+  "modified": "2025-12-21 14:49:09.766290",
   "name": "紧固件",
   "old_parent": "机械标准件",
   "parent_item_group": "机械标准件",
@@ -557,6 +594,7 @@
  {
   "custom_code": "2035",
   "custom_description": "高强度、不锈钢或防松螺栓。**【关键件，启用批次】**",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -572,6 +610,7 @@
  {
   "custom_code": "2040",
   "custom_description": "外包简单的加工服务和零部件",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -587,6 +626,7 @@
  {
   "custom_code": "2050",
   "custom_description": "用于存放具有独立图纸号的非标定制件或模具。",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -602,6 +642,7 @@
  {
   "custom_code": "3000",
   "custom_description": "公司内部生产或组装的产品",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -617,6 +658,7 @@
  {
   "custom_code": "3010",
   "custom_description": "有独立图号的中间件",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -632,6 +674,7 @@
  {
   "custom_code": "3011",
   "custom_description": "筒体、底座、支架、溜槽等。**【自制半成品、BOM子项、按图号管理】**",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -647,6 +690,7 @@
  {
   "custom_code": "3012",
   "custom_description": "动力柜、控制柜、PLC柜（BOM父项）",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -662,6 +706,7 @@
  {
   "custom_code": "3013",
   "custom_description": "精加工轴、小齿轮、滚圈、端盖。**【自制半成品、BOM子项】**",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -677,6 +722,7 @@
  {
   "custom_code": "3020",
   "custom_description": "最终交付给客户的设备",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -692,6 +738,7 @@
  {
   "custom_code": "3021",
   "custom_description": "不同规格的回转窑整机",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -707,6 +754,7 @@
  {
   "custom_code": "3022",
   "custom_description": "不同规格的球磨机整机",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -722,6 +770,7 @@
  {
   "custom_code": "3023",
   "custom_description": "稀油站、燃烧器、除尘器",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -737,6 +786,7 @@
  {
   "custom_code": "3030",
   "custom_description": "用于出售给客户作为售后服务的易损件/消耗品包。",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -752,6 +802,7 @@
  {
   "custom_code": "4000",
   "custom_description": "非BOM物资，计入制造费用",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -767,6 +818,7 @@
  {
   "custom_code": "4010",
   "custom_description": "焊条、焊丝、砂轮片",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -782,6 +834,7 @@
  {
   "custom_code": "4020",
   "custom_description": "数控刀片、钻头、铣刀",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -797,6 +850,7 @@
  {
   "custom_code": "4030",
   "custom_description": "手套、安全帽、工服",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -812,13 +866,14 @@
  {
   "custom_code": "4040",
   "custom_description": "扳手、钳子、卷尺、千斤顶",
+  "custom_standard_tax_rate": 9.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
   "is_group": 0,
   "item_group_defaults": [],
   "item_group_name": "五金工具",
-  "modified": "2025-12-20 02:54:32.738593",
+  "modified": "2025-12-21 15:01:25.313060",
   "name": "五金工具",
   "old_parent": "MRO与工具",
   "parent_item_group": "MRO与工具",
@@ -827,6 +882,7 @@
  {
   "custom_code": "4050",
   "custom_description": "维修自家行车/机床用的配件",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -842,6 +898,7 @@
  {
   "custom_code": "4061",
   "custom_description": "木箱、托盘、缠绕膜、办公用品",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -857,6 +914,7 @@
  {
   "custom_code": "5000",
   "custom_description": "无库存项目，用于成本归集",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -872,6 +930,7 @@
  {
   "custom_code": "5010",
   "custom_description": "技术服务费、设计费",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -887,6 +946,7 @@
  {
   "custom_code": "5020",
   "custom_description": "现场安装费、调试费",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -902,6 +962,7 @@
  {
   "custom_code": "5030",
   "custom_description": "运费、吊装费",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -917,6 +978,7 @@
  {
   "custom_code": "5041",
   "custom_description": "委外加工中产生的工序服务费用（热处理、喷漆等）。",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -932,6 +994,7 @@
  {
   "custom_code": "7000",
   "custom_description": "用于处理废品变卖",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -947,6 +1010,7 @@
  {
   "custom_code": "7010",
   "custom_description": "无法回用的铁屑、板头、废料",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -962,6 +1026,7 @@
  {
   "custom_code": "6000",
   "custom_description": "公司长期持有的、需折旧的资产",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -977,6 +1042,7 @@
  {
   "custom_code": "6010",
   "custom_description": "车床、铣床、焊接机器人",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -992,6 +1058,7 @@
  {
   "custom_code": "6020",
   "custom_description": "电脑、服务器、打印机",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -1007,6 +1074,7 @@
  {
   "custom_code": "6030",
   "custom_description": "老板桌、会议桌、空调",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -1022,6 +1090,7 @@
  {
   "custom_code": "6040",
   "custom_description": "公司轿车、货车、叉车",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
@@ -1037,6 +1106,7 @@
  {
   "custom_code": "6050",
   "custom_description": "厂房、土地使用权",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
