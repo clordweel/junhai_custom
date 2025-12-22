@@ -63,18 +63,6 @@
   "attachment": null,
   "docstatus": 0,
   "doctype": "Executive Standard",
-  "modified": "2025-12-16 14:50:47.471468",
-  "name": "GB/T 5780",
-  "revision_year": "2016",
-  "standard_code": "GB/T 5780",
-  "standard_name": "六角头螺栓-半螺纹 (C级 粗制)",
-  "standard_type": "Product Standard",
-  "status": "Current"
- },
- {
-  "attachment": null,
-  "docstatus": 0,
-  "doctype": "Executive Standard",
   "modified": "2025-12-16 14:50:47.489626",
   "name": "GB/T 70.1",
   "revision_year": "2008",
@@ -404,6 +392,18 @@
   "revision_year": "2000",
   "standard_code": "DIN 933 (不锈钢)",
   "standard_name": "六角头螺栓-全螺纹 (德标不锈钢常用)",
+  "standard_type": "Product Standard",
+  "status": "Current"
+ },
+ {
+  "attachment": null,
+  "docstatus": 0,
+  "doctype": "Executive Standard",
+  "modified": "2025-12-16 14:50:47.471468",
+  "name": "GB/T 5780",
+  "revision_year": "2016",
+  "standard_code": "GB/T 5780",
+  "standard_name": "六角头螺栓-半螺纹 (C级 粗制)",
   "standard_type": "Product Standard",
   "status": "Current"
  }
