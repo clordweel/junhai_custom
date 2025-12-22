@@ -30,3 +30,47 @@ frappe.ui.form.on('Item Parameter Template', {
         }
     }
 });
+
+frappe.ui.form.on('Item Parameter Template Definition', { // 监听子表事件 (保持不变)
+    // 监听所有动态输入字段的变动
+    value_float(frm, cdt, cdn) { sync_value(frm, cdt, cdn, 'value_float'); },
+    value_integer(frm, cdt, cdn) { sync_value(frm, cdt, cdn, 'value_integer'); },
+    value_doctype(frm, cdt, cdn) { sync_value(frm, cdt, cdn, 'value_doctype'); },
+    value_format(frm, cdt, cdn) { sync_value(frm, cdt, cdn, 'value_format'); },
+
+    // 监听约束类型变化，用于清空不相关的字段 (防脏数据)
+    constraint_type(frm, cdt, cdn) {
+        var row = locals[cdt][cdn];
+        var fields_to_clear = ['value_float', 'value_integer', 'value_format', 'value_doctype'];
+
+        fields_to_clear.forEach(function (fieldname) {
+            // 修正清除逻辑，避免清除当前类型对应的值
+            const constraint_type = row.constraint_type ? row.constraint_type.toLowerCase().trim() : '';
+            const field_is_relevant = fieldname.includes(constraint_type);
+
+            if (row[fieldname] !== null && row[fieldname] !== undefined && !field_is_relevant) {
+                frappe.model.set_value(cdt, cdn, fieldname, null);
+            }
+        });
+
+        frappe.model.set_value(cdt, cdn, 'parameter_default_value', null);
+    }
+});
+
+// 通用同步函数 (必须放在全局，或者在frappe.ui.form.on之外) (保持不变)
+function sync_value(frm, cdt, cdn, source_field) {
+    var row = locals[cdt][cdn];
+    var val = row[source_field];
+
+    if (frappe.get_meta(cdt).fields.find(f => f.fieldname == source_field && f.fieldtype == 'Link')) {
+        val = String(val || "");
+    } else if (val === null || val === undefined) {
+        val = null;
+    } else {
+        val = String(val);
+    }
+
+    frappe.model.set_value(cdt, cdn, 'parameter_default_value', val);
+
+    frm.refresh_field('parameters');
+}

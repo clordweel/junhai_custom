@@ -12,18 +12,16 @@
   "constraint_type",
   "value_integer",
   "value_float",
-  "value_base_name",
-  "value_material",
-  "value_surface",
-  "value_standard_code",
-  "value_unit",
+  "doctype_selector",
+  "value_doctype",
+  "value_format",
+  "section_break_nnjr",
   "binding_field",
   "target_field",
-  "section_break_nnjr",
+  "column_break_tots",
   "from_template",
   "readonly_value",
-  "join_to_hash",
-  "column_break_tots"
+  "join_to_hash"
  ],
  "fields": [
   {
@@ -42,33 +40,16 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Constraint Type",
-   "options": "Data\nInteger\nFloat\nItem Base Name\nItem Material\nItem Surface\nExecutive Standard\nUnit\nFormat",
+   "options": "Data\nInteger\nFloat\nFormat\nDoctype",
    "read_only_depends_on": "eval:doc.from_template==true",
    "reqd": 1,
    "translatable": 1
-  },
-  {
-   "depends_on": "eval:doc.constraint_type=='Item Material'",
-   "fieldname": "value_material",
-   "fieldtype": "Link",
-   "label": "Item Material",
-   "options": "Item Material",
-   "read_only_depends_on": "eval:doc.readonly_value"
-  },
-  {
-   "depends_on": "eval:doc.constraint_type=='Item Surface'",
-   "fieldname": "value_surface",
-   "fieldtype": "Link",
-   "label": "Item Surface",
-   "options": "Item Surface",
-   "read_only_depends_on": "eval:doc.readonly_value"
   },
   {
    "depends_on": "eval:doc.constraint_type=='Float'",
    "fieldname": "value_float",
    "fieldtype": "Float",
    "label": "Float",
-   "precision": "3",
    "read_only_depends_on": "eval:doc.readonly_value"
   },
   {
@@ -76,23 +57,6 @@
    "fieldname": "value_integer",
    "fieldtype": "Int",
    "label": "Integer",
-   "read_only_depends_on": "eval:doc.readonly_value"
-  },
-  {
-   "depends_on": "eval:doc.constraint_type=='Item Base Name'",
-   "fieldname": "value_base_name",
-   "fieldtype": "Link",
-   "label": "Item Base Name",
-   "link_filters": "[[\"Item Base Name\",\"is_group\",\"=\",0],[\"Item Base Name\",\"disabled\",\"=\",0]]",
-   "options": "Item Base Name",
-   "read_only_depends_on": "eval:doc.readonly_value"
-  },
-  {
-   "depends_on": "eval:doc.constraint_type=='Unit'",
-   "fieldname": "value_unit",
-   "fieldtype": "Link",
-   "label": "Unit",
-   "options": "UOM",
    "read_only_depends_on": "eval:doc.readonly_value"
   },
   {
@@ -106,7 +70,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Value",
-   "read_only_depends_on": "eval:doc.readonly_value",
+   "read_only_depends_on": "eval:doc.readonly_value || doc.constraint_type!=\"Data\"",
    "reqd": 1
   },
   {
@@ -160,11 +124,27 @@
    "read_only_depends_on": "eval:doc.from_template==true"
   },
   {
-   "depends_on": "eval:doc.constraint_type=='Executive Standard'",
-   "fieldname": "value_standard_code",
+   "depends_on": "eval:doc.constraint_type=='Doctype'",
+   "fieldname": "value_doctype",
+   "fieldtype": "Dynamic Link",
+   "label": "Doctype Value",
+   "options": "doctype_selector",
+   "read_only_depends_on": "eval:doc.readonly_value"
+  },
+  {
+   "depends_on": "eval:doc.constraint_type=='Doctype'",
+   "fieldname": "doctype_selector",
    "fieldtype": "Link",
-   "label": "Standard Code",
-   "options": "Executive Standard",
+   "label": "Doctype Selector",
+   "link_filters": "[[\"DocType\",\"name\",\"in\",[\"Item Base Name\",\"Item Material\",\"Item Surface\",\"Executive Standard\",\"UOM\",\"Brand\"]]]",
+   "options": "DocType",
+   "read_only_depends_on": "eval:doc.readonly_value"
+  },
+  {
+   "depends_on": "eval:doc.constraint_type==\"Format\"",
+   "fieldname": "value_format",
+   "fieldtype": "Small Text",
+   "label": "Format",
    "read_only_depends_on": "eval:doc.readonly_value"
   }
  ],
@@ -172,7 +152,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-16 14:05:27.202588",
+ "modified": "2025-12-22 10:36:47.120473",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Parameter Definition",

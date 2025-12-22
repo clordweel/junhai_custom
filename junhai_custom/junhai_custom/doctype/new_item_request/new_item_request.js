@@ -150,6 +150,7 @@ frappe.ui.form.on('New Item Request', {
                             if (row.value_base_name) new_row.value_base_name = row.value_base_name;
                             if (row.value_unit) new_row.value_unit = row.value_unit;
                             if (row.value_standard_code) new_row.value_standard_code = row.value_standard_code;
+                            if (row.value_doctype) new_row.value_doctype = row.value_doctype;
 
                             // ... (默认值赋值逻辑保持不变) ...
                             var defaultVal = null;
@@ -166,6 +167,7 @@ frappe.ui.form.on('New Item Request', {
                                     case 'Base Name': new_row.value_base_name = defaultVal; break;
                                     case 'Unit': new_row.value_unit = defaultVal; break;
                                     case 'Standard Code': new_row.value_standard_code = defaultVal; break;
+                                    case 'Doctype': new_row.value_doctype = defaultVal; break;
                                     default: new_row.parameter_value = defaultVal;
                                 }
                                 new_row.parameter_value = defaultVal;
@@ -211,18 +213,15 @@ frappe.ui.form.on('New Item Request', {
 
 frappe.ui.form.on('Item Parameter Definition', { // 监听子表事件 (保持不变)
     // 监听所有动态输入字段的变动
-    value_material(frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_material'); },
-    value_surface(frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_surface'); },
-    value_float(frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_float'); },
-    value_integer(frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_integer'); },
-    value_base_name(frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_base_name'); },
-    value_unit(frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_unit'); },
-    value_standard_code(frm, cdt, cdn) { sync_default_value(frm, cdt, cdn, 'value_standard_code'); },
+    value_float(frm, cdt, cdn) { sync_value(frm, cdt, cdn, 'value_float'); },
+    value_integer(frm, cdt, cdn) { sync_value(frm, cdt, cdn, 'value_integer'); },
+    value_doctype(frm, cdt, cdn) { sync_value(frm, cdt, cdn, 'value_doctype'); },
+    value_format(frm, cdt, cdn) { sync_value(frm, cdt, cdn, 'value_format'); },
 
     // 监听约束类型变化，用于清空不相关的字段 (防脏数据)
     constraint_type(frm, cdt, cdn) {
         var row = locals[cdt][cdn];
-        var fields_to_clear = ['value_material', 'value_surface', 'value_float', 'value_integer', 'value_base_name', 'value_unit', 'value_standard_code'];
+        var fields_to_clear = ['value_float', 'value_integer', 'value_doctype', 'value_format'];
 
         fields_to_clear.forEach(function (fieldname) {
             // 修正清除逻辑，避免清除当前类型对应的值
@@ -239,7 +238,7 @@ frappe.ui.form.on('Item Parameter Definition', { // 监听子表事件 (保持�
 });
 
 // 通用同步函数 (必须放在全局，或者在frappe.ui.form.on之外) (保持不变)
-function sync_default_value(frm, cdt, cdn, source_field) {
+function sync_value(frm, cdt, cdn, source_field) {
     var row = locals[cdt][cdn];
     var val = row[source_field];
 

@@ -137,6 +137,20 @@ def sync_group_taxes_to_items(item_group):
     return {"message": f"成功更新了 {count} 个物料的进/销项税率数据"}
 
 
+# --- 定期巡查：计划任务函数 ---
+def daily_tax_audit():
+    """
+    每天凌晨巡查：发现税率不一致的物料并自动修正
+    """
+    items = frappe.get_all("Item", fields=["name", "item_group"])
+    for i in items:
+        # 这里可以加一个逻辑，判断当前税率是否与物料组一致，不一致才 save
+        # 为保证脚本简洁，此处直接调用更新逻辑
+        doc = frappe.get_doc("Item", i.name)
+        update_item_tax_data(doc)
+        doc.save(ignore_permissions=True)
+
+
 @frappe.whitelist()
 def bulk_cleanup_tax_templates(keyword="(销项)"):
     """
