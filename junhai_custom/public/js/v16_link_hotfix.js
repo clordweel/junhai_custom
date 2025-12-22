@@ -1,6 +1,5 @@
-frappe.router.jq.ready(function () {
+$(document).on('app_ready', function () {
     console.log("v16_link_hotfix.js loaded.");
-
     // 监听路由变化和初次加载，确保脚本在每次页面加载/切换时都运行
 
     // 立即执行一次修复

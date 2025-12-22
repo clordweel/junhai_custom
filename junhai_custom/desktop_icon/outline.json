@@ -1,0 +1,20 @@
+{
+ "app": "junhai_custom",
+ "creation": "2025-12-22 20:19:24.230556",
+ "docstatus": 0,
+ "doctype": "Desktop Icon",
+ "hidden": 0,
+ "icon_type": "Link",
+ "idx": 96,
+ "label": "Outline",
+ "link": "/desk/external-link/Outline#jump",
+ "link_to": "",
+ "link_type": "External",
+ "logo_url": "/assets/junhai_custom/images/outline-app-logo.svg",
+ "modified": "2025-12-22 20:55:35.241437",
+ "modified_by": "Administrator",
+ "name": "Outline",
+ "owner": "Administrator",
+ "roles": [],
+ "standard": 1
+}
