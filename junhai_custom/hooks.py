@@ -29,7 +29,10 @@ app_include_css = [
     "/assets/junhai_custom/css/junhai_standard.css",
     "/assets/junhai_custom/css/v16_patching_styles.css",
 ]
-app_include_js = ["/assets/junhai_custom/js/v16_link_hotfix.js"]
+app_include_js = [
+    "/assets/junhai_custom/js/v16_link_hotfix.js",
+    "/assets/junhai_custom/js/code_field_custom.js",
+]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/junhai_custom/css/junhai_custom.css"
@@ -275,7 +278,9 @@ fixtures = [
     {"dt": "Item Base Name", "filters": []},
     {"dt": "Item Parameter Template", "filters": [["module", "=", app_title]]},
     # {"dt": "New Item Request", "filters": []},
-    {"dt": "Social Login Key", "filters": [["name", "=", "logto"]]},
+    # 导出时，因为加密了 secret，再导入会填充错误密钥，所以不导出
+    # {"dt": "Social Login Key", "filters": [["name", "=", "logto"]]},
+    {"dt": "External Link", "filters": [["module", "=", app_title]]},
     {"dt": "Custom Field", "filters": [["module", "=", app_title]]},
     {"dt": "UOM", "filters": [["name", "in", ["件", "张", "台"]]]},
     {"dt": "Currency", "filters": [["name", "in", ["CNY"]]]},

@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:link_title",
+ "creation": "2025-12-22 20:34:10.178431",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "link_title",
+  "target_link",
+  "description",
+  "column_break_cwfr",
+  "module",
+  "new_tab",
+  "return_to_previous"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "target_link",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Target Link",
+   "length": 500,
+   "options": "URL",
+   "placeholder": "https://example.com",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "fieldname": "link_title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "new_tab",
+   "fieldtype": "Check",
+   "label": "New Tab"
+  },
+  {
+   "default": "0",
+   "fieldname": "return_to_previous",
+   "fieldtype": "Check",
+   "label": "Return to Previous"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_cwfr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "module",
+   "fieldtype": "Link",
+   "label": "Module (for export)",
+   "options": "Module Def"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-22 21:07:54.608914",
+ "modified_by": "Administrator",
+ "module": "Junhai Custom",
+ "name": "External Link",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "link_title"
+}
