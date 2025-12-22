@@ -544,5 +544,31 @@
   "name": "6ov59s7ohh",
   "source_text": "Exportable",
   "translated_text": "可导出"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-22 12:32:42.209697",
+  "name": "op6q8v7icn",
+  "source_text": "Doctype Selector",
+  "translated_text": "单据类型选择"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-22 12:33:00.987360",
+  "name": "ov1i3ljoa5",
+  "source_text": "Doctype Value",
+  "translated_text": "单据类型值"
  }
 ]

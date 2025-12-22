@@ -12,7 +12,7 @@
   "column_break_uhke",
   "reason",
   "section_break_jwac",
-  "item_parameters",
+  "parameters",
   "section_break_ztck",
   "uoms",
   "section_break_ypqq",
@@ -45,12 +45,6 @@
   {
    "fieldname": "section_break_jwac",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "item_parameters",
-   "fieldtype": "Table",
-   "label": "Item Parameters",
-   "options": "Item Parameter Definition"
   },
   {
    "fieldname": "naming_series",
@@ -99,13 +93,19 @@
    "fieldtype": "Table",
    "label": "UOMs",
    "options": "UOM Conversion Detail"
+  },
+  {
+   "fieldname": "parameters",
+   "fieldtype": "Table",
+   "label": "Parameters",
+   "options": "Item Parameter Definition"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-19 10:38:15.799476",
+ "modified": "2025-12-22 14:40:15.899900",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "New Item Request",

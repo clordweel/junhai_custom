@@ -12,7 +12,7 @@ function run_duplicate_check(frm, callback) {
     }
 
     frappe.call({
-        method: 'junhai_custom.custom_methods.new_item_request.check_duplicate_request',
+        method: 'junhai_custom.api.new_item_request.check_duplicate_request',
         args: {
             unique_code: unique_code,
             current_docname: frm.doc.name
@@ -66,7 +66,7 @@ frappe.ui.form.on('New Item Request', {
                     frm.clear_custom_buttons();
 
                     frappe.call({
-                        method: 'junhai_custom.custom_methods.new_item_request.generate_item_data_dict',
+                        method: 'junhai_custom.api.new_item_request.generate_item_data_dict',
                         args: {
                             doc: frm.doc
                         },
@@ -106,9 +106,9 @@ frappe.ui.form.on('New Item Request', {
 
         // 如果模板字段被清空，则清除子表数据
         if (!frm.doc.template) {
-            frm.clear_table('item_parameters');
+            frm.clear_table('parameters');
             frm.clear_table('uoms');
-            frm.refresh_field('item_parameters');
+            frm.refresh_field('parameters');
             frm.refresh_field('uoms');
             return;
         }
@@ -127,13 +127,13 @@ frappe.ui.form.on('New Item Request', {
                 if (r.message) {
                     var template = r.message;
 
-                    // 🌟 修正区域 1：在添加数据前，清除现有的 item_parameters
-                    frm.clear_table('item_parameters');
+                    // 🌟 修正区域 1：在添加数据前，清除现有的 parameters
+                    frm.clear_table('parameters');
 
                     // --- 1. 预填充 Item Parameters 子表 ---
                     if (template.parameters && template.parameters.length) {
                         $.each(template.parameters, function (i, row) {
-                            var new_row = frm.add_child('item_parameters');
+                            var new_row = frm.add_child('parameters');
                             // ... (参数复制逻辑保持不变) ...
                             new_row.from_template = true;
                             new_row.parameter_name = row.parameter_name || row.name || '';
@@ -173,7 +173,7 @@ frappe.ui.form.on('New Item Request', {
                                 new_row.parameter_value = defaultVal;
                             }
                         });
-                        frm.refresh_field('item_parameters');
+                        frm.refresh_field('parameters');
                     } else {
                         // ... (无参数提醒逻辑保持不变) ...
                     }
@@ -251,6 +251,6 @@ function sync_value(frm, cdt, cdn, source_field) {
     }
 
     frappe.model.set_value(cdt, cdn, 'parameter_value', val);
-    // 假设 item_parameters 的 fieldname 是 item_parameters (而不是 parameters)
-    frm.refresh_field('item_parameters');
+
+    frm.refresh_field('parameters');
 }

@@ -26,11 +26,11 @@ function handle_cleanup(frm) {
         ], (data) => {
             if (data.confirm === 'CLEANUP') {
                 frappe.call({
-                    method: "junhai_custom.utils.tax_logic.bulk_cleanup_tax_templates",
+                    method: "junhai_custom.api.tax.bulk_cleanup_tax_templates",
                     args: { keyword: "(销项)" },
                     callback: function () {
                         frappe.call({
-                            method: "junhai_custom.utils.tax_logic.bulk_cleanup_tax_templates",
+                            method: "junhai_custom.api.tax.bulk_cleanup_tax_templates",
                             args: { keyword: "(进项)" },
                             callback: function (r) {
                                 frappe.show_alert({ message: __('旧版模板清理完成'), indicator: 'green' });
@@ -52,7 +52,7 @@ function handle_sync(frm) {
     frappe.confirm(__('确定要根据当前税率 {0}% 同步至该组及其子组的所有物料吗？', [frm.doc.custom_standard_tax_rate]), () => {
         frappe.show_alert({ message: __('正在同步，请稍候...'), indicator: 'blue' });
         frappe.call({
-            method: "junhai_custom.utils.tax_logic.sync_group_taxes_to_items",
+            method: "junhai_custom.api.tax.sync_group_taxes_to_items",
             args: { item_group: frm.doc.name },
             callback: function (r) {
                 if (r.message) {
