@@ -284,7 +284,7 @@ fixtures = [
     # {"dt": "Social Login Key", "filters": [["name", "=", "logto"]]},
     {"dt": "External Link", "filters": [["module", "=", app_title]]},
     {"dt": "Custom Field", "filters": [["module", "=", app_title]]},
-    {"dt": "UOM", "filters": [["name", "in", ["件", "张", "台"]]]},
+    {"dt": "UOM", "filters": [["name", "in", ["件", "张", "台", "百/件", "千/件"]]]},
     {"dt": "Currency", "filters": [["name", "in", ["CNY"]]]},
     {
         "dt": "Property Setter",

@@ -138,5 +138,15 @@
   "modified": "2025-12-16 10:33:19.534053",
   "name": "发黑/氧化",
   "surface_name": "发黑/氧化"
+ },
+ {
+  "description": null,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Surface",
+  "image": null,
+  "modified": "2025-12-23 23:42:29.612202",
+  "name": "镀锌",
+  "surface_name": "镀锌"
  }
 ]

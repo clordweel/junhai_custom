@@ -3,18 +3,6 @@
   "attachment": null,
   "docstatus": 0,
   "doctype": "Executive Standard",
-  "modified": "2025-12-16 14:50:47.405171",
-  "name": "GB/T 5783",
-  "revision_year": "2016",
-  "standard_code": "GB/T 5783",
-  "standard_name": "六角头螺栓-全螺纹 (A/B级 粗牙)",
-  "standard_type": "Product Standard",
-  "status": "Current"
- },
- {
-  "attachment": null,
-  "docstatus": 0,
-  "doctype": "Executive Standard",
   "modified": "2025-12-16 14:50:47.423404",
   "name": "GB/T 5782",
   "revision_year": "2016",
@@ -404,6 +392,18 @@
   "revision_year": "2016",
   "standard_code": "GB/T 5780",
   "standard_name": "六角头螺栓-半螺纹 (C级 粗制)",
+  "standard_type": "Product Standard",
+  "status": "Current"
+ },
+ {
+  "attachment": null,
+  "docstatus": 0,
+  "doctype": "Executive Standard",
+  "modified": "2025-12-16 14:50:47.405171",
+  "name": "GB/T 5783",
+  "revision_year": "2016",
+  "standard_code": "GB/T 5783",
+  "standard_name": "六角头螺栓-全螺纹 (A/B级 粗牙)",
   "standard_type": "Product Standard",
   "status": "Current"
  }
