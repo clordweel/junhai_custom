@@ -9,7 +9,7 @@ const trigger_preview_calculation = frappe.utils.debounce((frm) => {
 
     (frm.doc.parameters || []).forEach(row => {
         if (row.constraint_type !== 'Format') {
-            // 确保数值类型正确转换，避免字符串拼接错误
+            // 确保数值类型正确转换
             let val = row.parameter_value;
             if (row.constraint_type === 'Integer' || row.constraint_type === 'Float') {
                 val = flt(val);
@@ -20,21 +20,22 @@ const trigger_preview_calculation = frappe.utils.debounce((frm) => {
         }
     });
 
-    // 如果没有 Format 行，直接返回
     if (format_rows.length === 0) return;
 
-    // 2. 调用后端 API 进行 Jinja2 渲染 (确保支持 Python 的 round/float 等过滤器)
+    // 2. 调用后端 API 进行 Jinja2 渲染
     frappe.call({
-        method: 'junhai_custom.api.new_item_request.preview_parameters', // 需配套后端 Python 方法
+        method: 'junhai_custom.api.new_item_request.preview_parameters',
         args: {
-            parameters: frm.doc.parameters, // 将整个子表传给后端处理
+            parameters: frm.doc.parameters,
             context: context_data
         },
-        freeze: false, // 不冻结屏幕，实现无感刷新
+        freeze: false,
         callback: (r) => {
             if (r.message) {
-                // 3. 更新界面上的 Format 行
                 let has_changes = false;
+                // 设置标志位，防止回写时再次触发计算
+                frm._is_system_updating = true;
+
                 $.each(frm.doc.parameters, function (i, row) {
                     if (r.message[row.name] !== undefined && row.parameter_value !== r.message[row.name]) {
                         frappe.model.set_value(row.doctype, row.name, 'parameter_value', r.message[row.name]);
@@ -42,16 +43,19 @@ const trigger_preview_calculation = frappe.utils.debounce((frm) => {
                     }
                 });
 
+                // 解除标志位
+                frm._is_system_updating = false;
+
                 if (has_changes) {
                     frm.refresh_field('parameters');
                 }
             }
         }
     });
-}, 500); // 延迟 500ms 触发
+}, 500);
 
 
-// --- 全局查重函数 ---
+// --- 全局查重函数 (保持不变) ---
 function run_duplicate_check(frm, callback) {
     const unique_code = frm.doc.unique_code;
     if (!unique_code) {
@@ -72,9 +76,12 @@ function run_duplicate_check(frm, callback) {
     });
 }
 
+// --- 主表逻辑 (保持不变) ---
 frappe.ui.form.on('New Item Request', {
     refresh(frm) {
-        // 按钮逻辑保持不变
+        // 初始化标志位
+        frm._is_system_updating = false;
+
         if (!frm.is_new()) {
             frm.add_custom_button(__('检查参数重复'), () => run_duplicate_check(frm));
         }
@@ -121,31 +128,27 @@ frappe.ui.form.on('New Item Request', {
                 if (!r.message) return;
                 let template = r.message;
 
+                // 标记为系统更新，避免填充时触发多次计算
+                frm._is_system_updating = true;
+
                 // 1. 填充 Parameters
                 frm.clear_table('parameters');
                 (template.parameters || []).forEach(row => {
                     let new_row = frm.add_child('parameters');
-                    // 复制基础属性
                     ['parameter_name', 'description', 'constraint_type', 'readonly_value',
                         'join_to_hash', 'binding_field', 'target_field', 'doctype_selector'].forEach(k => {
                             new_row[k] = row[k];
                         });
-
-                    // 复制默认值定义
                     ['value_float', 'value_integer', 'value_format', 'value_doctype'].forEach(k => {
                         if (row[k] !== undefined) new_row[k] = row[k];
                     });
 
-                    // 确定初始 parameter_value
                     let defaultVal = row.parameter_default_value;
-
-                    // 根据类型回填到具体的 value_xxx 字段，确保 UI 显示正确
                     if (defaultVal) {
                         if (row.constraint_type === 'Float') new_row.value_float = defaultVal;
                         else if (row.constraint_type === 'Integer') new_row.value_integer = defaultVal;
                         else if (row.constraint_type === 'Doctype') new_row.value_doctype = defaultVal;
                         else if (row.constraint_type === 'Format') new_row.value_format = defaultVal;
-
                         new_row.parameter_value = defaultVal;
                     }
                 });
@@ -160,43 +163,54 @@ frappe.ui.form.on('New Item Request', {
                 });
                 frm.refresh_field('uoms');
 
-                // 3. 填充主表字段
                 if (template.item_group) frm.set_value('item_group', template.item_group);
 
-                // 4. 加载完成后，立即触发一次 Format 字段的计算
+                // 解除标志位并手动触发一次计算
+                frm._is_system_updating = false;
                 trigger_preview_calculation(frm);
             }
         });
     }
 });
 
-// --- 子表事件监听 ---
+// --- 子表事件监听 (核心修改部分) ---
 frappe.ui.form.on('Item Parameter Definition', {
-    // 监听所有具体值字段的变化
+    // 监听特定类型字段
     value_float: (frm, cdt, cdn) => sync_value_and_trigger(frm, cdt, cdn, 'value_float'),
     value_integer: (frm, cdt, cdn) => sync_value_and_trigger(frm, cdt, cdn, 'value_integer'),
     value_doctype: (frm, cdt, cdn) => sync_value_and_trigger(frm, cdt, cdn, 'value_doctype'),
-
-    // Format 模板本身改变时也重新计算
     value_format: (frm, cdt, cdn) => sync_value_and_trigger(frm, cdt, cdn, 'value_format'),
+
+    // 🌟 新增：直接监听 parameter_value 的变化
+    parameter_value: (frm, cdt, cdn) => {
+        // 如果是系统正在更新（比如 Format 字段回写），则忽略，防止死循环
+        if (frm._is_system_updating) return;
+
+        // 触发重新计算
+        trigger_preview_calculation(frm);
+    },
 
     constraint_type(frm, cdt, cdn) {
         let row = locals[cdt][cdn];
-        // 清理不相关的字段
+        // 切换类型时，清理旧数据
+        frm._is_system_updating = true; // 暂时锁住，防止清空操作触发不必要的计算
         ['value_float', 'value_integer', 'value_doctype', 'value_format'].forEach(f => {
             if (!f.includes((row.constraint_type || '').toLowerCase())) {
                 frappe.model.set_value(cdt, cdn, f, null);
             }
         });
         frappe.model.set_value(cdt, cdn, 'parameter_value', null);
+        frm._is_system_updating = false;
     }
 });
 
 function sync_value_and_trigger(frm, cdt, cdn, source_field) {
+    // 如果是系统正在更新，直接跳过
+    if (frm._is_system_updating) return;
+
     let row = locals[cdt][cdn];
     let val = row[source_field];
 
-    // 处理 Link 类型可能存在的 undefined
     if (frappe.get_meta(cdt).fields.find(f => f.fieldname == source_field && f.fieldtype == 'Link')) {
         val = String(val || "");
     } else if (val === null || val === undefined) {
@@ -205,9 +219,15 @@ function sync_value_and_trigger(frm, cdt, cdn, source_field) {
         val = String(val);
     }
 
-    // 1. 同步到通用值字段
-    frappe.model.set_value(cdt, cdn, 'parameter_value', val);
+    // 1. 同步到 parameter_value
+    // 注意：这里设置 parameter_value 会触发上面的 parameter_value 监听
+    // 但因为我们没有设置 _is_system_updating = true，所以它会正确地流向 trigger_preview_calculation
+    // 为了效率，我们可以临时锁一下，或者直接在这里触发计算而不依赖级联触发
 
-    // 2. 触发预览计算 (核心改动：任何参数变动都会触发 Format 行的重算)
+    frm._is_system_updating = true; // 锁住 parameter_value 的监听
+    frappe.model.set_value(cdt, cdn, 'parameter_value', val);
+    frm._is_system_updating = false; // 解锁
+
+    // 2. 手动触发计算
     trigger_preview_calculation(frm);
 }
