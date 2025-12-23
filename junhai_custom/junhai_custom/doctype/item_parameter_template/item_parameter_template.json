@@ -9,6 +9,7 @@
  "field_order": [
   "template_name",
   "item_group",
+  "description",
   "column_break_wtcb",
   "module",
   "disabled",
@@ -89,6 +90,11 @@
    "fieldtype": "Table",
    "label": "UOMs",
    "options": "UOM Conversion Detail"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
   }
  ],
  "grid_page_length": 50,
@@ -101,7 +107,7 @@
   }
  ],
  "make_attachments_public": 1,
- "modified": "2025-12-23 14:24:29.213202",
+ "modified": "2025-12-23 23:24:22.318921",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Parameter Template",
@@ -126,5 +132,7 @@
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],
- "title_field": "template_name"
+ "title_field": "template_name",
+ "track_changes": 1,
+ "track_views": 1
 }

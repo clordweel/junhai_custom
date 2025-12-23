@@ -8,7 +8,7 @@
   "material_code": "Q355B",
   "material_name": "Q355B 低合金钢",
   "modified": "2025-12-16 10:44:51.826143",
-  "name": "Q355B 低合金钢"
+  "name": "Q355B"
  },
  {
   "description": "合金结构钢，调质处理后性能极佳，用于高负荷零件（如高强螺栓、曲轴）",
@@ -19,7 +19,7 @@
   "material_code": "40Cr",
   "material_name": "40Cr 合金钢",
   "modified": "2025-12-16 10:44:51.839741",
-  "name": "40Cr 合金钢"
+  "name": "40Cr"
  },
  {
   "description": "超高强度钢，韧性好，用于重载荷、大截面的重要结构件",
@@ -30,7 +30,7 @@
   "material_code": "42CrMo",
   "material_name": "42CrMo 合金钢",
   "modified": "2025-12-16 10:44:51.844828",
-  "name": "42CrMo 合金钢"
+  "name": "42CrMo"
  },
  {
   "description": "奥氏体不锈钢（美标304/国标06Cr19Ni10），最通用的防腐材料，食品级",
@@ -41,7 +41,7 @@
   "material_code": "304",
   "material_name": "304 不锈钢",
   "modified": "2025-12-16 10:44:51.850213",
-  "name": "304 不锈钢"
+  "name": "304"
  },
  {
   "description": "含钼不锈钢，耐腐蚀性优于304，特别适合海边、化工、医疗环境",
@@ -52,7 +52,7 @@
   "material_code": "316L",
   "material_name": "316L 不锈钢",
   "modified": "2025-12-16 10:44:51.855628",
-  "name": "316L 不锈钢"
+  "name": "316L"
  },
  {
   "description": "节镍型不锈钢，价格低，易生锈，仅建议用于干燥室内环境",
@@ -63,7 +63,7 @@
   "material_code": "201",
   "material_name": "201 不锈钢",
   "modified": "2025-12-16 10:44:51.861008",
-  "name": "201 不锈钢"
+  "name": "201"
  },
  {
   "description": "常用铝合金，强度中等，耐腐蚀，焊接性好，常用于钣金机箱",
@@ -74,7 +74,7 @@
   "material_code": "5052",
   "material_name": "5052 铝合金",
   "modified": "2025-12-16 10:44:51.866399",
-  "name": "5052 铝合金"
+  "name": "5052"
  },
  {
   "description": "镁铝硅合金，加工性能好，氧化效果好，自动化设备零件首选铝材",
@@ -85,7 +85,7 @@
   "material_code": "6061",
   "material_name": "6061 铝合金",
   "modified": "2025-12-16 10:44:51.871808",
-  "name": "6061 铝合金"
+  "name": "6061"
  },
  {
   "description": "航空铝，强度极高（接近钢），但价格贵，焊接性差",
@@ -96,7 +96,7 @@
   "material_code": "7075",
   "material_name": "7075 航空铝",
   "modified": "2025-12-16 10:44:51.877033",
-  "name": "7075 航空铝"
+  "name": "7075"
  },
  {
   "description": "黄铜，切削性能好，导电性一般，常用于接头、螺柱",
@@ -107,7 +107,7 @@
   "material_code": "H62",
   "material_name": "H62 黄铜",
   "modified": "2025-12-16 10:44:51.882317",
-  "name": "H62 黄铜"
+  "name": "H62"
  },
  {
   "description": "紫铜（红铜），导电导热性极佳，质软，用于电极、导电排",
@@ -118,7 +118,7 @@
   "material_code": "T2",
   "material_name": "T2 紫铜",
   "modified": "2025-12-16 10:44:51.887717",
-  "name": "T2 紫铜"
+  "name": "T2"
  },
  {
   "description": "聚甲醛（俗称赛钢），硬度高，耐磨，自润滑，常用于做耐磨条、导轮",
@@ -129,7 +129,7 @@
   "material_code": "POM",
   "material_name": "POM 赛钢",
   "modified": "2025-12-16 10:44:51.893127",
-  "name": "POM 赛钢"
+  "name": "POM"
  },
  {
   "description": "尼龙，韧性好，耐疲劳，常用于垫块、滑轮",
@@ -140,7 +140,7 @@
   "material_code": "PA6",
   "material_name": "PA6 尼龙",
   "modified": "2025-12-16 10:44:51.898506",
-  "name": "PA6 尼龙"
+  "name": "PA6"
  },
  {
   "description": "聚四氟乙烯（俗称特氟龙），耐高温，耐腐蚀，摩擦系数极低",
@@ -151,7 +151,7 @@
   "material_code": "PTFE",
   "material_name": "PTFE 特氟龙",
   "modified": "2025-12-16 10:44:51.903855",
-  "name": "PTFE 特氟龙"
+  "name": "PTFE"
  },
  {
   "description": "优质碳素结构钢，综合力学性能好，机械加工最常用（轴类、齿轮）",
@@ -162,7 +162,7 @@
   "material_code": "45#",
   "material_name": "45# 钢",
   "modified": "2025-12-16 10:44:51.834425",
-  "name": "45# 钢"
+  "name": "45#"
  },
  {
   "description": "最通用的碳素结构钢，塑性好，焊接性好，常用于角钢、槽钢、焊接件",
@@ -173,6 +173,6 @@
   "material_code": "Q235B",
   "material_name": "Q235B 碳钢",
   "modified": "2025-12-16 10:44:51.819865",
-  "name": "Q235B 碳钢"
+  "name": "Q235B"
  }
 ]

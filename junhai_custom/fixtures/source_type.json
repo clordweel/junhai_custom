@@ -5,19 +5,9 @@
   "doctype": "Source Type",
   "modified": "2025-12-23 20:26:17.668132",
   "module": "Junhai Custom",
-  "name": "Manufactured",
+  "name": "自制",
   "related_doctype": "Item",
-  "source_name": "Manufactured"
- },
- {
-  "description": null,
-  "docstatus": 0,
-  "doctype": "Source Type",
-  "modified": "2025-12-23 20:26:29.419753",
-  "module": "Junhai Custom",
-  "name": "Purchased",
-  "related_doctype": "Item",
-  "source_name": "Purchased"
+  "source_name": "自制"
  },
  {
   "description": null,
@@ -25,9 +15,9 @@
   "doctype": "Source Type",
   "modified": "2025-12-23 20:26:36.049555",
   "module": "Junhai Custom",
-  "name": "Subcontracted",
+  "name": "外协",
   "related_doctype": "Item",
-  "source_name": "Subcontracted"
+  "source_name": "外协"
  },
  {
   "description": null,
@@ -35,9 +25,9 @@
   "doctype": "Source Type",
   "modified": "2025-12-23 20:27:41.771581",
   "module": "Junhai Custom",
-  "name": "Official Website",
+  "name": "官方网站",
   "related_doctype": "External Link",
-  "source_name": "Official Website"
+  "source_name": "官方网站"
  },
  {
   "description": null,
@@ -45,9 +35,9 @@
   "doctype": "Source Type",
   "modified": "2025-12-23 20:27:54.991577",
   "module": "Junhai Custom",
-  "name": "Web Application",
+  "name": "网页应用",
   "related_doctype": "External Link",
-  "source_name": "Web Application"
+  "source_name": "网页应用"
  },
  {
   "description": null,
@@ -55,9 +45,9 @@
   "doctype": "Source Type",
   "modified": "2025-12-23 20:28:17.555188",
   "module": "Junhai Custom",
-  "name": "Other Link",
+  "name": "其它链接",
   "related_doctype": "External Link",
-  "source_name": "Other Link"
+  "source_name": "其它链接"
  },
  {
   "description": null,
@@ -65,8 +55,18 @@
   "doctype": "Source Type",
   "modified": "2025-12-23 20:28:53.151828",
   "module": "Junhai Custom",
-  "name": "Shopping Link",
+  "name": "网购链接",
   "related_doctype": "External Link",
-  "source_name": "Shopping Link"
+  "source_name": "网购链接"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Source Type",
+  "modified": "2025-12-23 20:26:29.419753",
+  "module": "Junhai Custom",
+  "name": "采购",
+  "related_doctype": "Item",
+  "source_name": "采购"
  }
 ]

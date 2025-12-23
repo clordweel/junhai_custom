@@ -661,5 +661,18 @@
   "name": "0gqnts32vv",
   "source_text": "Related Doctype",
   "translated_text": "关联单据类型"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-23 22:19:45.439263",
+  "name": "sge1rmu6lk",
+  "source_text": "Material Name",
+  "translated_text": "材质名称"
  }
 ]

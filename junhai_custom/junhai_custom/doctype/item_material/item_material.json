@@ -2,14 +2,14 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:material_name",
+ "autoname": "field:material_code",
  "creation": "2025-12-12 10:30:12.377760",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "section_break_yf4a",
-  "material_name",
   "material_code",
+  "material_name",
   "description",
   "column_break_wrjl",
   "disabled",
@@ -26,7 +26,7 @@
    "fieldname": "material_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Name",
+   "label": "Material Name",
    "reqd": 1,
    "unique": 1
   },
@@ -49,17 +49,16 @@
    "label": "Description"
   },
   {
-   "fieldname": "material_code",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Material Code",
-   "unique": 1
-  },
-  {
    "fieldname": "image",
    "fieldtype": "Attach Image",
    "label": "Image"
+  },
+  {
+   "fieldname": "material_code",
+   "fieldtype": "Data",
+   "label": "Material Code",
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
@@ -73,7 +72,7 @@
   }
  ],
  "make_attachments_public": 1,
- "modified": "2025-12-23 14:28:26.881291",
+ "modified": "2025-12-23 22:24:06.765479",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Material",

@@ -56,7 +56,7 @@
   {
    "group": "Connections",
    "link_doctype": "Item",
-   "link_fieldname": "custom_sourcing_type"
+   "link_fieldname": "custom_source_type"
   },
   {
    "group": "Connections",
@@ -64,7 +64,7 @@
    "link_fieldname": "link_type"
   }
  ],
- "modified": "2025-12-23 20:55:11.584567",
+ "modified": "2025-12-23 21:45:21.112720",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Source Type",

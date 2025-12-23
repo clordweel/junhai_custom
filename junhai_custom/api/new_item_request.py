@@ -1,6 +1,8 @@
 import json
 import re
+import html
 import frappe
+
 from frappe.utils import flt
 
 
@@ -159,10 +161,6 @@ def generate_item_data_dict(doc):
 
 @frappe.whitelist()
 def preview_parameters(parameters, context=None):
-    """
-    接收前端传来的参数表，渲染所有 constraint_type == 'Format' 的行
-    后端智能处理数值类型：5.0 -> 5, 5.5 -> 5.5
-    """
     if isinstance(parameters, str):
         parameters = json.loads(parameters)
     if isinstance(context, str):
@@ -171,46 +169,46 @@ def preview_parameters(parameters, context=None):
     if not context:
         context = {}
 
-    # --- 核心修改开始：智能数值转换逻辑 ---
+    # 数值类型智能转换逻辑 (保持之前的优化不变)
     safe_context = {}
     for k, v in context.items():
-        # 如果值为空，直接保留
         if v is None or v == "":
             safe_context[k] = v
             continue
-
-        # 尝试判断是否为数字
         try:
-            # 先转为 float (处理 "5", "5.0", "5.5" 等字符串)
             f_val = float(v)
-
-            # 判断是否是整数 (5.0.is_integer() 为 True, 5.5.is_integer() 为 False)
             if f_val.is_integer():
-                safe_context[k] = int(f_val)  # 强制转为 int，Jinja 渲染时就是 "5"
+                safe_context[k] = int(f_val)
             else:
-                safe_context[k] = f_val  # 保留 float，Jinja 渲染时是 "5.5"
+                safe_context[k] = f_val
         except ValueError:
-            # 如果转换失败（说明是文本，如 "Red"），保留原值
             safe_context[k] = v
-    # --- 核心修改结束 ---
 
     result = {}
 
     for row in parameters:
         if row.get("constraint_type") == "Format":
-            template = row.get("value_format") or row.get("parameter_default_value")
-            if not template:
+            # 获取原始模板字符串
+            raw_template = row.get("value_format") or row.get("parameter_default_value")
+            if not raw_template:
                 continue
 
             try:
-                # 使用处理过的 safe_context 进行渲染
+                # --- 2. 核心修改：反转义 HTML 实体 ---
+                # 这会将 "&gt;" 变回 ">"，将 "<br>" 变回 "<br>" (如果被转义的话)
+                template = html.unescape(raw_template)
+
+                # 渲染模板
                 rendered_value = frappe.render_template(template, safe_context)
 
-                # 清理多余空格 (保留原逻辑)
-                rendered_value = re.sub(r"\s+", " ", rendered_value).strip()
+                # --- 3. 换行符处理 ---
+                # 这一步是为了确保生成的 Description 在 ERPNext 界面看起来舒服
+                # 如果模板里写了 <br>，这里会保留；如果产生了多余的纯文本换行，整理一下
+                rendered_value = re.sub(r"\n\s*\n", "\n", rendered_value).strip()
 
                 result[row.get("name")] = rendered_value
-            except Exception:
-                result[row.get("name")] = ""  # 出错时暂返空
+            except Exception as e:
+                # 方便调试，如果出错可以看到具体原因
+                result[row.get("name")] = f"Error: {str(e)}"
 
     return result
