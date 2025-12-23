@@ -40,11 +40,7 @@ function run_duplicate_check(frm, callback) {
 }
 
 frappe.ui.form.on('New Item Request', {
-    // ... (setup 函数保持不变，如果有的话) ...
-
     refresh(frm) {
-        // --- 核心按钮逻辑 (保持不变) ---
-
         const is_submitted = frm.doc.docstatus === 1;
         const item_not_generated = !frm.doc.generated_item;
 
@@ -134,48 +130,47 @@ frappe.ui.form.on('New Item Request', {
                     if (template.parameters && template.parameters.length) {
                         $.each(template.parameters, function (i, row) {
                             var new_row = frm.add_child('parameters');
-                            // ... (参数复制逻辑保持不变) ...
+
+                            //  添加 from_template 字段，用于标识是否来自模板
                             new_row.from_template = true;
-                            new_row.parameter_name = row.parameter_name || row.name || '';
+
+                            //  拷贝模板中的参数数据到子表
+                            new_row.parameter_name = row.parameter_name;
+                            new_row.description = row.description;
+
                             new_row.constraint_type = row.constraint_type || '';
                             new_row.readonly_value = row.readonly_value || 0;
                             new_row.join_to_hash = row.join_to_hash || 0;
                             new_row.binding_field = row.binding_field || 0;
                             new_row.target_field = row.target_field || '';
 
-                            if (row.value_material) new_row.value_material = row.value_material;
-                            if (row.value_surface) new_row.value_surface = row.value_surface;
                             if (row.value_float !== undefined) new_row.value_float = row.value_float;
                             if (row.value_integer !== undefined) new_row.value_integer = row.value_integer;
-                            if (row.value_base_name) new_row.value_base_name = row.value_base_name;
-                            if (row.value_unit) new_row.value_unit = row.value_unit;
-                            if (row.value_standard_code) new_row.value_standard_code = row.value_standard_code;
-                            if (row.value_doctype) new_row.value_doctype = row.value_doctype;
+                            if (row.value_format !== undefined) new_row.value_format = row.value_format;
+                            if (row.doctype_selector !== undefined) {
+                                new_row.doctype_selector = row.doctype_selector;
+                                if (row.value_doctype !== undefined) new_row.value_doctype = row.value_doctype;
+                            }
 
-                            // ... (默认值赋值逻辑保持不变) ...
                             var defaultVal = null;
+
                             if (row.parameter_default_value !== undefined) defaultVal = row.parameter_default_value;
                             else if (row.parameter_value !== undefined) defaultVal = row.parameter_value;
                             else if (row.default !== undefined) defaultVal = row.default;
 
                             if (defaultVal !== null) {
                                 switch ((row.constraint_type || '').trim()) {
-                                    case 'Material': new_row.value_material = defaultVal; break;
-                                    case 'Surface': new_row.value_surface = defaultVal; break;
                                     case 'Float': new_row.value_float = defaultVal; break;
                                     case 'Integer': new_row.value_integer = defaultVal; break;
-                                    case 'Base Name': new_row.value_base_name = defaultVal; break;
-                                    case 'Unit': new_row.value_unit = defaultVal; break;
-                                    case 'Standard Code': new_row.value_standard_code = defaultVal; break;
                                     case 'Doctype': new_row.value_doctype = defaultVal; break;
+                                    case 'Format': new_row.value_format = defaultVal; break;
+                                    // 'Data' 类型不需要特别处理
                                     default: new_row.parameter_value = defaultVal;
                                 }
                                 new_row.parameter_value = defaultVal;
                             }
                         });
                         frm.refresh_field('parameters');
-                    } else {
-                        // ... (无参数提醒逻辑保持不变) ...
                     }
 
                     // 🌟 修正区域 2：在添加 UOMs 数据前，清除现有的 uoms

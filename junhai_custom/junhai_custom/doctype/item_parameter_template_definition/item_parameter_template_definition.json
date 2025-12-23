@@ -15,9 +15,11 @@
   "doctype_selector",
   "value_doctype",
   "value_format",
-  "readonly_value",
+  "section_break_spof",
   "binding_field",
   "target_field",
+  "column_break_msqe",
+  "readonly_value",
   "join_to_hash"
  ],
  "fields": [
@@ -49,6 +51,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Default Value",
+   "length": 500,
    "read_only_depends_on": "eval:doc.constraint_type!=\"Data\""
   },
   {
@@ -75,7 +78,7 @@
    "fieldname": "doctype_selector",
    "fieldtype": "Link",
    "label": "Doctype Selector",
-   "link_filters": "[[\"DocType\",\"name\",\"in\",[\"Item Base Name\",\"Item Material\",\"Item Surface\",\"Executive Standard\",\"UOM\",\"Brand\"]]]",
+   "link_filters": "[[\"DocType\",\"name\",\"in\",[\"Item Base Name\",\"Item Material\",\"Item Surface\",\"Item Color\",\"Executive Standard\",\"UOM\",\"Brand\"]]]",
    "options": "DocType"
   },
   {
@@ -122,15 +125,24 @@
   {
    "depends_on": "eval:doc.constraint_type=='Format'",
    "fieldname": "value_format",
-   "fieldtype": "Small Text",
-   "label": "Format"
+   "fieldtype": "Code",
+   "label": "Format",
+   "options": "Jinja"
+  },
+  {
+   "fieldname": "section_break_spof",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_msqe",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 20,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-22 10:36:42.426137",
+ "modified": "2025-12-23 10:11:20.529025",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Parameter Template Definition",

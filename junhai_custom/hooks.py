@@ -275,6 +275,7 @@ fixtures = [
     {"dt": "Item Group", "filters": []},
     {"dt": "Item Surface", "filters": []},
     {"dt": "Item Material", "filters": []},
+    {"dt": "Item Color", "filters": []},
     {"dt": "Item Base Name", "filters": []},
     {"dt": "Item Parameter Template", "filters": [["module", "=", app_title]]},
     # {"dt": "New Item Request", "filters": []},

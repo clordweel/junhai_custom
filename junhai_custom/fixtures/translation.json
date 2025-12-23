@@ -570,5 +570,18 @@
   "name": "ov1i3ljoa5",
   "source_text": "Doctype Value",
   "translated_text": "单据类型值"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-23 00:28:56.241888",
+  "name": "sei09jv4p7",
+  "source_text": "Parent Item Base Name",
+  "translated_text": "父级物料基础名"
  }
 ]

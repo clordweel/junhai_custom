@@ -370,5 +370,29 @@
   "name": "大齿轮",
   "old_parent": "回转部分",
   "parent_item_base_name": "回转部分"
+ },
+ {
+  "base_name": "行政办公",
+  "description": null,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Base Name",
+  "is_group": 1,
+  "modified": "2025-12-23 00:30:46.032901",
+  "name": "行政办公",
+  "old_parent": "",
+  "parent_item_base_name": null
+ },
+ {
+  "base_name": "签字笔",
+  "description": null,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Base Name",
+  "is_group": 0,
+  "modified": "2025-12-23 00:30:58.291612",
+  "name": "签字笔",
+  "old_parent": "行政办公",
+  "parent_item_base_name": "行政办公"
  }
 ]

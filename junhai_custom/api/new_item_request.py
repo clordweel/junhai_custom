@@ -1,5 +1,6 @@
-import frappe
 import json
+import re
+import frappe
 from frappe.utils import flt
 
 
@@ -111,14 +112,22 @@ def generate_item_data_dict(doc):
         final_value = None
 
         if rule["constraint_type"] == "Format":
-            format_string = rule["source_value"]
+            # 这里的 source_value 对应模板中的 value_format 或 parameter_default_value
+            template_str = rule["source_value"]
+
             try:
-                final_value = format_string.format(**params)
-            except KeyError as e:
-                missing_param = str(e).strip("'")
+                # 直接渲染 Jinja2 模板
+                # Frappe 的 render_template 会自动处理 params 中的变量
+                final_value = frappe.render_template(template_str, params)
+
+                # 后处理：清理因参数缺失导致的连续空格
+                if final_value:
+                    final_value = re.sub(r"\s+", " ", final_value).strip()
+
+            except Exception as e:
                 frappe.throw(
-                    f"字段【{target_field}】的格式化模板中引用的参数【{missing_param}】在申请单中未提供值或名称不匹配。",
-                    title="格式化错误",
+                    f"字段【{target_field}】Jinja2 渲染失败。<br>模板：{template_str}<br>错误：{str(e)}",
+                    title="模板渲染错误",
                 )
         else:
             final_value = rule["source_value"]

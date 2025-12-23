@@ -3,9 +3,7 @@
 
 frappe.ui.form.on('Item Parameter Template', {
     refresh: function (frm) {
-        console.log("Item Parameter Template 刷新事件触发");
         if (!frm.doc.__islocal) {
-
             frm.add_custom_button(__('创建物料申请单'), function () {
 
                 const template_name = frm.doc.name;

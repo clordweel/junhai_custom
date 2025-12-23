@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:link_title",
  "creation": "2025-12-22 20:34:10.178431",
@@ -8,9 +9,12 @@
  "field_order": [
   "link_title",
   "target_link",
+  "link_type",
   "description",
-  "column_break_cwfr",
+  "column_break_gvwl",
   "module",
+  "snapshot_preview",
+  "snapshot_image",
   "new_tab",
   "return_to_previous"
  ],
@@ -37,15 +41,19 @@
    "unique": 1
   },
   {
+   "allow_in_quick_entry": 1,
    "default": "1",
    "fieldname": "new_tab",
    "fieldtype": "Check",
+   "in_list_view": 1,
    "label": "New Tab"
   },
   {
+   "allow_in_quick_entry": 1,
    "default": "0",
    "fieldname": "return_to_previous",
    "fieldtype": "Check",
+   "in_list_view": 1,
    "label": "Return to Previous"
   },
   {
@@ -54,20 +62,41 @@
    "label": "Description"
   },
   {
-   "fieldname": "column_break_cwfr",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "module",
    "fieldtype": "Link",
    "label": "Module (for export)",
    "options": "Module Def"
+  },
+  {
+   "fieldname": "snapshot_image",
+   "fieldtype": "Attach Image",
+   "label": "Snapshot Image"
+  },
+  {
+   "fieldname": "snapshot_preview",
+   "fieldtype": "Image",
+   "label": "Snapshot Preview",
+   "options": "snapshot_image"
+  },
+  {
+   "fieldname": "column_break_gvwl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Other",
+   "fieldname": "link_type",
+   "fieldtype": "Select",
+   "label": "Link Type",
+   "options": "Official Website\nWeb Application\nShopping\nOther",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
+ "image_field": "snapshot_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-22 21:07:54.608914",
+ "make_attachments_public": 1,
+ "modified": "2025-12-23 10:17:46.185036",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "External Link",
@@ -83,11 +112,11 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
-   "select": 1,
    "share": 1,
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
  "sort_field": "creation",
