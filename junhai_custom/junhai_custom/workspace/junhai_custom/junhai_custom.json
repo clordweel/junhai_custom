@@ -1,7 +1,7 @@
 {
  "app": "junhai_custom",
  "charts": [],
- "content": "[{\"id\":\"lRHA8MnhEz\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"R4ct5pPuOU\",\"type\":\"card\",\"data\":{\"card_name\":\"\u7269\u6599\u7ba1\u7406\u5de5\u5177\",\"col\":4}}]",
+ "content": "[{\"id\":\"sEwzFPyT74\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"\u5916\u90e8\u94fe\u63a5\",\"col\":4}},{\"id\":\"QlQQ4VbvJy\",\"type\":\"card\",\"data\":{\"card_name\":\"\u7269\u6599\u5de5\u5177\",\"col\":4}},{\"id\":\"3ZV1w1GCKn\",\"type\":\"card\",\"data\":{\"card_name\":\"\u7269\u6599\u53c2\u6570\",\"col\":4}}]",
  "creation": "2025-12-12 08:30:48.221143",
  "custom_blocks": [],
  "docstatus": 0,
@@ -18,7 +18,18 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "\u7269\u6599\u7ba1\u7406\u5de5\u5177",
+   "label": "\u7269\u6599\u6a21\u677f",
+   "link_count": 0,
+   "link_to": "Item Parameter Template",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "description": "\u7269\u6599\u76f8\u5173\u7684\u8f85\u52a9\u5de5\u5177",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u7269\u6599\u5de5\u5177",
    "link_count": 2,
    "link_type": "DocType",
    "onboard": 0,
@@ -27,7 +38,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "\u7269\u6599\u7533\u8bf7\u5355",
+   "label": "\u7269\u6599\u7533\u8bf7",
    "link_count": 0,
    "link_to": "New Item Request",
    "link_type": "DocType",
@@ -37,15 +48,74 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "\u7269\u6599\u53c2\u6570\u6a21\u677f",
+   "label": "\u7269\u6599\u6a21\u677f",
    "link_count": 0,
    "link_to": "Item Parameter Template",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u7269\u6599\u53c2\u6570",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u7269\u6599\u57fa\u7840\u540d",
+   "link_count": 0,
+   "link_to": "Item Base Name",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u7269\u6599\u6750\u8d28",
+   "link_count": 0,
+   "link_to": "Item Material",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u7269\u6599\u8868\u9762",
+   "link_count": 0,
+   "link_to": "Item Surface",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u7269\u6599\u989c\u8272",
+   "link_count": 0,
+   "link_to": "Item Color",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u6267\u884c\u6807\u51c6",
+   "link_count": 0,
+   "link_to": "Executive Standard",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-12-20 03:03:48.733895",
+ "modified": "2025-12-23 14:59:21.832834",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Junhai Custom",
@@ -53,13 +123,16 @@
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
- "quick_lists": [],
+ "quick_lists": [
+  {
+   "document_type": "External Link",
+   "label": "\u5916\u90e8\u94fe\u63a5",
+   "quick_list_filter": "[[\"External Link\",\"link_type\",\"in\",[\"Web Application\",\"Official Website\",null],false]]"
+  }
+ ],
  "roles": [
   {
    "role": "All"
-  },
-  {
-   "role": "Stock User"
   }
  ],
  "sequence_id": 28.0,
