@@ -372,6 +372,18 @@
   "parent_item_base_name": null
  },
  {
+  "base_name": "微型断路器",
+  "description": null,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Base Name",
+  "is_group": 0,
+  "modified": "2025-12-24 00:12:52.084783",
+  "name": "微型断路器",
+  "old_parent": "",
+  "parent_item_base_name": null
+ },
+ {
   "base_name": "签字笔",
   "description": null,
   "disabled": 0,

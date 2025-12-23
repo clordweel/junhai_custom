@@ -263,7 +263,7 @@
   "item_group": "板材",
   "modified": "2025-12-24 00:05:30.411119",
   "module": "Junhai Custom",
-  "name": "Q235B 钢板模板 - V1",
+  "name": "钢板模板 - Q235B",
   "parameters": [
    {
     "binding_field": 0,
@@ -461,7 +461,7 @@
     "value_integer": 1
    }
   ],
-  "template_name": "Q235B 钢板模板 - V1",
+  "template_name": "钢板模板 - Q235B",
   "uoms": [
    {
     "conversion_factor": 1.0,
@@ -484,9 +484,9 @@
   "docstatus": 0,
   "doctype": "Item Parameter Template",
   "item_group": "紧固件",
-  "modified": "2025-12-24 00:08:07.383017",
+  "modified": "2025-12-24 00:11:38.753976",
   "module": "Junhai Custom",
-  "name": "GB/T 5783 六角头螺栓模板 - V1",
+  "name": "六角头螺栓模板 - GB/T 5783",
   "parameters": [
    {
     "binding_field": 0,
@@ -514,6 +514,21 @@
     "readonly_value": 0,
     "target_field": "custom_tech_standard_number",
     "value_doctype": "GB/T 5783",
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Doctype",
+    "description": null,
+    "doctype_selector": "Source Type",
+    "join_to_hash": 0,
+    "parameter_default_value": "采购",
+    "parameter_name": "供应类型",
+    "readonly_value": 1,
+    "target_field": "custom_source_type",
+    "value_doctype": "采购",
     "value_float": 0.0,
     "value_format": null,
     "value_integer": 0
@@ -699,7 +714,7 @@
     "value_integer": 1
    }
   ],
-  "template_name": "GB/T 5783 六角头螺栓模板 - V1",
+  "template_name": "六角头螺栓模板 - GB/T 5783",
   "uoms": [
    {
     "conversion_factor": 1.0,
@@ -713,6 +728,236 @@
  },
  {
   "amended_from": null,
+  "description": "适用于微型断路器(MCB)。请填写详细参数，系统自动组装标准型号。如：iC65N 2P C16A。",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Parameter Template",
+  "item_group": "电气辅材",
+  "modified": "2025-12-24 00:24:06.912858",
+  "module": "Junhai Custom",
+  "name": "电气元件模板 - 微型断路器(MCB)",
+  "parameters": [
+   {
+    "binding_field": 0,
+    "constraint_type": "Doctype",
+    "description": null,
+    "doctype_selector": "Item Base Name",
+    "join_to_hash": 1,
+    "parameter_default_value": "微型断路器",
+    "parameter_name": "基础名",
+    "readonly_value": 1,
+    "target_field": null,
+    "value_doctype": "微型断路器",
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Doctype",
+    "description": "品牌决定了系列号，如 施耐德/正泰/西门子。",
+    "doctype_selector": "Brand",
+    "join_to_hash": 1,
+    "parameter_default_value": "施耐德",
+    "parameter_name": "品牌",
+    "readonly_value": 0,
+    "target_field": "brand",
+    "value_doctype": "施耐德",
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Data",
+    "description": "如: iC65N, DZ47, 5SY6。",
+    "doctype_selector": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "iC65N",
+    "parameter_name": "系列",
+    "readonly_value": 0,
+    "target_field": null,
+    "value_doctype": null,
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Data",
+    "description": "选项: 1P, 2P, 3P, 4P, 1P+N。",
+    "doctype_selector": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "2P",
+    "parameter_name": "极数",
+    "readonly_value": 0,
+    "target_field": null,
+    "value_doctype": null,
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Data",
+    "description": "C型(配电), D型(动力), B型(电子)。",
+    "doctype_selector": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "C型",
+    "parameter_name": "脱扣曲线",
+    "readonly_value": 0,
+    "target_field": null,
+    "value_doctype": null,
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Float",
+    "description": "单位: A (如 10, 16, 32, 63)。",
+    "doctype_selector": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "16",
+    "parameter_name": "额定电流",
+    "readonly_value": 0,
+    "target_field": null,
+    "value_doctype": null,
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Integer",
+    "description": "单位: kA。如 6kA, 10kA (默认6)。",
+    "doctype_selector": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "6",
+    "parameter_name": "分断能力",
+    "readonly_value": 0,
+    "target_field": null,
+    "value_doctype": null,
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Doctype",
+    "description": "默认 Purchased。",
+    "doctype_selector": "Source Type",
+    "join_to_hash": 0,
+    "parameter_default_value": "采购",
+    "parameter_name": "供应类型",
+    "readonly_value": 1,
+    "target_field": "custom_source_type",
+    "value_doctype": "采购",
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Doctype",
+    "description": null,
+    "doctype_selector": "UOM",
+    "join_to_hash": 0,
+    "parameter_default_value": "个",
+    "parameter_name": "计量单位",
+    "readonly_value": 1,
+    "target_field": "stock_uom",
+    "value_doctype": "个",
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Doctype",
+    "description": null,
+    "doctype_selector": "UOM",
+    "join_to_hash": 0,
+    "parameter_default_value": "个",
+    "parameter_name": "采购单位",
+    "readonly_value": 1,
+    "target_field": "purchase_uom",
+    "value_doctype": "个",
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Format",
+    "description": "品牌+系列+极数+脱扣+电流。",
+    "doctype_selector": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "{{ 品牌 }} {{ 基础名 }} {{ 系列 }} {{ 极数 }} {{ 脱扣曲线|replace('型','') }}{{ 额定电流 }}A",
+    "parameter_name": "物料名称",
+    "readonly_value": 1,
+    "target_field": "item_name",
+    "value_doctype": null,
+    "value_float": 0.0,
+    "value_format": "{{ 品牌 }} {{ 基础名 }} {{ 系列 }} {{ 极数 }} {{ 脱扣曲线|replace('型','') }}{{ 额定电流 }}A",
+    "value_integer": 0
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Format",
+    "description": "纯型号：系列 极数 脱扣+电流",
+    "doctype_selector": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "{{ 系列 }} {{ 极数 }} {{ 脱扣曲线|replace('型','') }}{{ 额定电流 }}A",
+    "parameter_name": "规格型号",
+    "readonly_value": 1,
+    "target_field": "custom_specification",
+    "value_doctype": null,
+    "value_float": 0.0,
+    "value_format": "{{ 系列 }} {{ 极数 }} {{ 脱扣曲线|replace('型','') }}{{ 额定电流 }}A",
+    "value_integer": 0
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Format",
+    "description": "包含分断能力等详细参数。",
+    "doctype_selector": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "品牌: {{ 品牌 }} | 系列: {{ 系列 }} | 规格: {{ 极数 }} {{ 脱扣曲线 }} {{ 额定电流 }}A | 分断: {{ 分断能力 }}kA || 供应: {{ 供应类型 }}",
+    "parameter_name": "详细描述",
+    "readonly_value": 1,
+    "target_field": "description",
+    "value_doctype": null,
+    "value_float": 0.0,
+    "value_format": "品牌: {{ 品牌 }} | 系列: {{ 系列 }} | 规格: {{ 极数 }} {{ 脱扣曲线 }} {{ 额定电流 }}A | 分断: {{ 分断能力 }}kA || 供应: {{ 供应类型 }}",
+    "value_integer": 0
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Integer",
+    "description": null,
+    "doctype_selector": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "1",
+    "parameter_name": "库存属性",
+    "readonly_value": 1,
+    "target_field": "is_stock_item",
+    "value_doctype": null,
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 1
+   }
+  ],
+  "template_name": "电气元件模板 - 微型断路器(MCB)",
+  "uoms": [
+   {
+    "conversion_factor": 1.0,
+    "uom": "个"
+   }
+  ]
+ },
+ {
+  "amended_from": null,
   "description": null,
   "disabled": 0,
   "docstatus": 0,
@@ -720,7 +965,7 @@
   "item_group": "行政与包装",
   "modified": "2025-12-23 11:33:10.995697",
   "module": "Junhai Custom",
-  "name": "行政用品模板 - 标准",
+  "name": "行政用品模板 - 通用",
   "parameters": [
    {
     "binding_field": 0,
@@ -918,7 +1163,7 @@
     "value_integer": 0
    }
   ],
-  "template_name": "行政用品模板 - 标准",
+  "template_name": "行政用品模板 - 通用",
   "uoms": []
  }
 ]
