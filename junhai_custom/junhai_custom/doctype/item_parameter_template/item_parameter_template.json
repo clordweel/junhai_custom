@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:template_name",
  "creation": "2025-12-12 10:55:46.899095",
@@ -92,8 +93,15 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-12-21 19:32:28.550819",
+ "links": [
+  {
+   "group": "Connections",
+   "link_doctype": "New Item Request",
+   "link_fieldname": "template"
+  }
+ ],
+ "make_attachments_public": 1,
+ "modified": "2025-12-23 14:24:29.213202",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Parameter Template",
@@ -117,5 +125,6 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "template_name"
 }

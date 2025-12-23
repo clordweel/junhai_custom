@@ -13,8 +13,7 @@
   "description",
   "column_break_gvwl",
   "module",
-  "snapshot_preview",
-  "snapshot_image",
+  "image",
   "new_tab",
   "return_to_previous"
  ],
@@ -68,17 +67,6 @@
    "options": "Module Def"
   },
   {
-   "fieldname": "snapshot_image",
-   "fieldtype": "Attach Image",
-   "label": "Snapshot Image"
-  },
-  {
-   "fieldname": "snapshot_preview",
-   "fieldtype": "Image",
-   "label": "Snapshot Preview",
-   "options": "snapshot_image"
-  },
-  {
    "fieldname": "column_break_gvwl",
    "fieldtype": "Column Break"
   },
@@ -89,14 +77,19 @@
    "label": "Link Type",
    "options": "Official Website\nWeb Application\nShopping\nOther",
    "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
   }
  ],
  "grid_page_length": 50,
- "image_field": "snapshot_image",
+ "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
  "make_attachments_public": 1,
- "modified": "2025-12-23 10:17:46.185036",
+ "modified": "2025-12-23 12:15:00.718213",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "External Link",

@@ -9,11 +9,10 @@
  "field_order": [
   "color_name",
   "color_code",
+  "color_image",
   "description",
   "column_break_lxon",
   "hex_color",
-  "image_jefq",
-  "color_image",
   "is_standard"
  ],
  "fields": [
@@ -59,12 +58,7 @@
   {
    "fieldname": "color_image",
    "fieldtype": "Attach Image",
-   "label": "Color Image"
-  },
-  {
-   "fieldname": "image_jefq",
-   "fieldtype": "Image",
-   "options": "color_image"
+   "label": "Image"
   }
  ],
  "grid_page_length": 50,
@@ -78,7 +72,7 @@
   }
  ],
  "make_attachments_public": 1,
- "modified": "2025-12-23 10:13:33.819310",
+ "modified": "2025-12-23 12:14:24.222913",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Color",

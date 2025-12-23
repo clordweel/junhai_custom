@@ -98,8 +98,9 @@ def generate_item_data_dict(doc):
         "doctype": "Item",
         "is_stock_item": 1,
         # 继承主字段
-        "custom_new_item_request": doc.name,
+        "image": doc.image,
         "item_group": doc.item_group,
+        "custom_new_item_request": doc.name,
         "custom_unique_code": doc.unique_code,
         # 🌟 附加单位转换子表数据
         "uoms": unit_conversions,

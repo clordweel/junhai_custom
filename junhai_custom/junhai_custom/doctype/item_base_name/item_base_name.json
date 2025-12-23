@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:base_name",
  "creation": "2025-12-12 12:55:41.409644",
@@ -9,11 +10,11 @@
   "base_name",
   "description",
   "column_break_bzvv",
+  "parent_item_base_name",
   "is_group",
   "disabled",
   "lft",
   "rgt",
-  "parent_item_base_name",
   "old_parent"
  ],
  "fields": [
@@ -51,6 +52,7 @@
   {
    "fieldname": "old_parent",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Old Parent",
    "options": "Item Base Name"
   },
@@ -84,7 +86,8 @@
  "index_web_pages_for_search": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2025-12-23 00:31:49.583279",
+ "make_attachments_public": 1,
+ "modified": "2025-12-23 12:03:45.260709",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Item Base Name",
@@ -110,5 +113,6 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "base_name"
 }
