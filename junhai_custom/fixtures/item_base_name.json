@@ -264,18 +264,6 @@
   "parent_item_base_name": "型材"
  },
  {
-  "base_name": "钢板",
-  "description": null,
-  "disabled": 0,
-  "docstatus": 0,
-  "doctype": "Item Base Name",
-  "is_group": 0,
-  "modified": "2025-12-16 09:27:15.086545",
-  "name": "钢板",
-  "old_parent": "板材",
-  "parent_item_base_name": "板材"
- },
- {
   "base_name": "方管",
   "description": "方形空心型钢",
   "disabled": 0,
@@ -382,6 +370,18 @@
   "name": "行政办公",
   "old_parent": "",
   "parent_item_base_name": null
+ },
+ {
+  "base_name": "钢板",
+  "description": null,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Base Name",
+  "is_group": 0,
+  "modified": "2025-12-16 09:27:15.086545",
+  "name": "钢板",
+  "old_parent": "板材",
+  "parent_item_base_name": "板材"
  },
  {
   "base_name": "签字笔",

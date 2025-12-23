@@ -1,0 +1,72 @@
+[
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Source Type",
+  "modified": "2025-12-23 20:26:17.668132",
+  "module": "Junhai Custom",
+  "name": "Manufactured",
+  "related_doctype": "Item",
+  "source_name": "Manufactured"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Source Type",
+  "modified": "2025-12-23 20:26:29.419753",
+  "module": "Junhai Custom",
+  "name": "Purchased",
+  "related_doctype": "Item",
+  "source_name": "Purchased"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Source Type",
+  "modified": "2025-12-23 20:26:36.049555",
+  "module": "Junhai Custom",
+  "name": "Subcontracted",
+  "related_doctype": "Item",
+  "source_name": "Subcontracted"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Source Type",
+  "modified": "2025-12-23 20:27:41.771581",
+  "module": "Junhai Custom",
+  "name": "Official Website",
+  "related_doctype": "External Link",
+  "source_name": "Official Website"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Source Type",
+  "modified": "2025-12-23 20:27:54.991577",
+  "module": "Junhai Custom",
+  "name": "Web Application",
+  "related_doctype": "External Link",
+  "source_name": "Web Application"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Source Type",
+  "modified": "2025-12-23 20:28:17.555188",
+  "module": "Junhai Custom",
+  "name": "Other Link",
+  "related_doctype": "External Link",
+  "source_name": "Other Link"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Source Type",
+  "modified": "2025-12-23 20:28:53.151828",
+  "module": "Junhai Custom",
+  "name": "Shopping Link",
+  "related_doctype": "External Link",
+  "source_name": "Shopping Link"
+ }
+]

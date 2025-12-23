@@ -583,5 +583,83 @@
   "name": "sei09jv4p7",
   "source_text": "Parent Item Base Name",
   "translated_text": "父级物料基础名"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-23 11:59:10.218196",
+  "name": "gseiofob5n",
+  "source_text": "Color Code",
+  "translated_text": "颜色代码"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-23 11:59:30.734156",
+  "name": "h2rruij7ot",
+  "source_text": "Hex Color",
+  "translated_text": "十六进制颜色"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-23 11:59:52.042178",
+  "name": "h9gn7dtbhf",
+  "source_text": "Color Image",
+  "translated_text": "颜色图片"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-23 14:37:08.758981",
+  "name": "defqa22pvq",
+  "source_text": "Item Color",
+  "translated_text": "物料颜色"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-23 19:37:15.922786",
+  "name": "t9n34jl6ht",
+  "source_text": "Body Color",
+  "translated_text": "主体颜色"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-23 20:37:22.616776",
+  "name": "0gqnts32vv",
+  "source_text": "Related Doctype",
+  "translated_text": "关联单据类型"
  }
 ]

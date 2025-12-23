@@ -155,3 +155,62 @@ def generate_item_data_dict(doc):
         )
 
     return item_fields
+
+
+@frappe.whitelist()
+def preview_parameters(parameters, context=None):
+    """
+    接收前端传来的参数表，渲染所有 constraint_type == 'Format' 的行
+    后端智能处理数值类型：5.0 -> 5, 5.5 -> 5.5
+    """
+    if isinstance(parameters, str):
+        parameters = json.loads(parameters)
+    if isinstance(context, str):
+        context = json.loads(context)
+
+    if not context:
+        context = {}
+
+    # --- 核心修改开始：智能数值转换逻辑 ---
+    safe_context = {}
+    for k, v in context.items():
+        # 如果值为空，直接保留
+        if v is None or v == "":
+            safe_context[k] = v
+            continue
+
+        # 尝试判断是否为数字
+        try:
+            # 先转为 float (处理 "5", "5.0", "5.5" 等字符串)
+            f_val = float(v)
+
+            # 判断是否是整数 (5.0.is_integer() 为 True, 5.5.is_integer() 为 False)
+            if f_val.is_integer():
+                safe_context[k] = int(f_val)  # 强制转为 int，Jinja 渲染时就是 "5"
+            else:
+                safe_context[k] = f_val  # 保留 float，Jinja 渲染时是 "5.5"
+        except ValueError:
+            # 如果转换失败（说明是文本，如 "Red"），保留原值
+            safe_context[k] = v
+    # --- 核心修改结束 ---
+
+    result = {}
+
+    for row in parameters:
+        if row.get("constraint_type") == "Format":
+            template = row.get("value_format") or row.get("parameter_default_value")
+            if not template:
+                continue
+
+            try:
+                # 使用处理过的 safe_context 进行渲染
+                rendered_value = frappe.render_template(template, safe_context)
+
+                # 清理多余空格 (保留原逻辑)
+                rendered_value = re.sub(r"\s+", " ", rendered_value).strip()
+
+                result[row.get("name")] = rendered_value
+            except Exception:
+                result[row.get("name")] = ""  # 出错时暂返空
+
+    return result

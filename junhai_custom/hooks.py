@@ -271,6 +271,7 @@ fixtures = [
     {"dt": "Client Script", "filters": [["module", "=", app_title]]},
     {"dt": "Server Script", "filters": [["module", "=", app_title]]},
     {"dt": "Translation", "filters": []},
+    {"dt": "Source Type", "filters": [["module", "=", app_title]]},
     {"dt": "Executive Standard", "filters": []},
     {"dt": "Item Group", "filters": []},
     {"dt": "Item Surface", "filters": []},

@@ -12,18 +12,6 @@
   "name": "红色"
  },
  {
-  "color_code": "Black",
-  "color_image": null,
-  "color_name": "黑色",
-  "description": null,
-  "docstatus": 0,
-  "doctype": "Item Color",
-  "hex_color": "#000000",
-  "is_standard": 0,
-  "modified": "2025-12-23 09:13:43.345327",
-  "name": "黑色"
- },
- {
   "color_code": "Blue",
   "color_image": null,
   "color_name": "蓝色",
@@ -58,5 +46,17 @@
   "is_standard": 0,
   "modified": "2025-12-23 09:13:09.595294",
   "name": "绿色"
+ },
+ {
+  "color_code": "Black",
+  "color_image": null,
+  "color_name": "黑色",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Item Color",
+  "hex_color": "#000000",
+  "is_standard": 0,
+  "modified": "2025-12-23 09:13:43.345327",
+  "name": "黑色"
  }
 ]
