@@ -285,9 +285,12 @@ fixtures = [
     # {"dt": "Social Login Key", "filters": [["name", "=", "logto"]]},
     {"dt": "External Link", "filters": [["module", "=", app_title]]},
     {"dt": "Custom Field", "filters": [["module", "=", app_title]]},
+    {"dt": "Brand", "filters": []},
     {
         "dt": "UOM",
-        "filters": [["name", "in", ["件", "张", "台", "根", "百/件", "千/件"]]],
+        "filters": [
+            ["name", "in", ["件", "张", "台", "根", "卷", "箱", "百/件", "千/件"]]
+        ],
     },
     {"dt": "Currency", "filters": [["name", "in", ["CNY"]]]},
     {

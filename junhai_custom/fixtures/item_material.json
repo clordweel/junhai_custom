@@ -319,6 +319,72 @@
   "name": "BV"
  },
  {
+  "description": "屈服强度≥345 MPa，耐高温高压、抗冲击与焊接性能优异，广泛用于制造储罐、锅炉及石化装备",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Material",
+  "image": null,
+  "material_code": "Q345R",
+  "material_name": "Q345R 低合金钢板",
+  "modified": "2025-12-24 16:21:41.444074",
+  "name": "Q345R"
+ },
+ {
+  "description": "用于高精度轴承密封、磨光、精密过滤。特硬。含毛量 ≥ 95%，密度极高，耐磨耐冲击。",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Material",
+  "image": null,
+  "material_code": "SAE F-1",
+  "material_name": "SAE F-1 羊毛毡圈",
+  "modified": "2025-12-25 03:03:39.319819",
+  "name": "SAE F-1"
+ },
+ {
+  "description": "油封、衬垫、减震、精密润滑。硬。含毛量 ≥ 85%，性能接近 F-1 但成本略低。",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Material",
+  "image": null,
+  "material_code": "SAE F-3",
+  "material_name": "SAE F-3 羊毛毡圈",
+  "modified": "2025-12-25 03:04:47.158248",
+  "name": "SAE F-3"
+ },
+ {
+  "description": "轴承润滑芯、防尘圈、油脂挡圈。中硬。回弹性好，适用于精密设备的油脂保持。",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Material",
+  "image": null,
+  "material_code": "SAE F-5",
+  "material_name": "SAE F-5 羊毛毡圈",
+  "modified": "2025-12-25 03:05:27.848163",
+  "name": "SAE F-5"
+ },
+ {
+  "description": "储油器、低压密封、空气过滤器。中软。密度较低，储油性能极佳，但不耐磨。",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Material",
+  "image": null,
+  "material_code": "SAE F-10",
+  "material_name": "SAE F-10 羊毛毡圈",
+  "modified": "2025-12-25 03:05:52.974605",
+  "name": "SAE F-10"
+ },
+ {
+  "description": "超薄精密密封垫（厚度 < 3mm）。薄且坚硬。常用于微型滚珠轴承的防尘罩。",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Material",
+  "image": null,
+  "material_code": "SAE F-50",
+  "material_name": "SAE F-50 羊毛毡圈",
+  "modified": "2025-12-25 03:06:15.851889",
+  "name": "SAE F-50"
+ },
+ {
   "description": "具有高淬透性和高热强性的中碳合金调质钢，常用于制造高负荷、大截面且需在高温或冲击环境下工作的关键机械零件。",
   "disabled": 0,
   "docstatus": 0,

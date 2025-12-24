@@ -63,6 +63,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Item Group",
+   "link_filters": "[[\"Item Group\",\"custom_code\",\"is\",\"set\"]]",
    "options": "Item Group",
    "reqd": 1
   },
@@ -112,7 +113,7 @@
   }
  ],
  "make_attachments_public": 1,
- "modified": "2025-12-23 23:26:25.579199",
+ "modified": "2025-12-25 02:17:17.661678",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "New Item Request",

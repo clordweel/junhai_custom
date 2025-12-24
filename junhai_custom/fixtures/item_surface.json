@@ -1,15 +1,5 @@
 [
  {
-  "description": "默认状态，无任何表面处理，表面有油",
-  "disabled": 0,
-  "docstatus": 0,
-  "doctype": "Item Surface",
-  "image": null,
-  "modified": "2025-12-16 10:33:19.512696",
-  "name": "本色/发黑",
-  "surface_name": "本色/发黑"
- },
- {
   "description": "最常见的表面处理，银白色，防锈能力中等",
   "disabled": 0,
   "docstatus": 0,
@@ -126,8 +116,8 @@
   "doctype": "Item Surface",
   "image": null,
   "modified": "2025-12-16 10:33:19.581951",
-  "name": "喷砂/抛丸",
-  "surface_name": "喷砂/抛丸"
+  "name": "喷砂",
+  "surface_name": "喷砂"
  },
  {
   "description": "低成本，防锈能力差，仅用于室内或临时防锈",
@@ -136,8 +126,18 @@
   "doctype": "Item Surface",
   "image": null,
   "modified": "2025-12-16 10:33:19.534053",
-  "name": "发黑/氧化",
-  "surface_name": "发黑/氧化"
+  "name": "氧化发黑",
+  "surface_name": "氧化发黑"
+ },
+ {
+  "description": "默认状态，无任何表面处理，表面有油",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Surface",
+  "image": null,
+  "modified": "2025-12-16 10:33:19.512696",
+  "name": "发黑",
+  "surface_name": "发黑"
  },
  {
   "description": null,

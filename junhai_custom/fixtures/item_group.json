@@ -64,22 +64,6 @@
   "taxes": []
  },
  {
-  "custom_code": "1012",
-  "custom_description": "角钢、槽钢、H型钢、工字钢",
-  "custom_standard_tax_rate": 0.0,
-  "docstatus": 0,
-  "doctype": "Item Group",
-  "image": null,
-  "is_group": 0,
-  "item_group_defaults": [],
-  "item_group_name": "型材",
-  "modified": "2025-12-20 02:54:30.684149",
-  "name": "型材",
-  "old_parent": "钢材类",
-  "parent_item_group": "钢材类",
-  "taxes": []
- },
- {
   "custom_code": "1013",
   "custom_description": "无缝管、焊管、流体管",
   "custom_standard_tax_rate": 0.0,
@@ -784,22 +768,6 @@
   "taxes": []
  },
  {
-  "custom_code": "4010",
-  "custom_description": "焊条、焊丝、砂轮片",
-  "custom_standard_tax_rate": 0.0,
-  "docstatus": 0,
-  "doctype": "Item Group",
-  "image": null,
-  "is_group": 0,
-  "item_group_defaults": [],
-  "item_group_name": "焊接与磨具",
-  "modified": "2025-12-20 02:54:32.608865",
-  "name": "焊接与磨具",
-  "old_parent": "MRO与工具",
-  "parent_item_group": "MRO与工具",
-  "taxes": []
- },
- {
   "custom_code": "4020",
   "custom_description": "数控刀片、钻头、铣刀",
   "custom_standard_tax_rate": 0.0,
@@ -1072,19 +1040,35 @@
   "taxes": []
  },
  {
-  "custom_code": "2034",
-  "custom_description": "通用碳钢螺栓、螺母、垫圈。(按数量/重量计价)。",
-  "custom_standard_tax_rate": 13.0,
+  "custom_code": "1012",
+  "custom_description": "角钢、槽钢、H型钢、工字钢",
+  "custom_standard_tax_rate": 0.0,
   "docstatus": 0,
   "doctype": "Item Group",
   "image": null,
-  "is_group": 1,
+  "is_group": 0,
   "item_group_defaults": [],
-  "item_group_name": "紧固件",
-  "modified": "2025-12-21 14:49:09.766290",
-  "name": "紧固件",
-  "old_parent": "机械标准件",
-  "parent_item_group": "机械标准件",
+  "item_group_name": "型材",
+  "modified": "2025-12-20 02:54:30.684149",
+  "name": "型材",
+  "old_parent": "钢材类",
+  "parent_item_group": "钢材类",
+  "taxes": []
+ },
+ {
+  "custom_code": "4010",
+  "custom_description": "焊条、焊丝、砂轮片",
+  "custom_standard_tax_rate": 0.0,
+  "docstatus": 0,
+  "doctype": "Item Group",
+  "image": null,
+  "is_group": 0,
+  "item_group_defaults": [],
+  "item_group_name": "焊接与磨具",
+  "modified": "2025-12-20 02:54:32.608865",
+  "name": "焊接与磨具",
+  "old_parent": "MRO与工具",
+  "parent_item_group": "MRO与工具",
   "taxes": []
  },
  {
@@ -1117,6 +1101,22 @@
   "name": "行政与包装",
   "old_parent": "MRO与工具",
   "parent_item_group": "MRO与工具",
+  "taxes": []
+ },
+ {
+  "custom_code": "2034",
+  "custom_description": "通用碳钢螺栓、螺母、垫圈。(按数量/重量计价)。",
+  "custom_standard_tax_rate": 13.0,
+  "docstatus": 0,
+  "doctype": "Item Group",
+  "image": null,
+  "is_group": 1,
+  "item_group_defaults": [],
+  "item_group_name": "紧固件",
+  "modified": "2025-12-21 14:49:09.766290",
+  "name": "紧固件",
+  "old_parent": "机械标准件",
+  "parent_item_group": "机械标准件",
   "taxes": []
  }
 ]

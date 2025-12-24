@@ -10,9 +10,11 @@
   "standard_code",
   "standard_name",
   "revision_year",
+  "reference_standard",
   "column_break_bqnm",
   "standard_type",
   "status",
+  "description",
   "section_break_qyop",
   "attachment"
  ],
@@ -56,6 +58,7 @@
    "options": "Current\nAbolition\nComing"
   },
   {
+   "default": "Product Standard",
    "fieldname": "standard_type",
    "fieldtype": "Select",
    "label": "Type",
@@ -64,6 +67,17 @@
   {
    "fieldname": "section_break_qyop",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reference_standard",
+   "fieldtype": "Link",
+   "label": "Reference Standard",
+   "options": "Executive Standard"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
   }
  ],
  "grid_page_length": 50,
@@ -76,7 +90,7 @@
   }
  ],
  "make_attachments_public": 1,
- "modified": "2025-12-23 11:57:57.555390",
+ "modified": "2025-12-25 03:35:24.598891",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Executive Standard",
