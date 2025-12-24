@@ -385,17 +385,6 @@
   "name": "35CrMo"
  },
  {
-  "description": "最通用的碳素结构钢，塑性好，焊接性好，常用于角钢、槽钢、焊接件",
-  "disabled": 0,
-  "docstatus": 0,
-  "doctype": "Item Material",
-  "image": null,
-  "material_code": "Q235B",
-  "material_name": "Q235B 碳钢",
-  "modified": "2025-12-16 10:44:51.819865",
-  "name": "Q235B"
- },
- {
   "description": "又称 ZGMn13Cr2，通过在传统高锰钢基础上添加 2\\% 的铬元素，使其在承受强烈冲击或挤压应力时表面迅速产生加工硬化，从而在保持优异中心韧性的同时获得极佳的表面耐磨性。",
   "disabled": 0,
   "docstatus": 0,
@@ -427,5 +416,16 @@
   "material_name": "HT200 灰铸铁",
   "modified": "2025-12-24 11:26:09.551054",
   "name": "HT200"
+ },
+ {
+  "description": "最通用的碳素结构钢，塑性好，焊接性好，常用于角钢、槽钢、焊接件",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Material",
+  "image": null,
+  "material_code": "Q235B",
+  "material_name": "Q235B 碳钢",
+  "modified": "2025-12-16 10:44:51.819865",
+  "name": "Q235B"
  }
 ]

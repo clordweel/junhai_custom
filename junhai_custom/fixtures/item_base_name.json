@@ -900,18 +900,6 @@
   "parent_item_base_name": "传动件"
  },
  {
-  "base_name": "托辊",
-  "description": null,
-  "disabled": 0,
-  "docstatus": 0,
-  "doctype": "Item Base Name",
-  "is_group": 0,
-  "modified": "2025-12-25 04:42:34.206213",
-  "name": "托辊",
-  "old_parent": "传动件",
-  "parent_item_base_name": "传动件"
- },
- {
   "base_name": "传动滚筒",
   "description": null,
   "disabled": 0,
@@ -1126,5 +1114,17 @@
   "name": "减速机",
   "old_parent": "动力设备",
   "parent_item_base_name": "动力设备"
+ },
+ {
+  "base_name": "托辊",
+  "description": null,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Base Name",
+  "is_group": 0,
+  "modified": "2025-12-25 04:42:34.206213",
+  "name": "托辊",
+  "old_parent": "传动件",
+  "parent_item_base_name": "传动件"
  }
 ]
