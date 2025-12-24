@@ -2,19 +2,15 @@ import json
 import re
 import html
 import frappe
-
 from frappe.utils import flt
 
 
 @frappe.whitelist()
 def check_duplicate_request(unique_code, current_docname):
-    """
-    检查系统中是否存在具有相同参数指纹且已提交的 New Item Request。
-    """
+    """检查是否存在相同参数指纹的已提交申请"""
     if not unique_code:
         return {"duplicate": False, "message": "指纹为空，无法查重。"}
 
-    # 查找所有已提交（docstatus=1）且指纹相同的单据，排除当前单据
     duplicate_name = frappe.db.get_value(
         "New Item Request",
         filters={
@@ -30,185 +26,142 @@ def check_duplicate_request(unique_code, current_docname):
         return {
             "duplicate": True,
             "name": duplicate_name,
-            "message": f"发现重复的物料参数组合！重复单据：{duplicate_name}。请核实！",
+            "message": f"发现重复的物料参数组合！重复单据：{duplicate_name}。",
         }
-    else:
-        return {"duplicate": False, "message": "当前参数组合未发现重复申请单。"}
-
-
-@frappe.whitelist()
-def generate_item_data_dict(doc):
-    """
-    接收 New Item Request 数据，解析参数、格式化规则、UOM 子表，生成 Item DocType 的数据字典。
-    """
-
-    # --- 核心修正：处理 Frappe.call 传入的 JSON 字符串参数 ---
-    if isinstance(doc, str):
-        try:
-            doc_data = json.loads(doc)
-            doc = frappe.get_doc(doc_data)
-        except Exception as e:
-            frappe.throw(f"无法解析传入的单据数据：{e}", title="数据解析错误")
-    elif isinstance(doc, dict):
-        doc = frappe.get_doc(doc)
-
-    if doc.docstatus != 1:
-        frappe.throw("只能对已提交的物料申请单执行操作。", title="操作限制")
-
-    params = {}  # 用于 str.format() 拼接的参数字典
-    assignment_rules = []  # 用于直接或格式化赋值的规则列表
-    unit_conversions = []  # 用于单位转换子表的列表
-
-    # --- 阶段一：收集参数值和所有赋值规则 ---
-    for row in doc.parameters:
-
-        # 1. 收集到 params 字典中 (所有非 Format 的行)
-        if row.constraint_type != "Format":
-            value = row.parameter_value
-            params[row.parameter_name] = str(value) if value is not None else ""
-
-        # 2. 收集赋值规则 (Binding Rule)
-        if row.binding_field == 1 and row.target_field:
-            rule = {
-                "target_field": row.target_field,
-                "constraint_type": row.constraint_type,
-                "source_value": row.parameter_value,
-                "parameter_name": row.parameter_name,
-            }
-            assignment_rules.append(rule)
-
-    # --- 阶段二：处理单位转换子表 (UOMs) ---
-
-    # 🌟 关键：遍历 New Item Request.uoms 子表
-    if hasattr(doc, "uoms") and doc.uoms:
-        for row in doc.uoms:
-            factor = flt(row.conversion_factor)
-
-            # 排除转换系数为 1 的行，防止重复创建基准单位
-            # if factor != 1:
-            unit_conversions.append(
-                {
-                    "doctype": "Item Unit Conversion",  # 目标 DocType
-                    "uom": row.uom,
-                    "conversion_factor": factor,
-                }
-            )
-
-    # --- 阶段三：应用赋值规则，构建 Item 字典 ---
-
-    item_fields = {
-        "doctype": "Item",
-        "is_stock_item": 1,
-        # 继承主字段
-        "image": doc.image,
-        "item_group": doc.item_group,
-        "custom_new_item_request": doc.name,
-        "custom_unique_code": doc.unique_code,
-        # 🌟 附加单位转换子表数据
-        "uoms": unit_conversions,
-    }
-
-    final_item_name = None
-
-    for rule in assignment_rules:
-        target_field = rule["target_field"]
-        final_value = None
-
-        if rule["constraint_type"] == "Format":
-            # 这里的 source_value 对应模板中的 value_format 或 parameter_default_value
-            template_str = rule["source_value"]
-
-            try:
-                # 直接渲染 Jinja2 模板
-                # Frappe 的 render_template 会自动处理 params 中的变量
-                final_value = frappe.render_template(template_str, params)
-
-                # 后处理：清理因参数缺失导致的连续空格
-                if final_value:
-                    final_value = re.sub(r"\s+", " ", final_value).strip()
-
-            except Exception as e:
-                frappe.throw(
-                    f"字段【{target_field}】Jinja2 渲染失败。<br>模板：{template_str}<br>错误：{str(e)}",
-                    title="模板渲染错误",
-                )
-        else:
-            final_value = rule["source_value"]
-
-        if final_value is not None:
-            item_fields[target_field] = final_value
-
-            if target_field == "item_name":
-                final_item_name = final_value
-
-    # --- 阶段四：最终校验和返回 ---
-
-    if not final_item_name:
-        frappe.toast(
-            f"申请单 {doc.name}: 模板中未指定物料名称 (item_name) 的格式化规则。将依赖 Item DocType 的命名规则。",
-            "orange",
-        )
-
-    if final_item_name and frappe.db.exists("Item", {"item_name": final_item_name}):
-        frappe.msgprint(
-            f"注意：系统中已存在名为【{final_item_name}】的物料！请在新建页面核实。",
-            title="查重提醒",
-            indicator="orange",
-        )
-
-    return item_fields
+    return {"duplicate": False, "message": "当前参数组合未发现重复。"}
 
 
 @frappe.whitelist()
 def preview_parameters(parameters, context=None):
+    """前端预览计算逻辑：支持级联引用"""
     if isinstance(parameters, str):
         parameters = json.loads(parameters)
     if isinstance(context, str):
         context = json.loads(context)
 
-    if not context:
-        context = {}
-
-    # 数值类型智能转换逻辑 (保持之前的优化不变)
+    # 1. 整理初始上下文，处理数值类型
     safe_context = {}
-    for k, v in context.items():
-        if v is None or v == "":
-            safe_context[k] = v
-            continue
-        try:
-            f_val = float(v)
-            if f_val.is_integer():
-                safe_context[k] = int(f_val)
-            else:
-                safe_context[k] = f_val
-        except ValueError:
-            safe_context[k] = v
+    if context:
+        for k, v in context.items():
+            if v is None or v == "":
+                safe_context[k] = ""
+                continue
+            try:
+                f_val = float(v)
+                safe_context[k] = int(f_val) if f_val.is_integer() else f_val
+            except ValueError:
+                safe_context[k] = v
 
+    # 2. 核心：按 idx 排序，确保级联计算顺序
+    sorted_params = sorted(parameters, key=lambda x: x.get("idx", 0))
     result = {}
 
-    for row in parameters:
+    for row in sorted_params:
+        p_name = row.get("parameter_name")
         if row.get("constraint_type") == "Format":
-            # 获取原始模板字符串
             raw_template = row.get("value_format") or row.get("parameter_default_value")
             if not raw_template:
                 continue
 
             try:
-                # --- 2. 核心修改：反转义 HTML 实体 ---
-                # 这会将 "&gt;" 变回 ">"，将 "<br>" 变回 "<br>" (如果被转义的话)
+                # 反转义 HTML (处理 > < 等符号) 并渲染
                 template = html.unescape(raw_template)
-
-                # 渲染模板
                 rendered_value = frappe.render_template(template, safe_context)
 
-                # --- 3. 换行符处理 ---
-                # 这一步是为了确保生成的 Description 在 ERPNext 界面看起来舒服
-                # 如果模板里写了 <br>，这里会保留；如果产生了多余的纯文本换行，整理一下
+                # 清理多余空格和换行
                 rendered_value = re.sub(r"\n\s*\n", "\n", rendered_value).strip()
+                rendered_value = re.sub(r" +", " ", rendered_value)
 
                 result[row.get("name")] = rendered_value
+
+                # 🌟 关键：将当前渲染结果存入上下文，供后续 Format 行引用
+                if p_name:
+                    safe_context[p_name] = rendered_value
             except Exception as e:
-                # 方便调试，如果出错可以看到具体原因
-                result[row.get("name")] = f"Error: {str(e)}"
+                result[row.get("name")] = f"渲染错误: {str(e)}"
+        else:
+            # 非 Format 类型，确保上下文中的值是最新的
+            if p_name:
+                val = row.get("parameter_value")
+                try:
+                    if val and str(val).replace(".", "", 1).isdigit():
+                        f_val = float(val)
+                        safe_context[p_name] = (
+                            int(f_val) if f_val.is_integer() else f_val
+                        )
+                    else:
+                        safe_context[p_name] = val
+                except:
+                    safe_context[p_name] = val
 
     return result
+
+
+@frappe.whitelist()
+def generate_item_data_dict(doc):
+    """正式生成 Item 数据字典：支持级联引用"""
+    if isinstance(doc, str):
+        doc = frappe.get_doc(json.loads(doc))
+    elif isinstance(doc, dict):
+        doc = frappe.get_doc(doc)
+
+    if doc.docstatus != 1:
+        frappe.throw("只能对已提交的单据执行操作。")
+
+    # 1. 收集 UOM
+    unit_conversions = []
+    for row in doc.uoms or []:
+        unit_conversions.append(
+            {
+                "doctype": "Item Unit Conversion",
+                "uom": row.uom,
+                "conversion_factor": flt(row.conversion_factor),
+            }
+        )
+
+    # 2. 顺序处理参数，构建最终 Context
+    final_context = {}
+    assignment_rules = []
+    sorted_parameters = sorted(doc.parameters, key=lambda x: x.idx)
+
+    for row in sorted_parameters:
+        p_name = row.parameter_name
+        if row.constraint_type != "Format":
+            final_context[p_name] = row.parameter_value
+        else:
+            template_str = (
+                row.parameter_value or row.value_format or row.parameter_default_value
+            )
+            if template_str:
+                try:
+                    rendered = frappe.render_template(
+                        html.unescape(template_str), final_context
+                    )
+                    rendered = re.sub(r"\s+", " ", rendered).strip()
+                    final_context[p_name] = rendered
+                except:
+                    final_context[p_name] = ""
+
+        # 收集需要绑定到 Item 字段的规则
+        if row.binding_field == 1 and row.target_field:
+            assignment_rules.append(
+                {"target_field": row.target_field, "parameter_name": p_name}
+            )
+
+    # 3. 映射到 Item 字段
+    item_fields = {
+        "doctype": "Item",
+        "is_stock_item": 1,
+        "item_group": doc.item_group,
+        "image": doc.image,
+        "custom_new_item_request": doc.name,
+        "custom_unique_code": doc.unique_code,
+        "uoms": unit_conversions,
+    }
+
+    for rule in assignment_rules:
+        val = final_context.get(rule["parameter_name"])
+        if val is not None:
+            item_fields[rule["target_field"]] = val
+
+    return item_fields
