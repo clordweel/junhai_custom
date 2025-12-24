@@ -432,6 +432,42 @@
   "parent_item_base_name": "电气件"
  },
  {
+  "base_name": "扁钢",
+  "description": null,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Base Name",
+  "is_group": 0,
+  "modified": "2025-12-24 14:58:36.088006",
+  "name": "扁钢",
+  "old_parent": "型材",
+  "parent_item_base_name": "型材"
+ },
+ {
+  "base_name": "工字钢",
+  "description": null,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Base Name",
+  "is_group": 0,
+  "modified": "2025-12-24 15:05:53.635638",
+  "name": "工字钢",
+  "old_parent": "型材",
+  "parent_item_base_name": "型材"
+ },
+ {
+  "base_name": "H 型钢",
+  "description": null,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Base Name",
+  "is_group": 0,
+  "modified": "2025-12-24 16:09:10.002549",
+  "name": "H 型钢",
+  "old_parent": "型材",
+  "parent_item_base_name": "型材"
+ },
+ {
   "base_name": "电气件",
   "description": null,
   "disabled": 0,
