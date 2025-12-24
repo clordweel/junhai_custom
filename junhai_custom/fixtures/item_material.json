@@ -165,17 +165,6 @@
   "name": "45#"
  },
  {
-  "description": "抗拉强度 200MPa，常用于轴承座、皮带轮、减速机壳",
-  "disabled": 0,
-  "docstatus": 0,
-  "doctype": "Item Material",
-  "image": null,
-  "material_code": "HT200",
-  "material_name": "HT200 灰铸铁",
-  "modified": "2025-12-24 11:26:09.551054",
-  "name": "HT200"
- },
- {
   "description": "强度 450 / 延伸 10%，常用于挖掘机底盘件、重载轴承座",
   "disabled": 0,
   "docstatus": 0,
@@ -405,5 +394,38 @@
   "material_name": "Q235B 碳钢",
   "modified": "2025-12-16 10:44:51.819865",
   "name": "Q235B"
+ },
+ {
+  "description": "又称 ZGMn13Cr2，通过在传统高锰钢基础上添加 2\\% 的铬元素，使其在承受强烈冲击或挤压应力时表面迅速产生加工硬化，从而在保持优异中心韧性的同时获得极佳的表面耐磨性。",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Material",
+  "image": null,
+  "material_code": "Mn13Cr2",
+  "material_name": "Mn13Cr2 高锰耐磨钢",
+  "modified": "2025-12-25 04:51:51.495748",
+  "name": "Mn13Cr2"
+ },
+ {
+  "description": "最常用的阀门及压力容器碳钢铸件。适用于非腐蚀性介质，在 -29°C 至 427°C 温度范围内表现稳定。具有良好的韧性、强度和焊接性，广泛用于石油、天然气及电力管道系统。",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Material",
+  "image": null,
+  "material_code": "WCB",
+  "material_name": "WCB 铸钢",
+  "modified": "2025-12-25 05:16:10.093214",
+  "name": "WCB"
+ },
+ {
+  "description": "抗拉强度 200MPa，常用于轴承座、皮带轮、减速机壳",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Material",
+  "image": null,
+  "material_code": "HT200",
+  "material_name": "HT200 灰铸铁",
+  "modified": "2025-12-24 11:26:09.551054",
+  "name": "HT200"
  }
 ]

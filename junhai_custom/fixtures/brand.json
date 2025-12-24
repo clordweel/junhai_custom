@@ -1,1942 +1,1942 @@
 [
-    {
-        "brand": "宝武钢铁",
-        "brand_defaults": [],
-        "description": "板材、型材",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "宝武钢铁"
-    },
-    {
-        "brand": "鞍钢",
-        "brand_defaults": [],
-        "description": "板材、管材",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "鞍钢"
-    },
-    {
-        "brand": "首钢",
-        "brand_defaults": [],
-        "description": "板材",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "首钢"
-    },
-    {
-        "brand": "沙钢",
-        "brand_defaults": [],
-        "description": "建筑钢材",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "沙钢"
-    },
-    {
-        "brand": "马钢",
-        "brand_defaults": [],
-        "description": "H型钢",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "马钢"
-    },
-    {
-        "brand": "太钢",
-        "brand_defaults": [],
-        "description": "不锈钢",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "太钢"
-    },
-    {
-        "brand": "本钢",
-        "brand_defaults": [],
-        "description": "板材",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "本钢"
-    },
-    {
-        "brand": "华菱钢铁",
-        "brand_defaults": [],
-        "description": "管材、宽厚板",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "华菱钢铁"
-    },
-    {
-        "brand": "中信泰富特钢",
-        "brand_defaults": [],
-        "description": "优特钢",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "中信泰富特钢"
-    },
-    {
-        "brand": "青山控股",
-        "brand_defaults": [],
-        "description": "不锈钢",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "青山控股"
-    },
-    {
-        "brand": "中国铝业",
-        "brand_defaults": [],
-        "description": "铝材",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "中国铝业"
-    },
-    {
-        "brand": "南山铝业",
-        "brand_defaults": [],
-        "description": "铝型材",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "南山铝业"
-    },
-    {
-        "brand": "兴发铝业",
-        "brand_defaults": [],
-        "description": "建筑铝型材",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "兴发铝业"
-    },
-    {
-        "brand": "忠旺",
-        "brand_defaults": [],
-        "description": "工业铝型材",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "忠旺"
-    },
-    {
-        "brand": "瑞乃尔",
-        "brand_defaults": [],
-        "description": "耐磨材料",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "瑞乃尔"
-    },
-    {
-        "brand": "鲁阳",
-        "brand_defaults": [],
-        "description": "保温棉、耐火材料",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "鲁阳"
-    },
-    {
-        "brand": "立邦",
-        "brand_defaults": [],
-        "description": "工业涂料",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "立邦"
-    },
-    {
-        "brand": "佐敦",
-        "brand_defaults": [],
-        "description": "防腐涂料",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "佐敦"
-    },
-    {
-        "brand": "阿克苏诺贝尔",
-        "brand_defaults": [],
-        "description": "粉末涂料",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "阿克苏诺贝尔"
-    },
-    {
-        "brand": "宣伟",
-        "brand_defaults": [],
-        "description": "涂料",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "宣伟"
-    },
-    {
-        "brand": "PPG",
-        "brand_defaults": [],
-        "description": "防护涂料",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "PPG"
-    },
-    {
-        "brand": "海虹老人",
-        "brand_defaults": [],
-        "description": "船舶与重防腐",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "海虹老人"
-    },
-    {
-        "brand": "壳牌",
-        "brand_defaults": [],
-        "description": "润滑油",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "壳牌"
-    },
-    {
-        "brand": "美孚",
-        "brand_defaults": [],
-        "description": "润滑油",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "美孚"
-    },
-    {
-        "brand": "嘉实多",
-        "brand_defaults": [],
-        "description": "切削液",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "嘉实多"
-    },
-    {
-        "brand": "道达尔",
-        "brand_defaults": [],
-        "description": "润滑油",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "道达尔"
-    },
-    {
-        "brand": "克鲁勃",
-        "brand_defaults": [],
-        "description": "特种润滑",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "克鲁勃"
-    },
-    {
-        "brand": "长城润滑油",
-        "brand_defaults": [],
-        "description": "国产润滑油",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "长城润滑油"
-    },
-    {
-        "brand": "昆仑润滑",
-        "brand_defaults": [],
-        "description": "液压油",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "昆仑润滑"
-    },
-    {
-        "brand": "汉高",
-        "brand_defaults": [],
-        "description": "胶粘剂、表面处理",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "汉高"
-    },
-    {
-        "brand": "乐泰",
-        "brand_defaults": [],
-        "description": "螺纹胶",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "乐泰"
-    },
-    {
-        "brand": "3M",
-        "brand_defaults": [],
-        "description": "胶带、研磨、劳保",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "3M"
-    },
-    {
-        "brand": "西卡",
-        "brand_defaults": [],
-        "description": "密封胶",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "西卡"
-    },
-    {
-        "brand": "回天",
-        "brand_defaults": [],
-        "description": "工程胶粘剂",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "回天"
-    },
-    {
-        "brand": "施耐德",
-        "brand_defaults": [],
-        "description": "低压电气、PLC",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "施耐德"
-    },
-    {
-        "brand": "西门子",
-        "brand_defaults": [],
-        "description": "PLC、电机、变频器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "西门子"
-    },
-    {
-        "brand": "ABB",
-        "brand_defaults": [],
-        "description": "变频器、接触器、机器人",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "ABB"
-    },
-    {
-        "brand": "欧姆龙",
-        "brand_defaults": [],
-        "description": "传感器、继电器、PLC",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "欧姆龙"
-    },
-    {
-        "brand": "三菱电机",
-        "brand_defaults": [],
-        "description": "PLC、伺服",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "三菱电机"
-    },
-    {
-        "brand": "罗克韦尔",
-        "brand_defaults": [],
-        "description": "AB PLC",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "罗克韦尔"
-    },
-    {
-        "brand": "富士电机",
-        "brand_defaults": [],
-        "description": "接触器、变频器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "富士电机"
-    },
-    {
-        "brand": "LS产电",
-        "brand_defaults": [],
-        "description": "低压电器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "LS产电"
-    },
-    {
-        "brand": "台达",
-        "brand_defaults": [],
-        "description": "变频器、电源",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "台达"
-    },
-    {
-        "brand": "正泰",
-        "brand_defaults": [],
-        "description": "低压电器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "正泰"
-    },
-    {
-        "brand": "德力西",
-        "brand_defaults": [],
-        "description": "低压电器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "德力西"
-    },
-    {
-        "brand": "天正电气",
-        "brand_defaults": [],
-        "description": "低压电器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "天正电气"
-    },
-    {
-        "brand": "人民电器",
-        "brand_defaults": [],
-        "description": "电气元件",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "人民电器"
-    },
-    {
-        "brand": "良信",
-        "brand_defaults": [],
-        "description": "高端低压电器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "良信"
-    },
-    {
-        "brand": "公牛",
-        "brand_defaults": [],
-        "description": "插座、开关",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "公牛"
-    },
-    {
-        "brand": "菲尼克斯",
-        "brand_defaults": [],
-        "description": "端子、电源",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "菲尼克斯"
-    },
-    {
-        "brand": "魏德米勒",
-        "brand_defaults": [],
-        "description": "接线端子",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "魏德米勒"
-    },
-    {
-        "brand": "万可",
-        "brand_defaults": [],
-        "description": "弹簧端子",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "万可"
-    },
-    {
-        "brand": "基恩士",
-        "brand_defaults": [],
-        "description": "传感器、视觉",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "基恩士"
-    },
-    {
-        "brand": "希克斯",
-        "brand_defaults": [],
-        "description": "传感器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "希克斯"
-    },
-    {
-        "brand": "图尔克",
-        "brand_defaults": [],
-        "description": "接近开关",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "图尔克"
-    },
-    {
-        "brand": "易福门",
-        "brand_defaults": [],
-        "description": "流体传感器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "易福门"
-    },
-    {
-        "brand": "巴鲁夫",
-        "brand_defaults": [],
-        "description": "位移传感器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "巴鲁夫"
-    },
-    {
-        "brand": "倍加福",
-        "brand_defaults": [],
-        "description": "安全栅、传感器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "倍加福"
-    },
-    {
-        "brand": "邦纳",
-        "brand_defaults": [],
-        "description": "光电开关",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "邦纳"
-    },
-    {
-        "brand": "奥托尼克斯",
-        "brand_defaults": [],
-        "description": "温控器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "奥托尼克斯"
-    },
-    {
-        "brand": "霍尼韦尔",
-        "brand_defaults": [],
-        "description": "微动开关、传感器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "霍尼韦尔"
-    },
-    {
-        "brand": "明纬",
-        "brand_defaults": [],
-        "description": "开关电源",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "明纬"
-    },
-    {
-        "brand": "普尔世",
-        "brand_defaults": [],
-        "description": "高端电源",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "普尔世"
-    },
-    {
-        "brand": "金升阳",
-        "brand_defaults": [],
-        "description": "电源模块",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "金升阳"
-    },
-    {
-        "brand": "汇川技术",
-        "brand_defaults": [],
-        "description": "变频器、伺服",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "汇川技术"
-    },
-    {
-        "brand": "英威腾",
-        "brand_defaults": [],
-        "description": "变频器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "英威腾"
-    },
-    {
-        "brand": "信捷",
-        "brand_defaults": [],
-        "description": "小型PLC",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "信捷"
-    },
-    {
-        "brand": "昆仑通态",
-        "brand_defaults": [],
-        "description": "触摸屏",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "昆仑通态"
-    },
-    {
-        "brand": "威纶通",
-        "brand_defaults": [],
-        "description": "触摸屏",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "威纶通"
-    },
-    {
-        "brand": "SKF",
-        "brand_defaults": [],
-        "description": "轴承",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "SKF"
-    },
-    {
-        "brand": "NSK",
-        "brand_defaults": [],
-        "description": "轴承",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "NSK"
-    },
-    {
-        "brand": "FAG",
-        "brand_defaults": [],
-        "description": "轴承",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "FAG"
-    },
-    {
-        "brand": "NTN",
-        "brand_defaults": [],
-        "description": "轴承",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "NTN"
-    },
-    {
-        "brand": "铁姆肯",
-        "brand_defaults": [],
-        "description": "圆锥滚子轴承",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "铁姆肯"
-    },
-    {
-        "brand": "光洋",
-        "brand_defaults": [],
-        "description": "轴承",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "光洋"
-    },
-    {
-        "brand": "人本",
-        "brand_defaults": [],
-        "description": "国产轴承",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "人本"
-    },
-    {
-        "brand": "万向",
-        "brand_defaults": [],
-        "description": "汽车零部件",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "万向"
-    },
-    {
-        "brand": "瓦轴",
-        "brand_defaults": [],
-        "description": "重型轴承",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "瓦轴"
-    },
-    {
-        "brand": "哈轴",
-        "brand_defaults": [],
-        "description": "电机轴承",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "哈轴"
-    },
-    {
-        "brand": "洛轴",
-        "brand_defaults": [],
-        "description": "转盘轴承",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "洛轴"
-    },
-    {
-        "brand": "SEW",
-        "brand_defaults": [],
-        "description": "减速机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "SEW"
-    },
-    {
-        "brand": "诺德",
-        "brand_defaults": [],
-        "description": "减速机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "诺德"
-    },
-    {
-        "brand": "住友",
-        "brand_defaults": [],
-        "description": "减速机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "住友"
-    },
-    {
-        "brand": "邦飞利",
-        "brand_defaults": [],
-        "description": "减速机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "邦飞利"
-    },
-    {
-        "brand": "国茂",
-        "brand_defaults": [],
-        "description": "国产减速机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "国茂"
-    },
-    {
-        "brand": "通力",
-        "brand_defaults": [],
-        "description": "电梯/部件",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "通力"
-    },
-    {
-        "brand": "杰牌",
-        "brand_defaults": [],
-        "description": "减速机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "杰牌"
-    },
-    {
-        "brand": "上银",
-        "brand_defaults": [],
-        "description": "导轨丝杆",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "上银"
-    },
-    {
-        "brand": "THK",
-        "brand_defaults": [],
-        "description": "导轨",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "THK"
-    },
-    {
-        "brand": "银泰",
-        "brand_defaults": [],
-        "description": "PMI导轨",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "银泰"
-    },
-    {
-        "brand": "盖茨",
-        "brand_defaults": [],
-        "description": "皮带",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "盖茨"
-    },
-    {
-        "brand": "欧皮特",
-        "brand_defaults": [],
-        "description": "皮带",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "欧皮特"
-    },
-    {
-        "brand": "三力士",
-        "brand_defaults": [],
-        "description": "三角带",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "三力士"
-    },
-    {
-        "brand": "博世力士乐",
-        "brand_defaults": [],
-        "description": "液压阀泵",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "博世力士乐"
-    },
-    {
-        "brand": "派克",
-        "brand_defaults": [],
-        "description": "液压软管、接头",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "派克"
-    },
-    {
-        "brand": "伊顿",
-        "brand_defaults": [],
-        "description": "液压",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "伊顿"
-    },
-    {
-        "brand": "威格士",
-        "brand_defaults": [],
-        "description": "叶片泵",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "威格士"
-    },
-    {
-        "brand": "哈威",
-        "brand_defaults": [],
-        "description": "高压液压",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "哈威"
-    },
-    {
-        "brand": "阿托斯",
-        "brand_defaults": [],
-        "description": "比例阀",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "阿托斯"
-    },
-    {
-        "brand": "油研",
-        "brand_defaults": [],
-        "description": "液压阀",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "油研"
-    },
-    {
-        "brand": "SMC",
-        "brand_defaults": [],
-        "description": "气动元件",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "SMC"
-    },
-    {
-        "brand": "费斯托",
-        "brand_defaults": [],
-        "description": "高端气动",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "费斯托"
-    },
-    {
-        "brand": "亚德客",
-        "brand_defaults": [],
-        "description": "气缸、电磁阀",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "亚德客"
-    },
-    {
-        "brand": "诺冠",
-        "brand_defaults": [],
-        "description": "气动",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "诺冠"
-    },
-    {
-        "brand": "CKD",
-        "brand_defaults": [],
-        "description": "气动",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "CKD"
-    },
-    {
-        "brand": "小金井",
-        "brand_defaults": [],
-        "description": "气动",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "小金井"
-    },
-    {
-        "brand": "气立可",
-        "brand_defaults": [],
-        "description": "气动",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "气立可"
-    },
-    {
-        "brand": "北京华德",
-        "brand_defaults": [],
-        "description": "国产液压阀",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "北京华德"
-    },
-    {
-        "brand": "太重榆次",
-        "brand_defaults": [],
-        "description": "液压件",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "太重榆次"
-    },
-    {
-        "brand": "黎明液压",
-        "brand_defaults": [],
-        "description": "过滤器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "黎明液压"
-    },
-    {
-        "brand": "贺德克",
-        "brand_defaults": [],
-        "description": "蓄能器、传感器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "贺德克"
-    },
-    {
-        "brand": "伍尔特",
-        "brand_defaults": [],
-        "description": "紧固件、MRO",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "伍尔特"
-    },
-    {
-        "brand": "晋亿",
-        "brand_defaults": [],
-        "description": "螺栓",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "晋亿"
-    },
-    {
-        "brand": "东明",
-        "brand_defaults": [],
-        "description": "不锈钢紧固件",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "东明"
-    },
-    {
-        "brand": "奥展",
-        "brand_defaults": [],
-        "description": "不锈钢紧固件",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "奥展"
-    },
-    {
-        "brand": "鹏驰",
-        "brand_defaults": [],
-        "description": "高强螺栓",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "鹏驰"
-    },
-    {
-        "brand": "NOK",
-        "brand_defaults": [],
-        "description": "油封",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "NOK"
-    },
-    {
-        "brand": "特瑞堡",
-        "brand_defaults": [],
-        "description": "密封圈",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "特瑞堡"
-    },
-    {
-        "brand": "麦克",
-        "brand_defaults": [],
-        "description": "密封",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "麦克"
-    },
-    {
-        "brand": "派克密封",
-        "brand_defaults": [],
-        "description": "O型圈",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "派克密封"
-    },
-    {
-        "brand": "博世",
-        "brand_defaults": [],
-        "description": "电动工具",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "博世"
-    },
-    {
-        "brand": "牧田",
-        "brand_defaults": [],
-        "description": "电动工具",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "牧田"
-    },
-    {
-        "brand": "得伟",
-        "brand_defaults": [],
-        "description": "电动工具",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "得伟"
-    },
-    {
-        "brand": "日立",
-        "brand_defaults": [],
-        "description": "电动工具",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "日立"
-    },
-    {
-        "brand": "麦太保",
-        "brand_defaults": [],
-        "description": "角磨机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "麦太保"
-    },
-    {
-        "brand": "喜利得",
-        "brand_defaults": [],
-        "description": "电锤",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "喜利得"
-    },
-    {
-        "brand": "史丹利",
-        "brand_defaults": [],
-        "description": "手工具",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "史丹利"
-    },
-    {
-        "brand": "世达",
-        "brand_defaults": [],
-        "description": "手工具",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "世达"
-    },
-    {
-        "brand": "捷科",
-        "brand_defaults": [],
-        "description": "手工具",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "捷科"
-    },
-    {
-        "brand": "钢盾",
-        "brand_defaults": [],
-        "description": "手工具",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "钢盾"
-    },
-    {
-        "brand": "长城精工",
-        "brand_defaults": [],
-        "description": "卷尺",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "长城精工"
-    },
-    {
-        "brand": "威力",
-        "brand_defaults": [],
-        "description": "手工具",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "威力"
-    },
-    {
-        "brand": "山特维克",
-        "brand_defaults": [],
-        "description": "刀具",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "山特维克"
-    },
-    {
-        "brand": "肯纳",
-        "brand_defaults": [],
-        "description": "刀具",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "肯纳"
-    },
-    {
-        "brand": "伊斯卡",
-        "brand_defaults": [],
-        "description": "刀具",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "伊斯卡"
-    },
-    {
-        "brand": "株钻",
-        "brand_defaults": [],
-        "description": "硬质合金",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "株钻"
-    },
-    {
-        "brand": "林肯电气",
-        "brand_defaults": [],
-        "description": "焊机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "林肯电气"
-    },
-    {
-        "brand": "米勒",
-        "brand_defaults": [],
-        "description": "焊机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "米勒"
-    },
-    {
-        "brand": "松下焊接",
-        "brand_defaults": [],
-        "description": "机器人/焊机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "松下焊接"
-    },
-    {
-        "brand": "瑞凌",
-        "brand_defaults": [],
-        "description": "逆变焊机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "瑞凌"
-    },
-    {
-        "brand": "佳士",
-        "brand_defaults": [],
-        "description": "焊机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "佳士"
-    },
-    {
-        "brand": "上海通用",
-        "brand_defaults": [],
-        "description": "焊材",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "上海通用"
-    },
-    {
-        "brand": "金桥",
-        "brand_defaults": [],
-        "description": "焊材",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "金桥"
-    },
-    {
-        "brand": "大西洋",
-        "brand_defaults": [],
-        "description": "焊材",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "大西洋"
-    },
-    {
-        "brand": "梅思安",
-        "brand_defaults": [],
-        "description": "安全帽/气体检测",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "梅思安"
-    },
-    {
-        "brand": "代尔塔",
-        "brand_defaults": [],
-        "description": "劳保鞋/服",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "代尔塔"
-    },
-    {
-        "brand": "安思尔",
-        "brand_defaults": [],
-        "description": "手套",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "安思尔"
-    },
-    {
-        "brand": "联想",
-        "brand_defaults": [],
-        "description": "电脑/服务器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "联想"
-    },
-    {
-        "brand": "戴尔",
-        "brand_defaults": [],
-        "description": "电脑",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "戴尔"
-    },
-    {
-        "brand": "惠普",
-        "brand_defaults": [],
-        "description": "打印机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "惠普"
-    },
-    {
-        "brand": "苹果",
-        "brand_defaults": [],
-        "description": "电子设备",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "苹果"
-    },
-    {
-        "brand": "华为",
-        "brand_defaults": [],
-        "description": "网络/手机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "华为"
-    },
-    {
-        "brand": "小米",
-        "brand_defaults": [],
-        "description": "电子设备",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "小米"
-    },
-    {
-        "brand": "新华三",
-        "brand_defaults": [],
-        "description": "交换机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "新华三"
-    },
-    {
-        "brand": "海康威视",
-        "brand_defaults": [],
-        "description": "监控",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "海康威视"
-    },
-    {
-        "brand": "大华",
-        "brand_defaults": [],
-        "description": "监控",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "大华"
-    },
-    {
-        "brand": "得力",
-        "brand_defaults": [],
-        "description": "办公用品",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "得力"
-    },
-    {
-        "brand": "晨光",
-        "brand_defaults": [],
-        "description": "文具",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "晨光"
-    },
-    {
-        "brand": "齐心",
-        "brand_defaults": [],
-        "description": "办公用品",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "齐心"
-    },
-    {
-        "brand": "震旦",
-        "brand_defaults": [],
-        "description": "复印机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "震旦"
-    },
-    {
-        "brand": "佳能",
-        "brand_defaults": [],
-        "description": "相机/打印机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "佳能"
-    },
-    {
-        "brand": "爱普生",
-        "brand_defaults": [],
-        "description": "投影仪",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "爱普生"
-    },
-    {
-        "brand": "兄弟",
-        "brand_defaults": [],
-        "description": "打印机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "兄弟"
-    },
-    {
-        "brand": "格力",
-        "brand_defaults": [],
-        "description": "空调",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "格力"
-    },
-    {
-        "brand": "美的",
-        "brand_defaults": [],
-        "description": "电器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "美的"
-    },
-    {
-        "brand": "海尔",
-        "brand_defaults": [],
-        "description": "电器",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "海尔"
-    },
-    {
-        "brand": "比亚迪",
-        "brand_defaults": [],
-        "description": "车辆",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "比亚迪"
-    },
-    {
-        "brand": "丰田",
-        "brand_defaults": [],
-        "description": "叉车/车",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "丰田"
-    },
-    {
-        "brand": "林德",
-        "brand_defaults": [],
-        "description": "叉车",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "林德"
-    },
-    {
-        "brand": "杭叉",
-        "brand_defaults": [],
-        "description": "叉车",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "杭叉"
-    },
-    {
-        "brand": "合力",
-        "brand_defaults": [],
-        "description": "叉车",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "合力"
-    },
-    {
-        "brand": "格兰富",
-        "brand_defaults": [],
-        "description": "水泵",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "格兰富"
-    },
-    {
-        "brand": "威乐",
-        "brand_defaults": [],
-        "description": "水泵",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "威乐"
-    },
-    {
-        "brand": "凯士比",
-        "brand_defaults": [],
-        "description": "工业泵",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "凯士比"
-    },
-    {
-        "brand": "南方泵业",
-        "brand_defaults": [],
-        "description": "不锈钢泵",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "南方泵业"
-    },
-    {
-        "brand": "斯丕瑞莎克",
-        "brand_defaults": [],
-        "description": "蒸汽阀门",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "斯丕瑞莎克"
-    },
-    {
-        "brand": "阿姆斯壮",
-        "brand_defaults": [],
-        "description": "疏水阀",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "阿姆斯壮"
-    },
-    {
-        "brand": "纽威",
-        "brand_defaults": [],
-        "description": "工业阀门",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "纽威"
-    },
-    {
-        "brand": "中核苏阀",
-        "brand_defaults": [],
-        "description": "阀门",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "中核苏阀"
-    },
-    {
-        "brand": "TSC",
-        "brand_defaults": [],
-        "description": "条码打印机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "TSC"
-    },
-    {
-        "brand": "斑马",
-        "brand_defaults": [],
-        "description": "条码打印机",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "斑马"
-    },
-    {
-        "brand": "霍夫曼",
-        "brand_defaults": [],
-        "description": "机柜",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "霍夫曼"
-    },
-    {
-        "brand": "威图",
-        "brand_defaults": [],
-        "description": "机柜",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "威图"
-    },
-    {
-        "brand": "米客方德",
-        "brand_defaults": [],
-        "description": "用户数据",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "米客方德"
-    },
-    {
-        "brand": "虎王",
-        "brand_defaults": [],
-        "description": "用户数据",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "虎王"
-    },
-    {
-        "brand": "茵梦达",
-        "brand_defaults": [],
-        "description": "用户数据",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "茵梦达"
-    },
-    {
-        "brand": "瀚工",
-        "brand_defaults": [],
-        "description": "用户数据",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "瀚工"
-    },
-    {
-        "brand": "三众过滤",
-        "brand_defaults": [],
-        "description": "用户数据",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "三众过滤"
-    },
-    {
-        "brand": "海斯迪克",
-        "brand_defaults": [],
-        "description": "用户数据",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "海斯迪克"
-    },
-    {
-        "brand": "科莱沃",
-        "brand_defaults": [],
-        "description": "用户数据",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "科莱沃"
-    },
-    {
-        "brand": "维特锐",
-        "brand_defaults": [],
-        "description": "用户数据",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "维特锐"
-    },
-    {
-        "brand": "力得",
-        "brand_defaults": [],
-        "description": "用户数据",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "力得"
-    },
-    {
-        "brand": "中意",
-        "brand_defaults": [],
-        "description": "用户数据",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "中意"
-    },
-    {
-        "brand": "通用",
-        "brand_defaults": [],
-        "description": "通用无品牌",
-        "docstatus": 0,
-        "doctype": "Brand",
-        "image": null,
-        "modified": "2025-12-24 19:57:51.043893",
-        "name": "通用"
-    }
+ {
+  "brand": "宝武钢铁",
+  "brand_defaults": [],
+  "description": "板材、型材",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "宝武钢铁"
+ },
+ {
+  "brand": "鞍钢",
+  "brand_defaults": [],
+  "description": "板材、管材",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "鞍钢"
+ },
+ {
+  "brand": "首钢",
+  "brand_defaults": [],
+  "description": "板材",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "首钢"
+ },
+ {
+  "brand": "沙钢",
+  "brand_defaults": [],
+  "description": "建筑钢材",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "沙钢"
+ },
+ {
+  "brand": "马钢",
+  "brand_defaults": [],
+  "description": "H型钢",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "马钢"
+ },
+ {
+  "brand": "太钢",
+  "brand_defaults": [],
+  "description": "不锈钢",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "太钢"
+ },
+ {
+  "brand": "本钢",
+  "brand_defaults": [],
+  "description": "板材",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "本钢"
+ },
+ {
+  "brand": "华菱钢铁",
+  "brand_defaults": [],
+  "description": "管材、宽厚板",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "华菱钢铁"
+ },
+ {
+  "brand": "中信泰富特钢",
+  "brand_defaults": [],
+  "description": "优特钢",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "中信泰富特钢"
+ },
+ {
+  "brand": "青山控股",
+  "brand_defaults": [],
+  "description": "不锈钢",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "青山控股"
+ },
+ {
+  "brand": "中国铝业",
+  "brand_defaults": [],
+  "description": "铝材",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "中国铝业"
+ },
+ {
+  "brand": "南山铝业",
+  "brand_defaults": [],
+  "description": "铝型材",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "南山铝业"
+ },
+ {
+  "brand": "兴发铝业",
+  "brand_defaults": [],
+  "description": "建筑铝型材",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "兴发铝业"
+ },
+ {
+  "brand": "忠旺",
+  "brand_defaults": [],
+  "description": "工业铝型材",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "忠旺"
+ },
+ {
+  "brand": "瑞乃尔",
+  "brand_defaults": [],
+  "description": "耐磨材料",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "瑞乃尔"
+ },
+ {
+  "brand": "鲁阳",
+  "brand_defaults": [],
+  "description": "保温棉、耐火材料",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "鲁阳"
+ },
+ {
+  "brand": "立邦",
+  "brand_defaults": [],
+  "description": "工业涂料",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "立邦"
+ },
+ {
+  "brand": "佐敦",
+  "brand_defaults": [],
+  "description": "防腐涂料",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "佐敦"
+ },
+ {
+  "brand": "阿克苏诺贝尔",
+  "brand_defaults": [],
+  "description": "粉末涂料",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "阿克苏诺贝尔"
+ },
+ {
+  "brand": "宣伟",
+  "brand_defaults": [],
+  "description": "涂料",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "宣伟"
+ },
+ {
+  "brand": "PPG",
+  "brand_defaults": [],
+  "description": "防护涂料",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "PPG"
+ },
+ {
+  "brand": "海虹老人",
+  "brand_defaults": [],
+  "description": "船舶与重防腐",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "海虹老人"
+ },
+ {
+  "brand": "壳牌",
+  "brand_defaults": [],
+  "description": "润滑油",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "壳牌"
+ },
+ {
+  "brand": "美孚",
+  "brand_defaults": [],
+  "description": "润滑油",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "美孚"
+ },
+ {
+  "brand": "嘉实多",
+  "brand_defaults": [],
+  "description": "切削液",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "嘉实多"
+ },
+ {
+  "brand": "道达尔",
+  "brand_defaults": [],
+  "description": "润滑油",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "道达尔"
+ },
+ {
+  "brand": "克鲁勃",
+  "brand_defaults": [],
+  "description": "特种润滑",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "克鲁勃"
+ },
+ {
+  "brand": "长城润滑油",
+  "brand_defaults": [],
+  "description": "国产润滑油",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "长城润滑油"
+ },
+ {
+  "brand": "昆仑润滑",
+  "brand_defaults": [],
+  "description": "液压油",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "昆仑润滑"
+ },
+ {
+  "brand": "汉高",
+  "brand_defaults": [],
+  "description": "胶粘剂、表面处理",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "汉高"
+ },
+ {
+  "brand": "乐泰",
+  "brand_defaults": [],
+  "description": "螺纹胶",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "乐泰"
+ },
+ {
+  "brand": "3M",
+  "brand_defaults": [],
+  "description": "胶带、研磨、劳保",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "3M"
+ },
+ {
+  "brand": "西卡",
+  "brand_defaults": [],
+  "description": "密封胶",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "西卡"
+ },
+ {
+  "brand": "回天",
+  "brand_defaults": [],
+  "description": "工程胶粘剂",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "回天"
+ },
+ {
+  "brand": "施耐德",
+  "brand_defaults": [],
+  "description": "低压电气、PLC",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "施耐德"
+ },
+ {
+  "brand": "西门子",
+  "brand_defaults": [],
+  "description": "PLC、电机、变频器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "西门子"
+ },
+ {
+  "brand": "ABB",
+  "brand_defaults": [],
+  "description": "变频器、接触器、机器人",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "ABB"
+ },
+ {
+  "brand": "欧姆龙",
+  "brand_defaults": [],
+  "description": "传感器、继电器、PLC",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "欧姆龙"
+ },
+ {
+  "brand": "三菱电机",
+  "brand_defaults": [],
+  "description": "PLC、伺服",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "三菱电机"
+ },
+ {
+  "brand": "罗克韦尔",
+  "brand_defaults": [],
+  "description": "AB PLC",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "罗克韦尔"
+ },
+ {
+  "brand": "富士电机",
+  "brand_defaults": [],
+  "description": "接触器、变频器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "富士电机"
+ },
+ {
+  "brand": "LS产电",
+  "brand_defaults": [],
+  "description": "低压电器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "LS产电"
+ },
+ {
+  "brand": "台达",
+  "brand_defaults": [],
+  "description": "变频器、电源",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "台达"
+ },
+ {
+  "brand": "正泰",
+  "brand_defaults": [],
+  "description": "低压电器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "正泰"
+ },
+ {
+  "brand": "德力西",
+  "brand_defaults": [],
+  "description": "低压电器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "德力西"
+ },
+ {
+  "brand": "天正电气",
+  "brand_defaults": [],
+  "description": "低压电器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "天正电气"
+ },
+ {
+  "brand": "人民电器",
+  "brand_defaults": [],
+  "description": "电气元件",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "人民电器"
+ },
+ {
+  "brand": "良信",
+  "brand_defaults": [],
+  "description": "高端低压电器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "良信"
+ },
+ {
+  "brand": "公牛",
+  "brand_defaults": [],
+  "description": "插座、开关",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "公牛"
+ },
+ {
+  "brand": "菲尼克斯",
+  "brand_defaults": [],
+  "description": "端子、电源",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "菲尼克斯"
+ },
+ {
+  "brand": "魏德米勒",
+  "brand_defaults": [],
+  "description": "接线端子",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "魏德米勒"
+ },
+ {
+  "brand": "万可",
+  "brand_defaults": [],
+  "description": "弹簧端子",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "万可"
+ },
+ {
+  "brand": "基恩士",
+  "brand_defaults": [],
+  "description": "传感器、视觉",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "基恩士"
+ },
+ {
+  "brand": "希克斯",
+  "brand_defaults": [],
+  "description": "传感器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "希克斯"
+ },
+ {
+  "brand": "图尔克",
+  "brand_defaults": [],
+  "description": "接近开关",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "图尔克"
+ },
+ {
+  "brand": "易福门",
+  "brand_defaults": [],
+  "description": "流体传感器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "易福门"
+ },
+ {
+  "brand": "巴鲁夫",
+  "brand_defaults": [],
+  "description": "位移传感器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "巴鲁夫"
+ },
+ {
+  "brand": "倍加福",
+  "brand_defaults": [],
+  "description": "安全栅、传感器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "倍加福"
+ },
+ {
+  "brand": "邦纳",
+  "brand_defaults": [],
+  "description": "光电开关",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "邦纳"
+ },
+ {
+  "brand": "奥托尼克斯",
+  "brand_defaults": [],
+  "description": "温控器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "奥托尼克斯"
+ },
+ {
+  "brand": "霍尼韦尔",
+  "brand_defaults": [],
+  "description": "微动开关、传感器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "霍尼韦尔"
+ },
+ {
+  "brand": "明纬",
+  "brand_defaults": [],
+  "description": "开关电源",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "明纬"
+ },
+ {
+  "brand": "普尔世",
+  "brand_defaults": [],
+  "description": "高端电源",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "普尔世"
+ },
+ {
+  "brand": "金升阳",
+  "brand_defaults": [],
+  "description": "电源模块",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "金升阳"
+ },
+ {
+  "brand": "汇川技术",
+  "brand_defaults": [],
+  "description": "变频器、伺服",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "汇川技术"
+ },
+ {
+  "brand": "英威腾",
+  "brand_defaults": [],
+  "description": "变频器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "英威腾"
+ },
+ {
+  "brand": "信捷",
+  "brand_defaults": [],
+  "description": "小型PLC",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "信捷"
+ },
+ {
+  "brand": "昆仑通态",
+  "brand_defaults": [],
+  "description": "触摸屏",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "昆仑通态"
+ },
+ {
+  "brand": "威纶通",
+  "brand_defaults": [],
+  "description": "触摸屏",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "威纶通"
+ },
+ {
+  "brand": "SKF",
+  "brand_defaults": [],
+  "description": "轴承",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "SKF"
+ },
+ {
+  "brand": "NSK",
+  "brand_defaults": [],
+  "description": "轴承",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "NSK"
+ },
+ {
+  "brand": "FAG",
+  "brand_defaults": [],
+  "description": "轴承",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "FAG"
+ },
+ {
+  "brand": "NTN",
+  "brand_defaults": [],
+  "description": "轴承",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "NTN"
+ },
+ {
+  "brand": "铁姆肯",
+  "brand_defaults": [],
+  "description": "圆锥滚子轴承",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "铁姆肯"
+ },
+ {
+  "brand": "光洋",
+  "brand_defaults": [],
+  "description": "轴承",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "光洋"
+ },
+ {
+  "brand": "人本",
+  "brand_defaults": [],
+  "description": "国产轴承",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "人本"
+ },
+ {
+  "brand": "万向",
+  "brand_defaults": [],
+  "description": "汽车零部件",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "万向"
+ },
+ {
+  "brand": "瓦轴",
+  "brand_defaults": [],
+  "description": "重型轴承",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "瓦轴"
+ },
+ {
+  "brand": "哈轴",
+  "brand_defaults": [],
+  "description": "电机轴承",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "哈轴"
+ },
+ {
+  "brand": "洛轴",
+  "brand_defaults": [],
+  "description": "转盘轴承",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "洛轴"
+ },
+ {
+  "brand": "SEW",
+  "brand_defaults": [],
+  "description": "减速机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "SEW"
+ },
+ {
+  "brand": "诺德",
+  "brand_defaults": [],
+  "description": "减速机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "诺德"
+ },
+ {
+  "brand": "住友",
+  "brand_defaults": [],
+  "description": "减速机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "住友"
+ },
+ {
+  "brand": "邦飞利",
+  "brand_defaults": [],
+  "description": "减速机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "邦飞利"
+ },
+ {
+  "brand": "国茂",
+  "brand_defaults": [],
+  "description": "国产减速机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "国茂"
+ },
+ {
+  "brand": "通力",
+  "brand_defaults": [],
+  "description": "电梯/部件",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "通力"
+ },
+ {
+  "brand": "杰牌",
+  "brand_defaults": [],
+  "description": "减速机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "杰牌"
+ },
+ {
+  "brand": "上银",
+  "brand_defaults": [],
+  "description": "导轨丝杆",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "上银"
+ },
+ {
+  "brand": "THK",
+  "brand_defaults": [],
+  "description": "导轨",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "THK"
+ },
+ {
+  "brand": "银泰",
+  "brand_defaults": [],
+  "description": "PMI导轨",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "银泰"
+ },
+ {
+  "brand": "盖茨",
+  "brand_defaults": [],
+  "description": "皮带",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "盖茨"
+ },
+ {
+  "brand": "欧皮特",
+  "brand_defaults": [],
+  "description": "皮带",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "欧皮特"
+ },
+ {
+  "brand": "三力士",
+  "brand_defaults": [],
+  "description": "三角带",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "三力士"
+ },
+ {
+  "brand": "博世力士乐",
+  "brand_defaults": [],
+  "description": "液压阀泵",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "博世力士乐"
+ },
+ {
+  "brand": "派克",
+  "brand_defaults": [],
+  "description": "液压软管、接头",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "派克"
+ },
+ {
+  "brand": "伊顿",
+  "brand_defaults": [],
+  "description": "液压",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "伊顿"
+ },
+ {
+  "brand": "威格士",
+  "brand_defaults": [],
+  "description": "叶片泵",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "威格士"
+ },
+ {
+  "brand": "哈威",
+  "brand_defaults": [],
+  "description": "高压液压",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "哈威"
+ },
+ {
+  "brand": "阿托斯",
+  "brand_defaults": [],
+  "description": "比例阀",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "阿托斯"
+ },
+ {
+  "brand": "油研",
+  "brand_defaults": [],
+  "description": "液压阀",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "油研"
+ },
+ {
+  "brand": "SMC",
+  "brand_defaults": [],
+  "description": "气动元件",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "SMC"
+ },
+ {
+  "brand": "费斯托",
+  "brand_defaults": [],
+  "description": "高端气动",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "费斯托"
+ },
+ {
+  "brand": "亚德客",
+  "brand_defaults": [],
+  "description": "气缸、电磁阀",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "亚德客"
+ },
+ {
+  "brand": "诺冠",
+  "brand_defaults": [],
+  "description": "气动",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "诺冠"
+ },
+ {
+  "brand": "CKD",
+  "brand_defaults": [],
+  "description": "气动",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "CKD"
+ },
+ {
+  "brand": "小金井",
+  "brand_defaults": [],
+  "description": "气动",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "小金井"
+ },
+ {
+  "brand": "气立可",
+  "brand_defaults": [],
+  "description": "气动",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "气立可"
+ },
+ {
+  "brand": "北京华德",
+  "brand_defaults": [],
+  "description": "国产液压阀",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "北京华德"
+ },
+ {
+  "brand": "太重榆次",
+  "brand_defaults": [],
+  "description": "液压件",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "太重榆次"
+ },
+ {
+  "brand": "黎明液压",
+  "brand_defaults": [],
+  "description": "过滤器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "黎明液压"
+ },
+ {
+  "brand": "贺德克",
+  "brand_defaults": [],
+  "description": "蓄能器、传感器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "贺德克"
+ },
+ {
+  "brand": "伍尔特",
+  "brand_defaults": [],
+  "description": "紧固件、MRO",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "伍尔特"
+ },
+ {
+  "brand": "晋亿",
+  "brand_defaults": [],
+  "description": "螺栓",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "晋亿"
+ },
+ {
+  "brand": "东明",
+  "brand_defaults": [],
+  "description": "不锈钢紧固件",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "东明"
+ },
+ {
+  "brand": "奥展",
+  "brand_defaults": [],
+  "description": "不锈钢紧固件",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "奥展"
+ },
+ {
+  "brand": "鹏驰",
+  "brand_defaults": [],
+  "description": "高强螺栓",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "鹏驰"
+ },
+ {
+  "brand": "NOK",
+  "brand_defaults": [],
+  "description": "油封",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "NOK"
+ },
+ {
+  "brand": "特瑞堡",
+  "brand_defaults": [],
+  "description": "密封圈",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "特瑞堡"
+ },
+ {
+  "brand": "麦克",
+  "brand_defaults": [],
+  "description": "密封",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "麦克"
+ },
+ {
+  "brand": "派克密封",
+  "brand_defaults": [],
+  "description": "O型圈",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "派克密封"
+ },
+ {
+  "brand": "博世",
+  "brand_defaults": [],
+  "description": "电动工具",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "博世"
+ },
+ {
+  "brand": "牧田",
+  "brand_defaults": [],
+  "description": "电动工具",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "牧田"
+ },
+ {
+  "brand": "得伟",
+  "brand_defaults": [],
+  "description": "电动工具",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "得伟"
+ },
+ {
+  "brand": "日立",
+  "brand_defaults": [],
+  "description": "电动工具",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "日立"
+ },
+ {
+  "brand": "麦太保",
+  "brand_defaults": [],
+  "description": "角磨机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "麦太保"
+ },
+ {
+  "brand": "喜利得",
+  "brand_defaults": [],
+  "description": "电锤",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "喜利得"
+ },
+ {
+  "brand": "史丹利",
+  "brand_defaults": [],
+  "description": "手工具",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "史丹利"
+ },
+ {
+  "brand": "世达",
+  "brand_defaults": [],
+  "description": "手工具",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "世达"
+ },
+ {
+  "brand": "捷科",
+  "brand_defaults": [],
+  "description": "手工具",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "捷科"
+ },
+ {
+  "brand": "钢盾",
+  "brand_defaults": [],
+  "description": "手工具",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "钢盾"
+ },
+ {
+  "brand": "长城精工",
+  "brand_defaults": [],
+  "description": "卷尺",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "长城精工"
+ },
+ {
+  "brand": "威力",
+  "brand_defaults": [],
+  "description": "手工具",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "威力"
+ },
+ {
+  "brand": "山特维克",
+  "brand_defaults": [],
+  "description": "刀具",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "山特维克"
+ },
+ {
+  "brand": "肯纳",
+  "brand_defaults": [],
+  "description": "刀具",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "肯纳"
+ },
+ {
+  "brand": "伊斯卡",
+  "brand_defaults": [],
+  "description": "刀具",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "伊斯卡"
+ },
+ {
+  "brand": "株钻",
+  "brand_defaults": [],
+  "description": "硬质合金",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "株钻"
+ },
+ {
+  "brand": "林肯电气",
+  "brand_defaults": [],
+  "description": "焊机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "林肯电气"
+ },
+ {
+  "brand": "米勒",
+  "brand_defaults": [],
+  "description": "焊机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "米勒"
+ },
+ {
+  "brand": "松下焊接",
+  "brand_defaults": [],
+  "description": "机器人/焊机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "松下焊接"
+ },
+ {
+  "brand": "瑞凌",
+  "brand_defaults": [],
+  "description": "逆变焊机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "瑞凌"
+ },
+ {
+  "brand": "佳士",
+  "brand_defaults": [],
+  "description": "焊机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "佳士"
+ },
+ {
+  "brand": "上海通用",
+  "brand_defaults": [],
+  "description": "焊材",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "上海通用"
+ },
+ {
+  "brand": "金桥",
+  "brand_defaults": [],
+  "description": "焊材",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "金桥"
+ },
+ {
+  "brand": "大西洋",
+  "brand_defaults": [],
+  "description": "焊材",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "大西洋"
+ },
+ {
+  "brand": "梅思安",
+  "brand_defaults": [],
+  "description": "安全帽/气体检测",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "梅思安"
+ },
+ {
+  "brand": "代尔塔",
+  "brand_defaults": [],
+  "description": "劳保鞋/服",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "代尔塔"
+ },
+ {
+  "brand": "安思尔",
+  "brand_defaults": [],
+  "description": "手套",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "安思尔"
+ },
+ {
+  "brand": "联想",
+  "brand_defaults": [],
+  "description": "电脑/服务器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "联想"
+ },
+ {
+  "brand": "戴尔",
+  "brand_defaults": [],
+  "description": "电脑",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "戴尔"
+ },
+ {
+  "brand": "惠普",
+  "brand_defaults": [],
+  "description": "打印机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "惠普"
+ },
+ {
+  "brand": "苹果",
+  "brand_defaults": [],
+  "description": "电子设备",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "苹果"
+ },
+ {
+  "brand": "华为",
+  "brand_defaults": [],
+  "description": "网络/手机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "华为"
+ },
+ {
+  "brand": "小米",
+  "brand_defaults": [],
+  "description": "电子设备",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "小米"
+ },
+ {
+  "brand": "新华三",
+  "brand_defaults": [],
+  "description": "交换机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "新华三"
+ },
+ {
+  "brand": "海康威视",
+  "brand_defaults": [],
+  "description": "监控",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "海康威视"
+ },
+ {
+  "brand": "大华",
+  "brand_defaults": [],
+  "description": "监控",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "大华"
+ },
+ {
+  "brand": "得力",
+  "brand_defaults": [],
+  "description": "办公用品",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "得力"
+ },
+ {
+  "brand": "晨光",
+  "brand_defaults": [],
+  "description": "文具",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "晨光"
+ },
+ {
+  "brand": "齐心",
+  "brand_defaults": [],
+  "description": "办公用品",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "齐心"
+ },
+ {
+  "brand": "震旦",
+  "brand_defaults": [],
+  "description": "复印机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "震旦"
+ },
+ {
+  "brand": "佳能",
+  "brand_defaults": [],
+  "description": "相机/打印机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "佳能"
+ },
+ {
+  "brand": "爱普生",
+  "brand_defaults": [],
+  "description": "投影仪",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "爱普生"
+ },
+ {
+  "brand": "兄弟",
+  "brand_defaults": [],
+  "description": "打印机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "兄弟"
+ },
+ {
+  "brand": "格力",
+  "brand_defaults": [],
+  "description": "空调",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "格力"
+ },
+ {
+  "brand": "美的",
+  "brand_defaults": [],
+  "description": "电器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "美的"
+ },
+ {
+  "brand": "海尔",
+  "brand_defaults": [],
+  "description": "电器",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "海尔"
+ },
+ {
+  "brand": "比亚迪",
+  "brand_defaults": [],
+  "description": "车辆",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "比亚迪"
+ },
+ {
+  "brand": "丰田",
+  "brand_defaults": [],
+  "description": "叉车/车",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "丰田"
+ },
+ {
+  "brand": "林德",
+  "brand_defaults": [],
+  "description": "叉车",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "林德"
+ },
+ {
+  "brand": "杭叉",
+  "brand_defaults": [],
+  "description": "叉车",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "杭叉"
+ },
+ {
+  "brand": "合力",
+  "brand_defaults": [],
+  "description": "叉车",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "合力"
+ },
+ {
+  "brand": "格兰富",
+  "brand_defaults": [],
+  "description": "水泵",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "格兰富"
+ },
+ {
+  "brand": "威乐",
+  "brand_defaults": [],
+  "description": "水泵",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "威乐"
+ },
+ {
+  "brand": "凯士比",
+  "brand_defaults": [],
+  "description": "工业泵",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "凯士比"
+ },
+ {
+  "brand": "南方泵业",
+  "brand_defaults": [],
+  "description": "不锈钢泵",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "南方泵业"
+ },
+ {
+  "brand": "斯丕瑞莎克",
+  "brand_defaults": [],
+  "description": "蒸汽阀门",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "斯丕瑞莎克"
+ },
+ {
+  "brand": "阿姆斯壮",
+  "brand_defaults": [],
+  "description": "疏水阀",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "阿姆斯壮"
+ },
+ {
+  "brand": "纽威",
+  "brand_defaults": [],
+  "description": "工业阀门",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "纽威"
+ },
+ {
+  "brand": "中核苏阀",
+  "brand_defaults": [],
+  "description": "阀门",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "中核苏阀"
+ },
+ {
+  "brand": "TSC",
+  "brand_defaults": [],
+  "description": "条码打印机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "TSC"
+ },
+ {
+  "brand": "斑马",
+  "brand_defaults": [],
+  "description": "条码打印机",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "斑马"
+ },
+ {
+  "brand": "霍夫曼",
+  "brand_defaults": [],
+  "description": "机柜",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "霍夫曼"
+ },
+ {
+  "brand": "威图",
+  "brand_defaults": [],
+  "description": "机柜",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "威图"
+ },
+ {
+  "brand": "米客方德",
+  "brand_defaults": [],
+  "description": "用户数据",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "米客方德"
+ },
+ {
+  "brand": "虎王",
+  "brand_defaults": [],
+  "description": "用户数据",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "虎王"
+ },
+ {
+  "brand": "茵梦达",
+  "brand_defaults": [],
+  "description": "用户数据",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "茵梦达"
+ },
+ {
+  "brand": "瀚工",
+  "brand_defaults": [],
+  "description": "用户数据",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "瀚工"
+ },
+ {
+  "brand": "三众过滤",
+  "brand_defaults": [],
+  "description": "用户数据",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "三众过滤"
+ },
+ {
+  "brand": "海斯迪克",
+  "brand_defaults": [],
+  "description": "用户数据",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "海斯迪克"
+ },
+ {
+  "brand": "科莱沃",
+  "brand_defaults": [],
+  "description": "用户数据",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "科莱沃"
+ },
+ {
+  "brand": "维特锐",
+  "brand_defaults": [],
+  "description": "用户数据",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "维特锐"
+ },
+ {
+  "brand": "力得",
+  "brand_defaults": [],
+  "description": "用户数据",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "力得"
+ },
+ {
+  "brand": "中意",
+  "brand_defaults": [],
+  "description": "用户数据",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "中意"
+ },
+ {
+  "brand": "通用",
+  "brand_defaults": [],
+  "description": "通用无品牌",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "通用"
+ }
 ]
