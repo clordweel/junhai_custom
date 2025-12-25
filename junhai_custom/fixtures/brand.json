@@ -1938,5 +1938,15 @@
   "image": null,
   "modified": "2025-12-24 19:57:51.043893",
   "name": "通用"
+ },
+ {
+  "brand": "起帆",
+  "brand_defaults": [],
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-25 10:21:52.705791",
+  "name": "起帆"
  }
 ]

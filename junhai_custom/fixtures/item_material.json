@@ -407,6 +407,61 @@
   "name": "WCB"
  },
  {
+  "description": "是中国国家标准 GB/T 699 中的优质碳素结构钢，其含碳量约为 0.20%，属于典型的低碳钢。它以优异的焊接性能、冷冲压性能和良好的塑韧性著称。",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Material",
+  "image": null,
+  "material_code": "20#",
+  "material_name": "20# 低碳钢",
+  "modified": "2025-12-25 10:27:33.714132",
+  "name": "20#"
+ },
+ {
+  "description": "表示 Al2O3 含量 ≥ 80% 的高铝耐火砖。",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Material",
+  "image": null,
+  "material_code": "LZ-80",
+  "material_name": "LZ-80 高铝",
+  "modified": "2025-12-25 11:18:32.217351",
+  "name": "LZ-80"
+ },
+ {
+  "description": "表示 Al2O3 含量为 75% 的高铝耐火砖。",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Material",
+  "image": null,
+  "material_code": "LZ-75",
+  "material_name": "LZ-75 高铝",
+  "modified": "2025-12-25 11:20:30.795903",
+  "name": "LZ-75"
+ },
+ {
+  "description": "表示 Al2O3 含量为 65% 的高铝耐火砖。",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Material",
+  "image": null,
+  "material_code": "LZ-65",
+  "material_name": "LZ-65高铝",
+  "modified": "2025-12-25 11:20:41.100102",
+  "name": "LZ-65"
+ },
+ {
+  "description": "表示 Al2O3 含量为 55% 的高铝耐火砖。",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Material",
+  "image": null,
+  "material_code": "LZ-55",
+  "material_name": "LZ-55高铝",
+  "modified": "2025-12-25 11:20:51.672737",
+  "name": "LZ-55"
+ },
+ {
   "description": "抗拉强度 200MPa，常用于轴承座、皮带轮、减速机壳",
   "disabled": 0,
   "docstatus": 0,
