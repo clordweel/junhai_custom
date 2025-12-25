@@ -184,9 +184,11 @@ scheduler_events = {
 # ------------------------------
 #
 # Specify custom mixins to extend the standard doctype controller.
-# extend_doctype_class = {
-# 	"Task": "junhai_custom.custom.task.CustomTaskMixin"
-# }
+extend_doctype_class = {
+    "Purchase Order": "junhai_custom.overrides.buying_ext.JunhaiBuyingRMBMixin",
+    "Purchase Invoice": "junhai_custom.overrides.buying_ext.JunhaiBuyingRMBMixin",
+    "Material Request": "junhai_custom.overrides.buying_ext.JunhaiBuyingRMBMixin",
+}
 
 # Overriding Methods
 # ------------------------------
