@@ -287,6 +287,7 @@ fixtures = [
     # {"dt": "Social Login Key", "filters": [["name", "=", "logto"]]},
     {"dt": "External Link", "filters": [["module", "=", app_title]]},
     {"dt": "Custom Field", "filters": [["module", "=", app_title]]},
+    {"dt": "Account", "filters": [["company", "=", "徐州君海管理咨询有限公司"]]},
     {"dt": "Brand", "filters": []},
     {
         "dt": "UOM",
