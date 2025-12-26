@@ -687,5 +687,31 @@
   "name": "0hggbogrs1",
   "source_text": "Standard Tax Rate",
   "translated_text": "标准税率"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-27 01:27:42.153416",
+  "name": "dsdt9488ur",
+  "source_text": "Account Category",
+  "translated_text": "科目分类"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "zh",
+  "modified": "2025-12-27 01:29:12.519915",
+  "name": "ejntdhobcl",
+  "source_text": "Used with Financial Report Template",
+  "translated_text": "与财务报告模板配合使用"
  }
 ]

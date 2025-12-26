@@ -270,16 +270,6 @@
   "name": "克鲁勃"
  },
  {
-  "brand": "长城润滑油",
-  "brand_defaults": [],
-  "description": "国产润滑油",
-  "docstatus": 0,
-  "doctype": "Brand",
-  "image": null,
-  "modified": "2025-12-24 19:57:51.043893",
-  "name": "长城润滑油"
- },
- {
   "brand": "昆仑润滑",
   "brand_defaults": [],
   "description": "液压油",
@@ -1948,5 +1938,15 @@
   "image": null,
   "modified": "2025-12-25 10:21:52.705791",
   "name": "起帆"
+ },
+ {
+  "brand": "长城润滑油",
+  "brand_defaults": [],
+  "description": "国产润滑油",
+  "docstatus": 0,
+  "doctype": "Brand",
+  "image": null,
+  "modified": "2025-12-24 19:57:51.043893",
+  "name": "长城润滑油"
  }
 ]

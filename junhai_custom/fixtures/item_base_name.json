@@ -1200,18 +1200,6 @@
   "parent_item_base_name": "化工辅料"
  },
  {
-  "base_name": "抗磨液压油",
-  "description": null,
-  "disabled": 0,
-  "docstatus": 0,
-  "doctype": "Item Base Name",
-  "is_group": 0,
-  "modified": "2025-12-25 10:44:50.815312",
-  "name": "抗磨液压油",
-  "old_parent": "润滑油脂",
-  "parent_item_base_name": "润滑油脂"
- },
- {
   "base_name": "液压油",
   "description": null,
   "disabled": 0,
@@ -1426,5 +1414,17 @@
   "name": "无缝钢管",
   "old_parent": "管材",
   "parent_item_base_name": "管材"
+ },
+ {
+  "base_name": "抗磨液压油",
+  "description": null,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Base Name",
+  "is_group": 0,
+  "modified": "2025-12-25 10:44:50.815312",
+  "name": "抗磨液压油",
+  "old_parent": "润滑油脂",
+  "parent_item_base_name": "润滑油脂"
  }
 ]

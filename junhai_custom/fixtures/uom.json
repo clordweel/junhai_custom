@@ -65,18 +65,6 @@
   "docstatus": 0,
   "doctype": "UOM",
   "enabled": 1,
-  "modified": "2025-12-25 05:30:04.514367",
-  "must_be_whole_number": 0,
-  "name": "支",
-  "symbol": null,
-  "uom_name": "支"
- },
- {
-  "common_code": null,
-  "description": null,
-  "docstatus": 0,
-  "doctype": "UOM",
-  "enabled": 1,
   "modified": "2025-12-25 10:41:29.001021",
   "must_be_whole_number": 0,
   "name": "组",
@@ -154,6 +142,18 @@
   "name": "片",
   "symbol": null,
   "uom_name": "片"
+ },
+ {
+  "common_code": null,
+  "description": null,
+  "docstatus": 0,
+  "doctype": "UOM",
+  "enabled": 1,
+  "modified": "2025-12-25 05:30:04.514367",
+  "must_be_whole_number": 0,
+  "name": "支",
+  "symbol": null,
+  "uom_name": "支"
  },
  {
   "common_code": null,

@@ -204,7 +204,7 @@
   "length": 0,
   "link_filters": null,
   "mandatory_depends_on": "eval:doc.custom_sourcing_type==\"Subcontracted\"||doc.custom_sourcing_type==\"Manufactured\"",
-  "modified": "2025-12-14 12:31:27.350162",
+  "modified": "2025-12-26 11:36:13.062936",
   "module": "Junhai Custom",
   "name": "Item-custom_drawing_number",
   "no_copy": 1,
@@ -224,7 +224,7 @@
   "show_dashboard": 0,
   "sort_options": 0,
   "translatable": 0,
-  "unique": 0,
+  "unique": 1,
   "width": null
  },
  {

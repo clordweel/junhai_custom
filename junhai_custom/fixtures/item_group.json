@@ -736,22 +736,6 @@
   "taxes": []
  },
  {
-  "custom_code": "4040",
-  "custom_description": "扳手、钳子、卷尺、千斤顶",
-  "custom_standard_tax_rate": 9.0,
-  "docstatus": 0,
-  "doctype": "Item Group",
-  "image": null,
-  "is_group": 0,
-  "item_group_defaults": [],
-  "item_group_name": "五金工具",
-  "modified": "2025-12-21 15:01:25.313060",
-  "name": "五金工具",
-  "old_parent": "MRO与工具",
-  "parent_item_group": "MRO与工具",
-  "taxes": []
- },
- {
   "custom_code": "4050",
   "custom_description": "维修自家行车/机床用的配件",
   "custom_standard_tax_rate": 0.0,
@@ -1040,22 +1024,6 @@
   "taxes": []
  },
  {
-  "custom_code": "2034",
-  "custom_description": "通用碳钢螺栓、螺母、垫圈。(按数量/重量计价)。",
-  "custom_standard_tax_rate": 13.0,
-  "docstatus": 0,
-  "doctype": "Item Group",
-  "image": null,
-  "is_group": 1,
-  "item_group_defaults": [],
-  "item_group_name": "紧固件",
-  "modified": "2025-12-21 14:49:09.766290",
-  "name": "紧固件",
-  "old_parent": "机械标准件",
-  "parent_item_group": "机械标准件",
-  "taxes": []
- },
- {
   "custom_code": "1060",
   "custom_description": null,
   "custom_standard_tax_rate": 0.0,
@@ -1117,6 +1085,38 @@
   "name": "MRO与工具",
   "old_parent": "All Item Groups",
   "parent_item_group": "All Item Groups",
+  "taxes": []
+ },
+ {
+  "custom_code": "4040",
+  "custom_description": "扳手、钳子、卷尺、千斤顶",
+  "custom_standard_tax_rate": 9.0,
+  "docstatus": 0,
+  "doctype": "Item Group",
+  "image": null,
+  "is_group": 0,
+  "item_group_defaults": [],
+  "item_group_name": "五金工具",
+  "modified": "2025-12-21 15:01:25.313060",
+  "name": "五金工具",
+  "old_parent": "MRO与工具",
+  "parent_item_group": "MRO与工具",
+  "taxes": []
+ },
+ {
+  "custom_code": "2034",
+  "custom_description": "通用碳钢螺栓、螺母、垫圈。(按数量/重量计价)。",
+  "custom_standard_tax_rate": 13.0,
+  "docstatus": 0,
+  "doctype": "Item Group",
+  "image": null,
+  "is_group": 1,
+  "item_group_defaults": [],
+  "item_group_name": "紧固件",
+  "modified": "2025-12-21 14:49:09.766290",
+  "name": "紧固件",
+  "old_parent": "机械标准件",
+  "parent_item_group": "机械标准件",
   "taxes": []
  },
  {
