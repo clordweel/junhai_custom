@@ -1,7 +1,7 @@
 {
  "app": "junhai_custom",
  "charts": [],
- "content": "[{\"id\":\"sEwzFPyT74\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"\u5916\u90e8\u94fe\u63a5\",\"col\":4}},{\"id\":\"QlQQ4VbvJy\",\"type\":\"card\",\"data\":{\"card_name\":\"\u7269\u6599\u5de5\u5177\",\"col\":4}},{\"id\":\"3ZV1w1GCKn\",\"type\":\"card\",\"data\":{\"card_name\":\"\u7269\u6599\u53c2\u6570\",\"col\":4}}]",
+ "content": "[{\"id\":\"QlQQ4VbvJy\",\"type\":\"card\",\"data\":{\"card_name\":\"\u7269\u6599\u5de5\u5177\",\"col\":4}},{\"id\":\"3ZV1w1GCKn\",\"type\":\"card\",\"data\":{\"card_name\":\"\u7269\u6599\u53c2\u6570\",\"col\":4}}]",
  "creation": "2025-12-12 08:30:48.221143",
  "custom_blocks": [],
  "docstatus": 0,
@@ -115,7 +115,7 @@
    "type": "Link"
   }
  ],
- "modified": "2025-12-23 14:59:21.832834",
+ "modified": "2025-12-29 02:54:26.787231",
  "modified_by": "Administrator",
  "module": "Junhai Custom",
  "name": "Junhai Custom",
@@ -123,13 +123,7 @@
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
- "quick_lists": [
-  {
-   "document_type": "External Link",
-   "label": "\u5916\u90e8\u94fe\u63a5",
-   "quick_list_filter": "[[\"External Link\",\"link_type\",\"in\",[\"Web Application\",\"Official Website\",null],false]]"
-  }
- ],
+ "quick_lists": [],
  "roles": [
   {
    "role": "All"

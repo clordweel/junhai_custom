@@ -18,7 +18,7 @@ add_to_apps_screen = [
         "title": "Junhai Custom",
         "route": "/app/overview",
         "has_permission": "junhai_custom.check_app_permission",
-    }
+    },
 ]
 
 # Includes in <head>

@@ -4,32 +4,18 @@
  "docstatus": 0,
  "doctype": "Desktop Icon",
  "hidden": 0,
- "icon_type": "Link",
+ "icon_type": "App",
  "idx": 96,
  "label": "Outline",
  "link": "/desk/external-link/Outline#jump",
  "link_to": "",
  "link_type": "External",
  "logo_url": "/assets/junhai_custom/images/outline-app-logo.svg",
- "modified": "2025-12-27 14:06:21.354052",
+ "modified": "2025-12-29 03:03:57.738859",
  "modified_by": "Administrator",
  "name": "Outline",
  "owner": "Administrator",
- "roles": [
-  {
-   "creation": "2025-12-22 20:19:24.230556",
-   "docstatus": 0,
-   "doctype": "Has Role",
-   "idx": 1,
-   "modified": "2025-12-27 14:06:21.354052",
-   "modified_by": "Administrator",
-   "name": "ad5v73jbbo",
-   "owner": "Administrator",
-   "parent": "Outline",
-   "parentfield": "roles",
-   "parenttype": "Desktop Icon",
-   "role": "All"
-  }
- ],
+ "parent_icon": "",
+ "roles": [],
  "standard": 1
 }
