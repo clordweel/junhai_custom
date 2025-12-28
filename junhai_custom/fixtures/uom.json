@@ -29,10 +29,10 @@
   "docstatus": 0,
   "doctype": "UOM",
   "enabled": 1,
-  "modified": "2025-12-25 03:47:45.161905",
+  "modified": "2025-12-28 09:22:34.710718",
   "must_be_whole_number": 0,
   "name": "箱",
-  "symbol": null,
+  "symbol": "box",
   "uom_name": "箱"
  },
  {
@@ -89,10 +89,10 @@
   "docstatus": 0,
   "doctype": "UOM",
   "enabled": 1,
-  "modified": "2025-12-25 11:21:42.610404",
+  "modified": "2025-12-28 09:22:34.762811",
   "must_be_whole_number": 0,
   "name": "袋",
-  "symbol": null,
+  "symbol": "bag",
   "uom_name": "袋"
  },
  {
@@ -113,10 +113,10 @@
   "docstatus": 0,
   "doctype": "UOM",
   "enabled": 1,
-  "modified": "2025-12-25 03:12:07.113570",
+  "modified": "2025-12-28 09:22:34.770090",
   "must_be_whole_number": 0,
   "name": "卷",
-  "symbol": null,
+  "symbol": "roll",
   "uom_name": "卷"
  },
  {
@@ -161,10 +161,10 @@
   "docstatus": 0,
   "doctype": "UOM",
   "enabled": 1,
-  "modified": "2025-12-25 10:41:18.829422",
+  "modified": "2025-12-28 09:22:34.756031",
   "must_be_whole_number": 0,
   "name": "桶",
-  "symbol": null,
+  "symbol": "drum",
   "uom_name": "桶"
  },
  {

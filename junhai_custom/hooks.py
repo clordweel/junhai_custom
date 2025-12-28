@@ -150,7 +150,6 @@ doc_events = {
         "before_save": "junhai_custom.utils.new_item_request.calculate_parameters_hash",
     },
     "Item": {
-        # "on_update": "junhai_custom.utils.new_item_request.update_request_on_item_save",
         "before_insert": "junhai_custom.utils.item.auto_set_item_code",
         "validate": "junhai_custom.utils.tax_logic.update_item_tax_data",
     },
@@ -190,12 +189,15 @@ extend_doctype_class = {
     "Material Request": "junhai_custom.overrides.buying_ext.JunhaiBuyingRMBMixin",
 }
 
+# update_website_context = "junhai_custom.utils.login.patch_login_context"
+
 # Overriding Methods
 # ------------------------------
 #
 override_whitelisted_methods = {
-    # "frappe.desk.doctype.event.event.get_events": "junhai_custom.event.get_events"
-    "frappe.desk.search.search_link": "junhai_custom.api.search.custom_search_link"
+    "frappe.desk.search.search_link": "junhai_custom.api.search.custom_search_link",
+    # "frappe.integrations.doctype.ldap_settings.ldap_settings.get_ldap_client_settings": "junhai_custom.api.new_ldap_settings.get_custom_ldap_settings",
+    # "frappe.integrations.doctype.ldap_settings.ldap_settings.login": "junhai_custom.api.new_ldap_settings.custom_ldap_login",
 }
 #
 # each overriding function accepts a `data` argument;
@@ -287,7 +289,7 @@ fixtures = [
     # {"dt": "Social Login Key", "filters": [["name", "=", "logto"]]},
     {"dt": "External Link", "filters": [["module", "=", app_title]]},
     {"dt": "Custom Field", "filters": [["module", "=", app_title]]},
-    {"dt": "Account", "filters": [["company", "=", "徐州君海管理咨询有限公司"]]},
+    # {"dt": "Account", "filters": [["company", "=", "徐州君海管理咨询有限公司"]]},
     {"dt": "Brand", "filters": []},
     {
         "dt": "UOM",
@@ -316,6 +318,7 @@ fixtures = [
         ],
     },
     {"dt": "Currency", "filters": [["name", "in", ["CNY"]]]},
+    {"dt": "Print Style", "filters": [["name", "in", ["Junhai Standard"]]]},
     {
         "dt": "Property Setter",
         "filters": [
