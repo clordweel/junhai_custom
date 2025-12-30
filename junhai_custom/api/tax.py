@@ -1,5 +1,5 @@
 import frappe
-from utils.tax_logic import update_item_tax_data
+from junhai_custom.utils.tax_logic import update_item_tax_data
 
 
 # --- 供按钮调用的函数保持不变，但内部逻辑已更新 ---

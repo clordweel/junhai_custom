@@ -186,9 +186,13 @@ scheduler_events = {
 extend_doctype_class = {
     "Purchase Order": "junhai_custom.overrides.currency_ext.RMBMixin",
     "Purchase Invoice": "junhai_custom.overrides.currency_ext.RMBMixin",
+    "Purchase Receipt": "junhai_custom.overrides.currency_ext.RMBMixin",
     "Material Request": "junhai_custom.overrides.currency_ext.RMBMixin",
     "Sales Order": "junhai_custom.overrides.currency_ext.RMBMixin",
+    "Sales Invoice": "junhai_custom.overrides.currency_ext.RMBMixin",
     "Delivery Note": "junhai_custom.overrides.currency_ext.RMBMixin",
+    "Payment Entry": "junhai_custom.overrides.currency_ext.RMBMixin",
+    "Subcontracting Receipt": "junhai_custom.overrides.currency_ext.RMBMixin",
 }
 
 # update_website_context = "junhai_custom.utils.login.patch_login_context"

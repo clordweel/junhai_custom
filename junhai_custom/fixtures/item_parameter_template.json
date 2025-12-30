@@ -3297,7 +3297,7 @@
   "docstatus": 0,
   "doctype": "Item Parameter Template",
   "item_group": "板材",
-  "modified": "2025-12-25 02:23:22.661974",
+  "modified": "2025-12-30 14:21:00.578390",
   "module": "Junhai Custom",
   "name": "板材模板 - 钢板",
   "parameters": [
@@ -3457,11 +3457,11 @@
     "description": null,
     "doctype_selector": "UOM",
     "join_to_hash": 0,
-    "parameter_default_value": "千克",
+    "parameter_default_value": "吨",
     "parameter_name": "采购单位",
     "readonly_value": 1,
     "target_field": "purchase_uom",
-    "value_doctype": "千克",
+    "value_doctype": "吨",
     "value_float": 0.0,
     "value_format": null,
     "value_integer": 0
@@ -3532,6 +3532,10 @@
    {
     "conversion_factor": 1.0,
     "uom": "千克"
+   },
+   {
+    "conversion_factor": 1000.0,
+    "uom": "吨"
    },
    {
     "conversion_factor": 0.0,
@@ -8726,6 +8730,195 @@
    {
     "conversion_factor": 1.0,
     "uom": "件"
+   }
+  ]
+ },
+ {
+  "amended_from": null,
+  "description": "专用于委外订单(Subcontracting Order)的服务行项目。\n非库存物料，用于结算徐马或其他外协厂的加工费用。",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Item Parameter Template",
+  "item_group": "委外加工服务",
+  "modified": "2025-12-30 14:10:00.086458",
+  "module": "Junhai Custom",
+  "name": "生产服务模板 - 委外加工费",
+  "parameters": [
+   {
+    "binding_field": 1,
+    "constraint_type": "Doctype",
+    "description": "建议归类于[生产服务]组。",
+    "doctype_selector": "Item Group",
+    "join_to_hash": 0,
+    "parameter_default_value": "委外加工服务",
+    "parameter_name": "所属分类",
+    "readonly_value": 0,
+    "target_field": "item_group",
+    "value_doctype": "委外加工服务",
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Doctype",
+    "description": "固定为: 委外加工费。",
+    "doctype_selector": "Item Base Name",
+    "join_to_hash": 1,
+    "parameter_default_value": "委外加工",
+    "parameter_name": "基础名",
+    "readonly_value": 0,
+    "target_field": null,
+    "value_doctype": "委外加工",
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Data",
+    "description": "如 机加工, 焊接, 热处理, 表面处理, 装配。\n\nTODO: 之后改为 工序 单据类型。",
+    "doctype_selector": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "",
+    "parameter_name": "工序类型",
+    "readonly_value": 0,
+    "target_field": null,
+    "value_doctype": null,
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Data",
+    "description": "如 按件, 按重量(kg), 按工时(小时), 按批次。",
+    "doctype_selector": null,
+    "join_to_hash": 1,
+    "parameter_default_value": "按件",
+    "parameter_name": "计价方式",
+    "readonly_value": 0,
+    "target_field": null,
+    "value_doctype": null,
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   },
+   {
+    "binding_field": 0,
+    "constraint_type": "Doctype",
+    "description": "如 江苏徐马。",
+    "doctype_selector": "Supplier",
+    "join_to_hash": 0,
+    "parameter_default_value": "江苏徐马环保科技有限公司",
+    "parameter_name": "默认供应商",
+    "readonly_value": 0,
+    "target_field": null,
+    "value_doctype": "江苏徐马环保科技有限公司",
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Doctype",
+    "description": "固定为 Purchase(采购)，因为服务是买进来的。",
+    "doctype_selector": "Source Type",
+    "join_to_hash": 0,
+    "parameter_default_value": "采购",
+    "parameter_name": "供应类型",
+    "readonly_value": 1,
+    "target_field": "custom_source_type",
+    "value_doctype": "采购",
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Doctype",
+    "description": null,
+    "doctype_selector": "UOM",
+    "join_to_hash": 0,
+    "parameter_default_value": "次",
+    "parameter_name": "计量单位",
+    "readonly_value": 0,
+    "target_field": "stock_uom",
+    "value_doctype": "次",
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Format",
+    "description": "基础名+工序类型",
+    "doctype_selector": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "{{ 基础名 }} - {{ 工序类型 }}",
+    "parameter_name": "物料名称",
+    "readonly_value": 0,
+    "target_field": "item_name",
+    "value_doctype": null,
+    "value_float": 0.0,
+    "value_format": "{{ 基础名 }} - {{ 工序类型 }}",
+    "value_integer": 0
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Format",
+    "description": "工序+计价",
+    "doctype_selector": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "{{ 工序类型 }} ({{ 计价方式 }})",
+    "parameter_name": "规格型号",
+    "readonly_value": 0,
+    "target_field": "custom_specification",
+    "value_doctype": null,
+    "value_float": 0.0,
+    "value_format": "{{ 工序类型 }} ({{ 计价方式 }})",
+    "value_integer": 0
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Format",
+    "description": null,
+    "doctype_selector": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "项目: {{ 基础名 }} | 工序: {{ 工序类型 }} | 计价: {{ 计价方式 }} | 默认供应商: {{ 默认供应商 }} || 属性: 非库存服务",
+    "parameter_name": "详细描述",
+    "readonly_value": 0,
+    "target_field": "description",
+    "value_doctype": null,
+    "value_float": 0.0,
+    "value_format": "项目: {{ 基础名 }} | 工序: {{ 工序类型 }} | 计价: {{ 计价方式 }} | 默认供应商: {{ 默认供应商 }} || 属性: 非库存服务",
+    "value_integer": 0
+   },
+   {
+    "binding_field": 1,
+    "constraint_type": "Integer",
+    "description": "必须为0 (非库存)。",
+    "doctype_selector": null,
+    "join_to_hash": 0,
+    "parameter_default_value": "0",
+    "parameter_name": "库存属性",
+    "readonly_value": 1,
+    "target_field": "is_stock_item",
+    "value_doctype": null,
+    "value_float": 0.0,
+    "value_format": null,
+    "value_integer": 0
+   }
+  ],
+  "template_name": "生产服务模板 - 委外加工费",
+  "uoms": [
+   {
+    "conversion_factor": 1.0,
+    "uom": "次"
+   },
+   {
+    "conversion_factor": 1.0,
+    "uom": "小时"
    }
   ]
  }

@@ -1038,5 +1038,21 @@
   "property_type": "JSON",
   "row_name": null,
   "value": "[[\"Item Group\",\"custom_code\",\"is\",\"set\"]]"
+ },
+ {
+  "default_value": null,
+  "doc_type": "New Item Request",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocType",
+  "field_name": null,
+  "is_system_generated": 0,
+  "modified": "2025-12-29 04:10:40.014119",
+  "module": null,
+  "name": "New Item Request-main-field_order",
+  "property": "field_order",
+  "property_type": "Data",
+  "row_name": null,
+  "value": "[\"workflow_state\", \"naming_series\", \"template\", \"item_group\", \"image\", \"column_break_uhke\", \"reason\", \"section_break_jwac\", \"parameters\", \"section_break_ztck\", \"uoms\", \"section_break_ypqq\", \"unique_code\", \"amended_from\"]"
  }
 ]
