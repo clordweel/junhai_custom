@@ -162,7 +162,7 @@ scheduler_events = {
     # 	"all": [
     # 		"junhai_custom.tasks.all"
     # 	],
-    "daily": ["junhai_custom.utils.tax_logic.daily_tax_audit"],
+    # "daily": ["junhai_custom.utils.tax_logic.daily_tax_audit"],
     # 	"hourly": [
     # 		"junhai_custom.tasks.hourly"
     # 	],
@@ -184,9 +184,11 @@ scheduler_events = {
 #
 # Specify custom mixins to extend the standard doctype controller.
 extend_doctype_class = {
-    "Purchase Order": "junhai_custom.overrides.buying_ext.JunhaiBuyingRMBMixin",
-    "Purchase Invoice": "junhai_custom.overrides.buying_ext.JunhaiBuyingRMBMixin",
-    "Material Request": "junhai_custom.overrides.buying_ext.JunhaiBuyingRMBMixin",
+    "Purchase Order": "junhai_custom.overrides.currency_ext.RMBMixin",
+    "Purchase Invoice": "junhai_custom.overrides.currency_ext.RMBMixin",
+    "Material Request": "junhai_custom.overrides.currency_ext.RMBMixin",
+    "Sales Order": "junhai_custom.overrides.currency_ext.RMBMixin",
+    "Delivery Note": "junhai_custom.overrides.currency_ext.RMBMixin",
 }
 
 # update_website_context = "junhai_custom.utils.login.patch_login_context"

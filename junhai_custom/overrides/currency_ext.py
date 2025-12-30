@@ -5,7 +5,7 @@ from frappe.utils import flt
 from junhai_custom.utils.currency import get_rmb_upper
 
 
-class JunhaiBuyingRMBMixin(object):
+class RMBMixin(object):
     """
     针对 BuyingController 相关单据的人民币大写逻辑扩展
     适用范围：Purchase Order, Purchase Invoice, Material Request
